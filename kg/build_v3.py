@@ -51,8 +51,16 @@ _DEF = re.compile(
     r'\d+\.\s*[' + _Q + r']([^' + _Q + r']{1,30})[' + _Q + r']\s*(?:이?란|이라\s*함은)\s*(.+?)(?=\n\s*\d+\.|\Z)',
     re.S)
 _DEF_ARTICLE = re.compile(r"제\s*\d+\s*조\s*\(\s*정의\s*\)")
+_DEF_END = re.compile(r"^.{4,}?다\s*[.\n]")   # 정의문 첫 '…다.' 종결(여러 조항 blob 방지)
+
+
+def _def_sentence(d: str) -> str:
+    """정의문을 첫 '…다.' 종결까지로 자른다. 종결 없으면 180자 캡(공문체 등 붕괴 대비)."""
+    d = re.sub(r"\s+", " ", (d or "").strip())
+    m = _DEF_END.match(d)
+    return (m.group(0).strip() if m else d)[:180]
 # 기관(named body): 위원회/심의회/협의회/이사회로 끝나는 명사구(공백 없는 연속 명사구).
-_ORG = re.compile(r"[가-힣A-Za-z0-9·]{2,18}(?:위원회|심의회|협의회|이사회)")
+_ORG = re.compile(r"[가-힣A-Za-z0-9·]{2,14}(?:위원회|심의회|협의회|이사회)")  # 접두 ≤14: 실제 기관명 길이, 20자+ 절조각 차단
 _ORG_LEADJUNK = re.compile(r"^[oO·∙‧\-*ㅇ\s]+")  # 앞 list마커/불릿 제거 (ESG·AI 등 영문명은 보존)
 # 절·어미·동사·조항참조가 들어간 매치는 기관명이 아니라 문장 조각 → 거부(과포획 쓰레기 제거).
 # 진짜 기관명(○○평가위원회·전문위원회·기술기준위원회 등)엔 안 나타나는 신호만 모음.
@@ -355,7 +363,7 @@ def build(records: list[dict]) -> tuple[str, dict]:
                     if ti not in created_terms:
                         lines.append(f"{ti} rdf:type skos:Concept .")
                         lines.append(f'{ti} skos:prefLabel "{_esc(term)}" .')
-                        lines.append(f'{ti} skos:definition "{_esc(definition[:300])}" .')
+                        lines.append(f'{ti} skos:definition "{_esc(_def_sentence(definition))}" .')
                         created_terms.add(ti)
                         stats["def_terms"] += 1
                     if (ti, s) not in term_defs:    # 같은 용어를 정의한 모든 문서를 연결(2번째 문서 누락 방지)
