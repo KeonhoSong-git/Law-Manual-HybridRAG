@@ -23,6 +23,7 @@
 ## 데모 화면
 
 공개 데모: **https://construct-joyride-cartoon.ngrok-free.dev**
+> 도메인 이름이 임의적인 것은 무료 ngrok이 자동 배정한 주소이기 때문.
 
 ## 데이터 · 모델
 
@@ -45,7 +46,7 @@
 
 ## 동작 원리
 
-> KG 생성 방법론은 동반 하네스 **[law-regulation-kg-harness](https://github.com/KeonhoSong-git/law-regulation-kg-harness)** 와 동일하다.
+> KG는 Claude Code 하네스 **[law-regulation-kg-harness](https://github.com/KeonhoSong-git/law-regulation-kg-harness)** 의 지시로 구축한다. 노드·관계 추출과 게이트 검증 코드는 이 저장소 `kg/`(`build_v3.py`·`classify_edges_v3.py`)에 있다.
 
 | 원칙 | 내용 |
 |------|------|
@@ -62,22 +63,14 @@
 ## 파이프라인
 
 ```
-수집/청킹 → by_document/*.json
-   │  ①-A 법령·행정규칙  fetch_law.py     (조문 단위 → 법규체)
-   │  ①-B 매뉴얼·지침서  fetch_manual.py  (PDF 첨부 → 텍스트 추출 → 공문체 윈도우)
-   │  ①-C (선택) 로컬 HWPX  ingest_hwpx.py / hwpx_chunker
-   ▼
-청크 JSON
-   │  ② KG 구축   python -m kg.build_v3        → kg.ttl  (구조: 결정적)
-   │  ②b 종류분류 python -m kg.classify_edges_v3 → 인용 엣지에 based_on/applies/amends/cites 부여(LLM+게이트)
-   │  ③ 임베딩    BGE-M3                         → vectors.npy (+meta)
-   ▼
-demo/data/{kg.ttl, vectors.npy}
-   │  ④ 데모 서버  demo/kg_api.py (:8800)
-   ▼
-하이브리드 질의응답 웹
+① 수집·청킹: fetch_law / fetch_manual / ingest_hwpx  →  by_document/*.json
+② KG 구축: kg.build_v3  →  kg.ttl (구조 추출, 결정적)
+③ 인용 종류분류: kg.classify_edges_v3  →  based_on / applies / amends / cites (로컬 LLM + 게이트)
+④ 임베딩: BGE-M3  →  vectors.npy (+meta)
+⑤ 데모 서버: demo/kg_api.py  →  하이브리드 질의응답 웹
 ```
-- ①·③(청킹·임베딩) 같은 무거운 사전계산은 강한 기기에서 미리. 디바이스는 ④만 담당(가벼움).
+
+Claude Code로 하네스에 KG 구축을 지시하고, 노드·관계 추출(인용 종류분류·기관 판정)은 로컬 LLM을 사용한다.
 
 > 📄 **단계별 청킹·데이터 처리 규칙 상세** → [`docs/data-processing.md`](docs/data-processing.md)
 > (법령 vs 행정규칙(법규체) vs 매뉴얼(공문체) 청킹 차이, 정의·기관·참조 추출 규칙, 인용 종류분류 게이트, 임베딩 저장 형식)
@@ -104,18 +97,17 @@ demo/data/{kg.ttl, vectors.npy}
 ```json
 [
   {
-    "doc_title": "○○감독규정 시행세칙",
-    "source_file": "행정규칙_○○감독규정_시행세칙.json",
+    "doc_title": "기술보증기금법",
+    "source_file": "법령_기술보증기금법.json",
     "doc_family": "법규체",          // 법규체(조문 구조) | 공문체(매뉴얼·지침)
-    "doc_type": "행정규칙",          // 법령 | 행정규칙 | 매뉴얼
-    "enacted": "2010. 1. 1.",        // 제정일
-    "last_amended": "2023. 5. 1.",   // 최종 개정일
-    "unit": "조",                    // 조 | 본문 | 문서
+    "doc_type": "법령",              // 법령 | 행정규칙 | 매뉴얼
+    "enacted": "2002. 1. 1.",
+    "last_amended": "2023. 5. 1.",
+    "unit": "조",                    // 조 | 문서
     "article_label": "제1조",
     "article_title": "목적",
-    "text": "제1조(목적) 이 세칙은 「○○감독규정」에서 위임된 사항을 정한다 …",
-    "chunk_id": "d8f1a2…#0001",
-    "content_hash": "9c3f…"
+    "text": "제1조(목적) 이 법은 …",
+    "chunk_id": "d8f1a2…#0001"       // KG↔벡터 조인 키
   }
 ]
 ```
@@ -126,7 +118,7 @@ demo/data/{kg.ttl, vectors.npy}
 | `doc_type` · `unit` · `article_label`/`title` | 문서·조문 노드 라벨 |
 | `enacted` · `last_amended` | 제정·개정일 리터럴(`xsd:date`) |
 | `text` | 결정적 추출의 원천 — 모든 evidence가 여기 실재해야 채택 |
-| `chunk_id` · `content_hash` | KG↔벡터 조인(`dct:identifier`) · 증분 재추출 |
+| `chunk_id` | KG↔벡터 조인 키(`dct:identifier`) |
 
 ### (KG) `kg.ttl` — RDF/Turtle
 ```turtle
@@ -184,9 +176,11 @@ cd demo && docker compose up -d --build
 ```
 → 브라우저에서 **http://localhost:8800**
 
-> **다른 환경 이식**: KG·벡터가 번들돼 있어 데이터는 옮길 필요 없다. 새 환경에선 `.env`에 LLM·임베딩(BGE-M3, 1024-dim) 엔드포인트만 연결하고 `preflight.py`가 **ALL PASS**면 그대로 굴러간다. 임베딩이 BGE-M3가 아니면 질문 벡터가 번들 벡터와 공간이 어긋나니 반드시 같은 모델로.
-
-> 코드엔 **하드코딩된 주소·키가 없다**(전부 `.env`). 즉 클론 후 고칠 코드는 없고, **루트 `.env` + `demo/data/` 데이터** 두 가지만 준비하면 된다.
+> **다른 환경 이식**
+> - KG·벡터 번들 포함 → 데이터 이동 불필요
+> - `.env`에 LLM·임베딩(BGE-M3, 1024-dim) 엔드포인트만 연결 → `preflight.py` ALL PASS면 동작
+> - 임베딩은 반드시 BGE-M3 (다른 모델이면 번들 벡터와 공간 불일치)
+> - 하드코딩된 주소·키 없음(전부 `.env`) — 준비할 것은 루트 `.env` + `demo/data/` 둘뿐
 
 ---
 
@@ -243,5 +237,5 @@ demo/
 
 ## Notice
 
-- 원 데이터 셋은 타사의 내부 규정, 메뉴얼로 공개할 수 없어 비슷한 형태, 도메인 데이터를 국가법령센터에서 수집하여 VectorRAG, GraphRAG를 구축함.
-- 오픈 소스 [rhwp](https://github.com/edwardkim/rhwp) 개발에 감사드림.
+- 원 데이터셋은 타사 내부 규정·매뉴얼이라 공개할 수 없어, 비슷한 형태·같은 도메인 데이터를 국가법령센터에서 수집해 VectorRAG·GraphRAG를 구축함.
+- 오픈 소스 [rhwp](https://github.com/edwardkim/rhwp)를 사용함.
