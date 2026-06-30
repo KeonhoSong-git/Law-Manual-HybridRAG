@@ -38,28 +38,35 @@
 
 ## 개발 / 데모 환경
 
-| 역할 | 사양 |
-|------|------|
-| **추론 서버** (LLM, 임베딩) | Intel Xeon Gold 6530 (128스레드) · 2TB RAM · NVIDIA H100 NVL 94GB · Ubuntu 22.04 · CUDA 12.8 |
-| **데모 서버** (쿼리) | Jetson Origin Nano 8GB |
+현재 배포: **NVIDIA Jetson Orin Nano 8GB 한 대에서 전부 온디바이스(로컬·오프라인) 구동.** 외부 클라우드 LLM 미사용.
+
+- 공개 데모 접속: **https://construct-joyride-cartoon.ngrok-free.dev**
+  - 비밀번호 없음. 첫 접속 시 ngrok 경고 페이지에서 `Visit Site` 클릭.
+- 하드웨어: Jetson Orin Nano 8GB (6-core Arm Cortex-A78AE · Ampere GPU · 8GB 공유 메모리)
+- OS: Ubuntu 22.04 / JetPack 6.2.1 (L4T R36.4.4) · CUDA 12.6
+- 사용 모델: 생성 LLM = **NVIDIA Nemotron 3 Nano 4B**, 임베딩 = **BGE-M3** (둘 다 로컬 구동 · OpenAI 호환)
+- 구성요소 (모두 OpenAI 호환 API · systemd 서비스로 부팅 자동 시작):
+
+| 역할 | 모델 / 엔진 | 엔드포인트 |
+|------|-------------|-----------|
+| 생성 LLM | **NVIDIA Nemotron 3 Nano 4B** · `nvidia/NVIDIA-Nemotron-3-Nano-4B-GGUF` (Q4_K_M) · llama.cpp(CUDA) | `:8080` |
+| 임베딩 | **BGE-M3** · `BAAI/bge-m3` (GGUF FP16) · llama.cpp | `:8081` |
+| RAG API | FastAPI (`demo/kg_api.py`) | `:8800` |
+| 공개 터널 | ngrok (고정 도메인) | 위 데모 URL |
+
+- 데이터: 저장소에 번들된 KG(`kg.ttl`) + 벡터(`vectors.npy` / `vectors.meta.jsonl`) 사용 (청크 17,340).
+- 교체 가능: OpenAI 호환 엔드포인트만 바라보므로 `.env` 만 바꾸면 외부 추론서버(H100 등)로 전환 가능.
+
+운영 메모
+- 8GB 공유 메모리 한계 — LLM + 임베딩 + RAG 동시 구동이 안전선. whisper 등 대형 모델을 추가 적재하면 OOM.
+- Nemotron은 추론(reasoning) 모델 — LLM 호출 본문에 `chat_template_kwargs.enable_thinking=false` 를 넣어야 답변 본문이 정상 출력됨(미적용 시 추론에 토큰을 소진해 답변이 빔).
 
 ## 데모 화면
 
-`http://localhost:8800` — 단일 페이지(좌: 결과 / 우: 노드 상세).
+`http://localhost:8800` (공개 접속은 위 데모 URL) — 단일 페이지.
 
 **상단**
 - 제목 `⌂ Law & Manual HybridRAG` = **홈 버튼**(클릭 시 초기화) · 질문 입력창 · `질문` 버튼.
-
-**좌측 — 질의 결과**
-- **최종 답변** — 스트리밍 후 마크다운 렌더(굵게·불릿·화살표).
-- **① 지식그래프** — `시드: <규정명>` + `3홉 관련 문서`(클릭 가능한 칩 → 우측 상세) + KG 사실 목록. 관련 문서가 없으면 "이 문서는 다른 규정을 인용·피인용하지 않음" 안내.
-- **② 벡터 RAG — 전역 / 그래프 스코프** — 각 결과에 `유사도 점수 · 문서명 · 본문 스니펫`.
-
-**좌측 — 지식그래프 탐색기**
-- 타입 색상 **범례**(하나 선택 시 나머지 디밍) · **이름 부분검색** · **가나다순** · **페이지네이션**.
-
-**우측 — 노드 상세**
-- 라벨·타입·속성 + **나가는/들어오는 관계** 그룹 + **에고 그래프**(선택 노드와 이웃을 SVG로 시각화).
 
 ---
 
