@@ -40036,53 +40036,21 @@ doc:d0886601ed8985672 dct:identifier "d0886601ed8985672#0099" .
 doc:d0886601ed8985672 dct:identifier "d0886601ed8985672#0100" .
 doc:d0886601ed8985672 dct:issued "2025-01-08"^^xsd:date .
 doc:d0886601ed8985672 dct:modified "2025-01-08"^^xsd:date .
-term:t41e44e581a865041 rdf:type skos:Concept .
-term:t41e44e581a865041 skos:prefLabel "평가사(Assessor)" .
-term:t41e44e581a865041 skos:definition "인정기구로부터 단독 또는 평가반의 일원 으로 KOLAS 공인기관의 평가를 수행하도록 등록된 사람을 말하며, 평가사는 선임평가사, 기술평가사, 평가사보로 구분한다." .
-term:t41e44e581a865041 rdfs:isDefinedBy doc:d0886601ed8985672 .
-term:tacf89a2466035067 rdf:type skos:Concept .
-term:tacf89a2466035067 skos:prefLabel "선임평가사(Lead Assessor)" .
-term:tacf89a2466035067 skos:definition "평가반의 반원 선정 지원, 평가 반 관찰평가, 평가사보 교육‧지도 및 평가계획의 수립 등 평가반을 이끌고 평가수행과 관련된 최종결정을 하며, 평가보고서를 조정하 고 제출하는 평가사를 말한다. 선임평가사는 다음의 각 목을 수행 할 수 있다. 가. 평가반장 역할과 KOLAS 공인기관 및 신청자의 평가업무 총괄 나. 경영시스템의 평가 또는 기술평가사의 역할 수행" .
-term:tacf89a2466035067 rdfs:isDefinedBy doc:d0886601ed8985672 .
-term:ta381b5ae685f5113 rdf:type skos:Concept .
-term:ta381b5ae685f5113 skos:prefLabel "기술평가사(Technical Assessor)" .
-term:ta381b5ae685f5113 skos:definition "특정 인정신청 분야에 대해 KOLAS 공인기관의 기술적인 능력을 평가하는 평가사를 말하며, 적 KOLAS-R-004 국가기술표준원 고시 제2025-0009호(2025.01.08.) 한국인정기구 (KOLAS) 페이지 (3)/(50) 격성이 있다고 판단될 경우 경영시스템에 대한 평가를 수행할 수 있다." .
-term:ta381b5ae685f5113 rdfs:isDefinedBy doc:d0886601ed8985672 .
-term:t30fcd9da728354af rdf:type skos:Concept .
-term:t30fcd9da728354af skos:prefLabel "평가사보(Provisional Assessor)" .
-term:t30fcd9da728354af skos:definition "평가사로 등록된 자 중 현 장평가 경험을 충족하지 못하여(별표 1 제3호의 평가사 승급 요건 참조) 공식적인 자격을 부여받지 못하고 추가적인 경험이 요구되는 평가사를 말하며, 평가반장의 지시에 따라 평가업무를 익히고 보조 한다." .
-term:t30fcd9da728354af rdfs:isDefinedBy doc:d0886601ed8985672 .
-term:t74999f713a3a5c89 rdf:type skos:Concept .
-term:t74999f713a3a5c89 skos:prefLabel "기술전문가(Technical Expert)" .
-term:t74999f713a3a5c89 skos:definition "해당분야 기술평가사로 자격 부여를 받지는 못하였으나, 해당분야와 관련된 특정 지식 및 전문 지식을 제공하도록 등록된 사람으로, 특수 분야에 대한 기술자문을 위해 참여하는 평가반의 반원을 말하며, 인정에 대한 관련표준(예 를 들면, KS Q ISO/IEC 17025 등)과 인정기구의 관련 정책 및 절차 에 대한 기본적인 지식이 부족한 기술전문가는 반드시 기술평가사 와 동행하여야 한다. (“동행”은 평가활동 전체에 걸친 긴밀한 지 휘 감독을 의미한다.)." .
-term:t74999f713a3a5c89 rdfs:isDefinedBy doc:d0886601ed8985672 .
-doc:d8bc09d77c86a588b rdf:type reg:Manual .
-doc:d8bc09d77c86a588b rdfs:label "(서해어업관리단) 불법어업신고(1588-5119)센터 운영요령.pdf" .
-doc:d8bc09d77c86a588b dct:type "매뉴얼" .
-doc:d8bc09d77c86a588b dct:identifier "d60e00f6bb33b5cfd#0000" .
-doc:d8bc09d77c86a588b dct:identifier "d60e00f6bb33b5cfd#0001" .
-doc:d8bc09d77c86a588b dct:identifier "d60e00f6bb33b5cfd#0002" .
-doc:d8bc09d77c86a588b dct:identifier "d60e00f6bb33b5cfd#0003" .
-doc:d8bc09d77c86a588b dct:identifier "d60e00f6bb33b5cfd#0004" .
-doc:d8bc09d77c86a588b dct:identifier "d60e00f6bb33b5cfd#0005" .
-doc:d8bc09d77c86a588b dct:identifier "d60e00f6bb33b5cfd#0006" .
-doc:d8bc09d77c86a588b dct:issued "2026-06-01"^^xsd:date .
-doc:d8bc09d77c86a588b dct:modified "2026-06-01"^^xsd:date .
+doc:d60e00f6bb33b5cfd rdf:type reg:Manual .
+doc:d60e00f6bb33b5cfd rdfs:label "(서해어업관리단) 불법어업신고(1588-5119)센터 운영요령" .
+doc:d60e00f6bb33b5cfd dct:type "매뉴얼" .
+doc:d60e00f6bb33b5cfd dct:identifier "d60e00f6bb33b5cfd#0000" .
+doc:d60e00f6bb33b5cfd dct:identifier "d60e00f6bb33b5cfd#0001" .
+doc:d60e00f6bb33b5cfd dct:identifier "d60e00f6bb33b5cfd#0002" .
+doc:d60e00f6bb33b5cfd dct:identifier "d60e00f6bb33b5cfd#0003" .
+doc:d60e00f6bb33b5cfd dct:identifier "d60e00f6bb33b5cfd#0004" .
+doc:d60e00f6bb33b5cfd dct:identifier "d60e00f6bb33b5cfd#0005" .
+doc:d60e00f6bb33b5cfd dct:identifier "d60e00f6bb33b5cfd#0006" .
+doc:d60e00f6bb33b5cfd dct:issued "2026-06-01"^^xsd:date .
+doc:d60e00f6bb33b5cfd dct:modified "2026-06-01"^^xsd:date .
 doc:ext00c7cd190f93 rdf:type eli:LegalResource .
 doc:ext00c7cd190f93 rdfs:label "해양수산부와그소속기관직제시행규칙" .
 doc:ext00c7cd190f93 reg:external true .
-term:t93d2a2cc7eb650a4 rdf:type skos:Concept .
-term:t93d2a2cc7eb650a4 skos:prefLabel "불법어업신고전화" .
-term:t93d2a2cc7eb650a4 skos:definition "민원인이언제ㆍ어디서나불법어업신고를 할수있도록불법어업신고(1588-5119)센터(이하\"신고센터\"라한 다)에개설된전용전화를말한다." .
-term:t93d2a2cc7eb650a4 rdfs:isDefinedBy doc:d8bc09d77c86a588b .
-term:tcefa7fa0de585ae2 rdf:type skos:Concept .
-term:tcefa7fa0de585ae2 skos:prefLabel "처리부서" .
-term:tcefa7fa0de585ae2 skos:definition "어업지도과및소속어업감독공무원(국가어업지도선) 으로서, 접수한민원사항을육ㆍ해상현장에서직접확인ㆍ처리하는 단속요원(지도선)을말한다." .
-term:tcefa7fa0de585ae2 rdfs:isDefinedBy doc:d8bc09d77c86a588b .
-term:t4a9f3a0eac4b51f2 rdf:type skos:Concept .
-term:t4a9f3a0eac4b51f2 skos:prefLabel "관계기관" .
-term:t4a9f3a0eac4b51f2 skos:definition "지방자치단체의해양수산관련부서및해양경찰 등불법어업지도ㆍ단속업무를수행하는유관기관을말한다. 제3조(운영) 신고센터는서해어업관리단안전정보과(종합상황실)에두 고, 24시간연중운영하며불법어업신고사항을접수ㆍ처리한다. 제4조(신고의접수및처리) ①불법어업신고접수및전파등관리ㆍ운 영은신고센터에서처리한다. ②신고센터에서는제1항에따라접수한신고사항을별지제1호서식 - 2 - 으로처리부서에통보하고, 처리부서는통보를받은즉시민원인에게 사실확인후신고사항을처리하여야한다. ③신고센터에서는제1항에따라접수한신고사항이내수면등의불 법어업및관계기관의협조가필요한경우에는별지제1호서" .
-term:t4a9f3a0eac4b51f2 rdfs:isDefinedBy doc:d8bc09d77c86a588b .
 doc:ext54299aa654c7 rdf:type eli:LegalResource .
 doc:ext54299aa654c7 rdfs:label "공공기록물관리에관한법률" .
 doc:ext54299aa654c7 reg:external true .
@@ -40201,22 +40169,6 @@ doc:dc17e34fd39ca5c4a dct:identifier "dc17e34fd39ca5c4a#0012" .
 doc:dc17e34fd39ca5c4a dct:identifier "dc17e34fd39ca5c4a#0013" .
 doc:dc17e34fd39ca5c4a dct:issued "2025-04-18"^^xsd:date .
 doc:dc17e34fd39ca5c4a dct:modified "2025-04-18"^^xsd:date .
-term:t6dfb5875290e5abb rdf:type skos:Concept .
-term:t6dfb5875290e5abb skos:prefLabel "안내서" .
-term:t6dfb5875290e5abb skos:definition "보호위원회에서개인정보보호법령이나고시, 개인정보보호법령 의해석등에관하여외부에그내용을알기쉽게설명하거나구체화하여안 내하기위해마련한해설서, 가이드라인, 안내서등각종자료를말한다." .
-term:t6dfb5875290e5abb rdfs:isDefinedBy doc:dc17e34fd39ca5c4a .
-term:tf9d1233b1bb35879 rdf:type skos:Concept .
-term:tf9d1233b1bb35879 skos:prefLabel "관리부서" .
-term:tf9d1233b1bb35879 skos:definition "보호위원회안내서를총괄하여관리하는개인정보보호정책 과를말한다." .
-term:tf9d1233b1bb35879 rdfs:isDefinedBy doc:dc17e34fd39ca5c4a .
-term:tcfbb9aa45415553f rdf:type skos:Concept .
-term:tcfbb9aa45415553f skos:prefLabel "소관부서" .
-term:tcfbb9aa45415553f skos:definition "개별안내서를제정또는개정및관리하는개별부서를말한 다." .
-term:tcfbb9aa45415553f rdfs:isDefinedBy doc:dc17e34fd39ca5c4a .
-term:tbe0fcad54aff5984 rdf:type skos:Concept .
-term:tbe0fcad54aff5984 skos:prefLabel "중요사항" .
-term:tbe0fcad54aff5984 skos:definition "개인정보보호법령개정, 법해석의중대한변경, 새로운정 책방향의제시등으로인하여국민생활에의미있는영향을미치는사항을 말한다. 제3조(안내서제정및개정의원칙) ①소관부서가안내서를제정또는개정할 때에는다음각호의사항을고려하여유사한안내서가중복되지않도록사전 에검토해야한다." .
-term:tbe0fcad54aff5984 rdfs:isDefinedBy doc:dc17e34fd39ca5c4a .
 doc:df0bf85f809e35512 rdf:type reg:Manual .
 doc:df0bf85f809e35512 rdfs:label "건축물의 시공자제한 업무처리요령" .
 doc:df0bf85f809e35512 dct:type "매뉴얼" .
@@ -40304,44 +40256,12 @@ doc:dd0c5de1fd0ee5ef3 dct:modified "2024-01-15"^^xsd:date .
 doc:ext539dc0dd1367 rdf:type eli:LegalResource .
 doc:ext539dc0dd1367 rdfs:label "경제자유구역의지정및운영에관한특별법" .
 doc:ext539dc0dd1367 reg:external true .
-term:tcd29c551c3e458f8 rdf:type skos:Concept .
-term:tcd29c551c3e458f8 skos:prefLabel "외국교육기관" .
-term:tcd29c551c3e458f8 skos:definition "「경제자유구역및제주국제자유도시의외국교육 기관설립ㆍ운영에관한특별법」(이하\"외국교육기관특별법\"이라한다) 및동법시행령에따라경제자유구역내설립ㆍ운영되는교육기관을말한다." .
-term:tcd29c551c3e458f8 rdfs:isDefinedBy doc:dd0c5de1fd0ee5ef3 .
 doc:ext3c02daa12474 rdf:type eli:LegalResource .
 doc:ext3c02daa12474 rdfs:label "경제자유구역및제주국제자유도시의외국교육 기관설립ㆍ운영에관한특별법" .
 doc:ext3c02daa12474 reg:external true .
-term:tcfa7320bd758528d rdf:type skos:Concept .
-term:tcfa7320bd758528d skos:prefLabel "외국인학교" .
-term:tcfa7320bd758528d skos:definition "「초ㆍ중등교육법」제60조의2 및「외국인학교및외국인 유치원의설립ㆍ운영에관한규정」에따라경제자유구역내설립ㆍ운영 되는교육기관을말한다." .
-term:tcfa7320bd758528d rdfs:isDefinedBy doc:dd0c5de1fd0ee5ef3 .
-term:te8ec33f510dd5ba1 rdf:type skos:Concept .
-term:te8ec33f510dd5ba1 skos:prefLabel "외국연구기관" .
-term:te8ec33f510dd5ba1 skos:definition "다음각목의어느하나에해당하는요건을갖춘 기관을말한다. 가. \"대학부설연구기관\" : 「외국교육기관특별법」제2조제1호에따른 외국학교법인또는그부설연구기관이「민법」등관계법령에따라등기 하여경제자유구역내신설또는증설하거나해외로부터이전하는 부설연구기관 나. \"비영리연구기관\" : 외국에서설립ㆍ운영되고있는비영리연구기관이 민법등관계법령에따라등기하여경제자유구역내신설또는증설 하거나해외로부터이전하는연구기관 다. \"외국인설립연구기관\" : 「외국인투자촉진법」제2조제1항제1호에 따른외국인이가목또는나목의외국에서설립ㆍ운영되고있는연구기관 소속의연구원으로서공동연구협력책임자" .
-term:te8ec33f510dd5ba1 rdfs:isDefinedBy doc:dd0c5de1fd0ee5ef3 .
 doc:exte4a5629e6ad4 rdf:type eli:LegalResource .
 doc:exte4a5629e6ad4 rdfs:label "외국교육기관특별법" .
 doc:exte4a5629e6ad4 reg:external true .
-term:t73e33bbca46c5666 rdf:type skos:Concept .
-term:t73e33bbca46c5666 skos:prefLabel "본원" .
-term:t73e33bbca46c5666 skos:definition "국내에외국교육기관이나외국연구기관을설립하고자하는 기관으로외국의법률에따라외국에서설립ㆍ운영되고있는교육기관, 연구기관, 기업및이의부설기관등을말한다." .
-term:t73e33bbca46c5666 rdfs:isDefinedBy doc:dd0c5de1fd0ee5ef3 .
-term:t6a48b056fa7a5ea8 rdf:type skos:Concept .
-term:t6a48b056fa7a5ea8 skos:prefLabel "보조사업" .
-term:t6a48b056fa7a5ea8 skos:definition "외국교육ㆍ연구기관등을유치하기위하여보조금을 지원하는사무또는사업을말한다." .
-term:t6a48b056fa7a5ea8 rdfs:isDefinedBy doc:dd0c5de1fd0ee5ef3 .
-term:taf1bf464bbc45343 rdf:type skos:Concept .
-term:taf1bf464bbc45343 skos:prefLabel "보조사업자" .
-term:taf1bf464bbc45343 skos:definition "외국교육ㆍ연구기관등을대상으로유치활동을수행하거나 외국교육ㆍ연구기관등의설립ㆍ운영에필요한자금을지원하는지방 자치단체의장또는관련사무를위임받은기관의장을말한다." .
-term:taf1bf464bbc45343 rdfs:isDefinedBy doc:dd0c5de1fd0ee5ef3 .
-term:td3458e178e3a54ff rdf:type skos:Concept .
-term:td3458e178e3a54ff skos:prefLabel "보조금" .
-term:td3458e178e3a54ff skos:definition "사업을수행하는데소요되는비용중국가또는지방자치 단체가부담하는비용으로다음각목으로구성된다. 가. \"국고보조금\" : 국가가부담하는비용 나. \"지방보조금\" : 지방자치단체가부담하는비용" .
-term:td3458e178e3a54ff rdfs:isDefinedBy doc:dd0c5de1fd0ee5ef3 .
-term:t7b5f94104b8e5bc2 rdf:type skos:Concept .
-term:t7b5f94104b8e5bc2 skos:prefLabel "민간출연금" .
-term:t7b5f94104b8e5bc2 skos:definition "국가또는지방자치단체외의기관이부담하는다음 각목의어느하나에해당하는비용을말한다. 다만, 국내기관과공동으로 설립ㆍ운영하는기관의경우에는국내기관이부담하는비용은제외한다. 가. 현금 나. 현물출연(「외국인투자촉진법」제2조제1항제8호나목또는라목에 해당하고, 같은법제30조, 같은법시행령제39조및같은법시행 규칙제24조에따라객관화된화폐가치로산정가능한경우또는 외국연구기관의본교ㆍ본원(부설연구소)이제공하는인건비의경우등) 제3조(외국교육ᆞ연구기관 등의 책무) 외국교육ㆍ연구기관등의장은국가 및지방자치단체로부터지원받은보조금을보조사업자와의협약및 제13조제2항에따른약정" .
-term:t7b5f94104b8e5bc2 rdfs:isDefinedBy doc:dd0c5de1fd0ee5ef3 .
 doc:exte60106627041 rdf:type eli:LegalResource .
 doc:exte60106627041 rdfs:label "경제자유구역지정및운영에 관한특별법" .
 doc:exte60106627041 reg:external true .
@@ -40933,32 +40853,12 @@ doc:d1febaaa5777851e9 dct:modified "2023-11-23"^^xsd:date .
 doc:exte6e3003ebf94 rdf:type eli:LegalResource .
 doc:exte6e3003ebf94 rdfs:label "기후위기 대응을 위한 탄소중립ㆍ녹색성장 기본법" .
 doc:exte6e3003ebf94 reg:external true .
-term:t073e9752f512580f rdf:type skos:Concept .
-term:t073e9752f512580f skos:prefLabel "녹색기술" .
-term:t073e9752f512580f skos:definition "기후변화대응 기술(「기후변화대응 기술개발 촉진법」제2 조제6호에 따른 기후변화대응 기술을 말한다), 에너지 이용 효율화 기술, 청정 생산기술, 신ㆍ재생에너지 기술, 자원순환(「자원순환기본법」제2조제1호에 따 른 자원순환을 말한다. 이하 같다) 및 친환경 기술(관련 융합기술을 포함한다) 등 사회ㆍ경제 활동의 전 과정에 걸쳐 화석에너지의 사용을 대체하고 에너지 와 자원을 효율적으로 사용하여 탄소중립을 이루고 녹색성장을 촉진하기 위 한 기술을 말한다." .
-term:t073e9752f512580f rdfs:isDefinedBy doc:d1febaaa5777851e9 .
 doc:ext35ad10980fbe rdf:type eli:LegalResource .
 doc:ext35ad10980fbe rdfs:label "기후변화대응 기술개발 촉진법" .
 doc:ext35ad10980fbe reg:external true .
 doc:ext7917928a1e35 rdf:type eli:LegalResource .
 doc:ext7917928a1e35 rdfs:label "자원순환기본법" .
 doc:ext7917928a1e35 reg:external true .
-term:tc2f80de3b3bf5304 rdf:type skos:Concept .
-term:tc2f80de3b3bf5304 skos:prefLabel "녹색전문기업" .
-term:tc2f80de3b3bf5304 skos:definition "창업 후 1년이 경과된 기업으로서 인증 받은 녹색 기술과 확인받은 녹색기술제품에 의한 직전년도 매출액 합이 신청기업의 직 전년도 총매출액의 20% 이상인 기업을 말한다." .
-term:tc2f80de3b3bf5304 rdfs:isDefinedBy doc:d1febaaa5777851e9 .
-term:t5e898079cec75ded rdf:type skos:Concept .
-term:t5e898079cec75ded skos:prefLabel "녹색기술제품" .
-term:t5e898079cec75ded skos:definition "기후위기 대응을 위한 탄소중립ㆍ녹색성장 기본법 제60조 제2항에 따라 인증된 녹색기술을 적용하여 판매를 목적으로 상용화한 제품을 말한다." .
-term:t5e898079cec75ded rdfs:isDefinedBy doc:d1febaaa5777851e9 .
-term:td1d86da613855ae9 rdf:type skos:Concept .
-term:td1d86da613855ae9 skos:prefLabel "녹색인증" .
-term:td1d86da613855ae9 skos:definition "녹색기술의 인증기준, 녹색전문기업 및 녹색기술제품 확인기준과의 적합성을 증명하는 행위를 말한다." .
-term:td1d86da613855ae9 rdfs:isDefinedBy doc:d1febaaa5777851e9 .
-term:tae8cef2fd7ea5b6c rdf:type skos:Concept .
-term:tae8cef2fd7ea5b6c skos:prefLabel "기술수준" .
-term:tae8cef2fd7ea5b6c skos:definition "녹색기술 인증을 받으려는 기술이 충족시켜야 할 최소 한의 요건을 말한다." .
-term:tae8cef2fd7ea5b6c rdfs:isDefinedBy doc:d1febaaa5777851e9 .
 doc:exta785a32d5d3c rdf:type eli:LegalResource .
 doc:exta785a32d5d3c rdfs:label "국가연구개발사업 등의 성과평가 및 성과관리에 관한 법률" .
 doc:exta785a32d5d3c reg:external true .
@@ -41282,10 +41182,6 @@ doc:exta14295828a73 reg:external true .
 doc:ext201c6a27d5ac rdf:type eli:LegalResource .
 doc:ext201c6a27d5ac rdfs:label "벤처기업확인요령" .
 doc:ext201c6a27d5ac reg:external true .
-term:ta50445754e335ad1 rdf:type skos:Concept .
-term:ta50445754e335ad1 skos:prefLabel "지역수출지원기관" .
-term:ta50445754e335ad1 skos:definition "명 칭여하를불문하고본사소재 지이외의지역에있는수출 지원기관의지부, 지점, 지역 본부등을말한다." .
-term:ta50445754e335ad1 rdfs:isDefinedBy doc:ded02a0b750ba514e .
 doc:d99c14c42cd9d5c96 rdf:type reg:Manual .
 doc:d99c14c42cd9d5c96 rdfs:label "명예식물감시원 운영요령" .
 doc:d99c14c42cd9d5c96 dct:type "매뉴얼" .
@@ -41482,18 +41378,6 @@ doc:d9e7d294a66c45bad dct:identifier "d9e7d294a66c45bad#0026" .
 doc:d9e7d294a66c45bad dct:identifier "d9e7d294a66c45bad#0027" .
 doc:d9e7d294a66c45bad dct:issued "2025-01-23"^^xsd:date .
 doc:d9e7d294a66c45bad dct:modified "2025-01-23"^^xsd:date .
-term:t03fd175f743355d8 rdf:type skos:Concept .
-term:t03fd175f743355d8 skos:prefLabel "백년소상공인" .
-term:t03fd175f743355d8 skos:definition "법제2조제2호에따라장기간사업을운영하면 서사회에기여한바가크고, 축적한경험을바탕으로지속적인성장 이기대되는소상공인으로서법제16조의2에따라중소벤처기업부 장관(이하\"장관\"이라한다)이지정한소상공인을말한다." .
-term:t03fd175f743355d8 rdfs:isDefinedBy doc:d9e7d294a66c45bad .
-term:tec9f2729c60e5b2c rdf:type skos:Concept .
-term:tec9f2729c60e5b2c skos:prefLabel "전담기관" .
-term:tec9f2729c60e5b2c skos:definition "백년소상공인지정및지원사업등의업무를효율 적으로추진하기위하여장관이법제17조에따라지정한운영기관 으로소상공인시장진흥공단을말한다." .
-term:tec9f2729c60e5b2c rdfs:isDefinedBy doc:d9e7d294a66c45bad .
-term:t981940b9d2b0553a rdf:type skos:Concept .
-term:t981940b9d2b0553a skos:prefLabel "현장평가" .
-term:t981940b9d2b0553a skos:definition "서면평가를통과한신청인의경영역량, 제품이나서 비스의차별성및사회적기여도등을확인하기위해사업장을방 문하여실시하는평가를말한다. 제3조(전담기관) ①장관은백년소상공인지정및지원사업의효율적 추진을위하여다음각호에해당하는업무의일부및전부를전담기 관의장이수행하게할수있다" .
-term:t981940b9d2b0553a rdfs:isDefinedBy doc:d9e7d294a66c45bad .
 doc:ext8684fef9f89b rdf:type eli:LegalResource .
 doc:ext8684fef9f89b rdfs:label "식품위생법" .
 doc:ext8684fef9f89b reg:external true .
@@ -41541,7 +41425,6 @@ doc:d79430e64f5745d29 dct:identifier "d79430e64f5745d29#0028" .
 doc:d79430e64f5745d29 dct:identifier "d79430e64f5745d29#0029" .
 doc:d79430e64f5745d29 dct:issued "2024-04-08"^^xsd:date .
 doc:d79430e64f5745d29 dct:modified "2024-04-08"^^xsd:date .
-term:ta50445754e335ad1 rdfs:isDefinedBy doc:d79430e64f5745d29 .
 doc:d285e2dac282a5e31 rdf:type reg:Manual .
 doc:d285e2dac282a5e31 rdfs:label "병적정리 매뉴얼에 관한 규정" .
 doc:d285e2dac282a5e31 dct:type "매뉴얼" .
@@ -41561,14 +41444,6 @@ doc:d285e2dac282a5e31 dct:identifier "d285e2dac282a5e31#0012" .
 doc:d285e2dac282a5e31 dct:identifier "d285e2dac282a5e31#0013" .
 doc:d285e2dac282a5e31 dct:issued "2024-10-30"^^xsd:date .
 doc:d285e2dac282a5e31 dct:modified "2024-10-30"^^xsd:date .
-term:t1abe4c468a255843 rdf:type skos:Concept .
-term:t1abe4c468a255843 skos:prefLabel "소관부서의장" .
-term:t1abe4c468a255843 skos:definition "「병무청사무분장규정」상의업무소관부서의 장을말한다. <개정’07.12.31, ’08.4.16>" .
-term:t1abe4c468a255843 rdfs:isDefinedBy doc:d285e2dac282a5e31 .
-term:t7ae06479a13d52e4 rdf:type skos:Concept .
-term:t7ae06479a13d52e4 skos:prefLabel "Web Book" .
-term:t7ae06479a13d52e4 skos:definition "병적정리매뉴얼을Web상에서볼수있도록만든전 자책을말한다. 제3조(적용범위<개정2019.12.30.>) 병적정리매뉴얼의관리와병적정리에관련 하여다른규정이있는경우를제외하고는이규정이정하는바에따른다. <개정 2019.12.30.> 제4조(병적정리의범위) 병적정리매뉴얼상의병적정리범위는병무행정과관련된 내용으로서다음각호와같다." .
-term:t7ae06479a13d52e4 rdfs:isDefinedBy doc:d285e2dac282a5e31 .
 doc:d90958738218a59d2 rdf:type reg:Manual .
 doc:d90958738218a59d2 rdfs:label "산업 및 에너지 협력개발지원사업 운영요령" .
 doc:d90958738218a59d2 dct:type "매뉴얼" .
@@ -42150,94 +42025,6 @@ doc:d6adb4fe6b2465318 dct:identifier "d6adb4fe6b2465318#0327" .
 doc:d6adb4fe6b2465318 dct:identifier "d6adb4fe6b2465318#0328" .
 doc:d6adb4fe6b2465318 dct:issued "2025-04-15"^^xsd:date .
 doc:d6adb4fe6b2465318 dct:modified "2025-04-15"^^xsd:date .
-term:t84f42906aafe5730 rdf:type skos:Concept .
-term:t84f42906aafe5730 skos:prefLabel "공정문화(Just Culture)" .
-term:t84f42906aafe5730 skos:definition "업무수행과정에서발생하는사람의의도치않 은실수에대한발생원인을종사자자체가아닌조직문화, 업무환경, 업무절 차·운영체계등의특성이사람의인적요인과의작용으로나타난결과임을강 조하는문화를말한다." .
-term:t84f42906aafe5730 rdfs:isDefinedBy doc:d6adb4fe6b2465318 .
-term:tac7fe73e8fda504a rdf:type skos:Concept .
-term:tac7fe73e8fda504a skos:prefLabel "고위관리자(Senior Management)" .
-term:tac7fe73e8fda504a skos:definition "안전위험수준(Safety risk tolerability) 에대한의사결정권한을가진자로서, 이매뉴얼에서는서울지방항공청관 제통신국장을말한다." .
-term:tac7fe73e8fda504a rdfs:isDefinedBy doc:d6adb4fe6b2465318 .
-term:t5723012568545a71 rdf:type skos:Concept .
-term:t5723012568545a71 skos:prefLabel "규제당국(Regulatory Body)" .
-term:t5723012568545a71 skos:definition "항공교통업무분야의안전과관련된각종 증명, 인가, 승인및관련규정, 기준, 절차등수립및안전감독업무를수행 하는국토교통부항공정책실내담당부서를말한다." .
-term:t5723012568545a71 rdfs:isDefinedBy doc:d6adb4fe6b2465318 .
-term:ta4686123ac925f08 rdf:type skos:Concept .
-term:ta4686123ac925f08 skos:prefLabel "내부안전감사(Internal Safety Audit)" .
-term:ta4686123ac925f08 skos:definition "조직의활동및그결과가계획된 내용과일치하는지, 효과적으로이행되고있는지, 조직의안전정책과목표를 달성하는데적합한지를결정하는체계적․독립적․객관적인검증절차를말 한다." .
-term:ta4686123ac925f08 rdfs:isDefinedBy doc:d6adb4fe6b2465318 .
-term:tf488d4ca291e5dbf rdf:type skos:Concept .
-term:tf488d4ca291e5dbf skos:prefLabel "문서화(Documentation)" .
-term:tf488d4ca291e5dbf skos:definition "안전관리업무에서발생하는문서를향후열람 및참조가용이하도록체계적으로기록․정리․보관하는것으로, 데이터베이 스도포함된다." .
-term:tf488d4ca291e5dbf rdfs:isDefinedBy doc:d6adb4fe6b2465318 .
-term:t4899606d38f458ac rdf:type skos:Concept .
-term:t4899606d38f458ac skos:prefLabel "발생가능성(Probability)" .
-term:t4899606d38f458ac skos:definition "항공안전위해요인이발생할수있는확률을 - 2 - 말하며, 발생빈도라고도한다." .
-term:t4899606d38f458ac rdfs:isDefinedBy doc:d6adb4fe6b2465318 .
-term:t3ff53555aebf5ae9 rdf:type skos:Concept .
-term:t3ff53555aebf5ae9 skos:prefLabel "변화관리(Change Management)" .
-term:t3ff53555aebf5ae9 skos:definition "제공하는서비스의안전측면에영향을 줄수있는절차및환경등의변화가예상되는경우, 이로인해새롭게출 현할수있는위해요인에대한분석·평가·경감및확인하는조치를말한다." .
-term:t3ff53555aebf5ae9 rdfs:isDefinedBy doc:d6adb4fe6b2465318 .
-term:t1e6af85392225628 rdf:type skos:Concept .
-term:t1e6af85392225628 skos:prefLabel "심각도(Severity)" .
-term:t1e6af85392225628 skos:definition "항공안전위해요인에의해유발될수있는피해또는 치명정도를말한다." .
-term:t1e6af85392225628 rdfs:isDefinedBy doc:d6adb4fe6b2465318 .
-term:t930f0bb24a915acf rdf:type skos:Concept .
-term:t930f0bb24a915acf skos:prefLabel "안전(Safety)" .
-term:t930f0bb24a915acf skos:definition "항공기운항에대한직접적지원이나항공기운항에관 련된항공활동에관한위험도(risk)를경감시키고허용가능한수준이하로 관리하는상태를말한다." .
-term:t930f0bb24a915acf rdfs:isDefinedBy doc:d6adb4fe6b2465318 .
-term:t797b1612f532575d rdf:type skos:Concept .
-term:t797b1612f532575d skos:prefLabel "안전목표(Safety Objective)" .
-term:t797b1612f532575d skos:definition "국가항공안전프로그램또는항공교통업무 기관의안전관리시스템을통하여이루고자하는원하는결과치또는안전 달성도를간략하고높은수준으로기술한목표값을말한다." .
-term:t797b1612f532575d rdfs:isDefinedBy doc:d6adb4fe6b2465318 .
-term:ta44b25493ba95731 rdf:type skos:Concept .
-term:ta44b25493ba95731 skos:prefLabel "안전성과(Safety Performance)" .
-term:ta44b25493ba95731 skos:definition "안전성과지표및안전성과목표로정의된 국가또는항공교통업무기관의안전달성도를말한다." .
-term:ta44b25493ba95731 rdfs:isDefinedBy doc:d6adb4fe6b2465318 .
-term:t338d709b83bf5b67 rdf:type skos:Concept .
-term:t338d709b83bf5b67 skos:prefLabel "안전요건(Safety Requirement)" .
-term:t338d709b83bf5b67 skos:definition "안전성과지표및안전성과목표의달성 을위한기준, 방법, 수단및절차등을말한다." .
-term:t338d709b83bf5b67 rdfs:isDefinedBy doc:d6adb4fe6b2465318 .
-term:t41b655a445f255eb rdf:type skos:Concept .
-term:t41b655a445f255eb skos:prefLabel "위험도(Safety Risk)" .
-term:t41b655a445f255eb skos:definition "항공안전위해요인이항공안전을저해하는사례로 발전할가능성(Probability)과심각도(Severity)를말한다" .
-term:t41b655a445f255eb rdfs:isDefinedBy doc:d6adb4fe6b2465318 .
-term:tfd53711ff7ae5e35 rdf:type skos:Concept .
-term:tfd53711ff7ae5e35 skos:prefLabel "안전정책(Safety Policy)" .
-term:tfd53711ff7ae5e35 skos:definition "조직이바라는안전목표를달성하기위해사 용하는방법과이행절차를말한다." .
-term:tfd53711ff7ae5e35 rdfs:isDefinedBy doc:d6adb4fe6b2465318 .
-term:t6a13ad46dbee58e5 rdf:type skos:Concept .
-term:t6a13ad46dbee58e5 skos:prefLabel "위험도평가(Risk Assessment)" .
-term:t6a13ad46dbee58e5 skos:definition "항공안전위해요인의발생가능성과심각 도의수준을분석하여위험도정도를도출하는과학적․체계적평가방법 을말한다." .
-term:t6a13ad46dbee58e5 rdfs:isDefinedBy doc:d6adb4fe6b2465318 .
-term:tb65d2545d6595f01 rdf:type skos:Concept .
-term:tb65d2545d6595f01 skos:prefLabel "위험도경감(Risk Mitigation)" .
-term:tb65d2545d6595f01 skos:definition "위해요인의예상된결과치에대한발 생가능성또는심각도를낮추기위한예방적통제또는회복조치또는통 합적방어과정을말한다." .
-term:tb65d2545d6595f01 rdfs:isDefinedBy doc:d6adb4fe6b2465318 .
-term:t3f1dc3957e3d5d75 rdf:type skos:Concept .
-term:t3f1dc3957e3d5d75 skos:prefLabel "총괄안전관리자" .
-term:t3f1dc3957e3d5d75 skos:definition "항공교통업무분야의효과적인안전관리시스템이행및 유지를총괄하기위해제13조에따라임명된사람을말한다." .
-term:t3f1dc3957e3d5d75 rdfs:isDefinedBy doc:d6adb4fe6b2465318 .
-term:t729276edeb075435 rdf:type skos:Concept .
-term:t729276edeb075435 skos:prefLabel "최고관리자(Accountable Executive)" .
-term:t729276edeb075435 skos:definition "항공교통업무기관의안전운영에관 한최고권한을가진의사결정권자로서, 이매뉴얼에서는서울지방항공청장 을말한다." .
-term:t729276edeb075435 rdfs:isDefinedBy doc:d6adb4fe6b2465318 .
-term:te3bf25748f0c56eb rdf:type skos:Concept .
-term:te3bf25748f0c56eb skos:prefLabel "항공교통업무기관(ATS Service Provider)" .
-term:te3bf25748f0c56eb skos:definition "「항공안전법」제83조및 같은법시행규칙제228조제2항에따라항공교통업무를제공하는기관을 말하며, 그업무범위는항공교통관제업무, 항공교통흐름관리업무, 비행정 보업무, 경보업무를포함한다." .
-term:te3bf25748f0c56eb rdfs:isDefinedBy doc:d6adb4fe6b2465318 .
-term:tfc628cb700e5585f rdf:type skos:Concept .
-term:tfc628cb700e5585f skos:prefLabel "현장안전관리자" .
-term:tfc628cb700e5585f skos:definition "항공교통업무기관의효과적인안전관리시스템이행및 유지를지원하기위해제13조에따라임명된사람으로서항공관리사무소, 공항출장소또는항공교통업무시설등에서업무를수행하는안전관리자를 말한다." .
-term:tfc628cb700e5585f rdfs:isDefinedBy doc:d6adb4fe6b2465318 .
-term:t32af5cf82c855d31 rdf:type skos:Concept .
-term:t32af5cf82c855d31 skos:prefLabel "안전문제(safety issue)" .
-term:t32af5cf82c855d31 skos:definition "항공안전위험도를증가시키는각종요인, 사건, 상태등을말한다." .
-term:t32af5cf82c855d31 rdfs:isDefinedBy doc:d6adb4fe6b2465318 .
-term:tfd018e36f56a5dbb rdf:type skos:Concept .
-term:tfd018e36f56a5dbb skos:prefLabel "안전문화(safety culture)" .
-term:tfd018e36f56a5dbb skos:definition "안전관리에대한의지, 책임의식을좌우하는 조직및구성원의가치관ㆍ태도ㆍ인식ㆍ역량, 행동양식등을말한다." .
-term:tfd018e36f56a5dbb rdfs:isDefinedBy doc:d6adb4fe6b2465318 .
 doc:ext749d29a6baad rdf:type eli:LegalResource .
 doc:ext749d29a6baad rdfs:label "정상운영안전표본조사(NOSS) 요령" .
 doc:ext749d29a6baad reg:external true .
@@ -42352,27 +42139,6 @@ doc:d3d3af491619f5696 dct:identifier "d3d3af491619f5696#0042" .
 doc:d3d3af491619f5696 dct:identifier "d3d3af491619f5696#0043" .
 doc:d3d3af491619f5696 dct:issued "2024-08-26"^^xsd:date .
 doc:d3d3af491619f5696 dct:modified "2024-08-26"^^xsd:date .
-term:t4f1d733bf22a5eb4 rdf:type skos:Concept .
-term:t4f1d733bf22a5eb4 skos:prefLabel "소셜벤처기업판별" .
-term:t4f1d733bf22a5eb4 skos:definition "영제11조의7제1항의요건에해당하는지 여부를확인하는절차를말한다." .
-term:t4f1d733bf22a5eb4 rdfs:isDefinedBy doc:d3d3af491619f5696 .
-term:t2b2b6c61ebdf5762 rdf:type skos:Concept .
-term:t2b2b6c61ebdf5762 skos:prefLabel "신청기업" .
-term:t2b2b6c61ebdf5762 skos:definition "소셜벤처기업판별을받고자신청한기업을말한 다." .
-term:t2b2b6c61ebdf5762 rdfs:isDefinedBy doc:d3d3af491619f5696 .
-term:t026b8a0be81858e9 rdf:type skos:Concept .
-term:t026b8a0be81858e9 skos:prefLabel "민간자문위원회" .
-term:t026b8a0be81858e9 skos:definition "소셜벤처기업의판별을위한심의또는소셜벤 처기업지원과관련하여자문이필요한경우구성하는위원회를말 한다." .
-term:t026b8a0be81858e9 rdfs:isDefinedBy doc:d3d3af491619f5696 .
-term:t960c753bca9252a6 rdf:type skos:Concept .
-term:t960c753bca9252a6 skos:prefLabel "실태조사" .
-term:t960c753bca9252a6 skos:definition "법제16조의10제3항에따라소셜벤처기업을체계적으 로육성하고지원하기위하여소셜벤처기업의활동현황및실태등 에대한조사를하는것을말한다." .
-term:t960c753bca9252a6 rdfs:isDefinedBy doc:d3d3af491619f5696 .
-term:t607d1dd3c02b52db rdfs:isDefinedBy doc:d3d3af491619f5696 .
-term:t31b60dd30e1758c0 rdf:type skos:Concept .
-term:t31b60dd30e1758c0 skos:prefLabel "중간지원조직" .
-term:t31b60dd30e1758c0 skos:definition "중앙행정기관또는지방자치단체와소셜벤처 기업간의가교역할을수행하며소셜벤처기업간의협력과연대촉 진, 역량강화와생태계조성을지원하는조직을말한다. 제3조(소셜벤처기업 신청대상) 소셜벤처기업은법제16조의10제1항과 영제11조의7제1항의요건을갖춘기업으로영제2조의4에해당하지 않는기업으로한다. 제4조(업종의 구분) ①신청기업의업종구분은한국표준산업분류에의 하되, 동일기업이2개이상의서로다른사업을겸업하는경우에는매 - 3 - 출액이가장큰사업으로업종을구분함을원칙으로한다. 다만, 매출 액을기준으로함이부적합하다고인정되는경우에는해당사업에종 사하는상시근로자수또는해당사업" .
-term:t31b60dd30e1758c0 rdfs:isDefinedBy doc:d3d3af491619f5696 .
 doc:ext07df7dd7bd47 rdf:type eli:LegalResource .
 doc:ext07df7dd7bd47 rdfs:label "연구개발특구의육성에관한특별법" .
 doc:ext07df7dd7bd47 reg:external true .
@@ -42565,30 +42331,6 @@ doc:dc4a48081b69d5157 dct:modified "2026-01-15"^^xsd:date .
 doc:ext7c9ee45d4be3 rdf:type eli:LegalResource .
 doc:ext7c9ee45d4be3 rdfs:label "수상레저안전법시행령" .
 doc:ext7c9ee45d4be3 reg:external true .
-term:t899713c4a1045c18 rdf:type skos:Concept .
-term:t899713c4a1045c18 skos:prefLabel "래프팅가이드" .
-term:t899713c4a1045c18 skos:definition "해양경찰청장이지정한교육기관에서발급하는래프 팅가이드자격증을취득한사람중래프팅기구를이용하는수상레저사업 장에서이용객의안전관리와인명구조를목적으로래프팅기구에탑승하 거나배치되는사람을말한다." .
-term:t899713c4a1045c18 rdfs:isDefinedBy doc:dc4a48081b69d5157 .
-term:t7e0dd07242eb5cc4 rdf:type skos:Concept .
-term:t7e0dd07242eb5cc4 skos:prefLabel "교육기관" .
-term:t7e0dd07242eb5cc4 skos:definition "래프팅가이드의자격증발급과관련된교육을위하여 해양경찰청장으로부터지정을받은법인이나기관ㆍ단체를말한다." .
-term:t7e0dd07242eb5cc4 rdfs:isDefinedBy doc:dc4a48081b69d5157 .
-term:tf7d7c8e19c085cbd rdf:type skos:Concept .
-term:tf7d7c8e19c085cbd skos:prefLabel "교육강사" .
-term:tf7d7c8e19c085cbd skos:definition "래프팅가이드교육과정에서이론과실기교육을담당하는 사람을말한다." .
-term:tf7d7c8e19c085cbd rdfs:isDefinedBy doc:dc4a48081b69d5157 .
-term:t0359c5b919175139 rdf:type skos:Concept .
-term:t0359c5b919175139 skos:prefLabel "응급처치강사" .
-term:t0359c5b919175139 skos:definition "래프팅가이드교육과정에서응급처치와심폐소생교 육ㆍ평가를담당하는사람을말한다." .
-term:t0359c5b919175139 rdfs:isDefinedBy doc:dc4a48081b69d5157 .
-term:t79bc6376afb45942 rdf:type skos:Concept .
-term:t79bc6376afb45942 skos:prefLabel "평가관" .
-term:t79bc6376afb45942 skos:definition "래프팅가이드자격을평가하는사람을말한다." .
-term:t79bc6376afb45942 rdfs:isDefinedBy doc:dc4a48081b69d5157 .
-term:t4c48058b92ab50c7 rdf:type skos:Concept .
-term:t4c48058b92ab50c7 skos:prefLabel "자격증" .
-term:t4c48058b92ab50c7 skos:definition "「수상레저안전법」(이하\"법\"이라한다) 제37조에따라 등록된수상레저사업장등에배치되는래프팅가이드의자격을인정한증 서를말한다. 제3조삭제 제4조(교육기관 신청 자격) ①「수상레저안전법시행령」(이하\"영\"이라한 다) 제26조제2항에따라래프팅가이드교육기관으로지정받기위해서는 다음각호의자격을모두갖추어야한다." .
-term:t4c48058b92ab50c7 rdfs:isDefinedBy doc:dc4a48081b69d5157 .
 doc:ext3ce37cb23b0a rdf:type eli:LegalResource .
 doc:ext3ce37cb23b0a rdfs:label "수상레저안전법" .
 doc:ext3ce37cb23b0a reg:external true .
@@ -42751,14 +42493,6 @@ doc:d23d391a68e9056c7 dct:identifier "d23d391a68e9056c7#0034" .
 doc:d23d391a68e9056c7 dct:identifier "d23d391a68e9056c7#0035" .
 doc:d23d391a68e9056c7 dct:issued "2024-02-27"^^xsd:date .
 doc:d23d391a68e9056c7 dct:modified "2024-02-27"^^xsd:date .
-term:t9384f18151195cea rdf:type skos:Concept .
-term:t9384f18151195cea skos:prefLabel "정밀검사능력 평가" .
-term:t9384f18151195cea skos:definition "전문검사기관의 인력, 시설, 설비 등으로 병해 충과 LMO를 정확히 분류동정하거나 포함여부를 확인할 수 있는 능 - 2 - 력을 평가하는 것을 말한다." .
-term:t9384f18151195cea rdfs:isDefinedBy doc:d23d391a68e9056c7 .
-term:t5db516f70f235882 rdf:type skos:Concept .
-term:t5db516f70f235882 skos:prefLabel "품질관리능력 평가" .
-term:t5db516f70f235882 skos:definition "인력, 시설, 장비, 시약관리, 교육 관리 등 객 관적이고 정확한 정밀검사를 위한 요건, 절차 및 검사업무 수행기준 을 준수하는 정도 등 정밀검사능력 유지를 위한 품질관리 수준을 평 가하는 것을 말한다. 제3조(전문검사기관 지정 신청서 처리절차) ① 농림축산검역본부장(이하 \" 검역본부장\"이라 한다)이 전문검사기관 지정 신청서를 접수하였을 경우 에는 「식물방역법 시행규칙」(이하 \"규칙\"이라 한다) 제21조의2제3항에 따라 지정요건에 적합한지 확인하고 다음과 같이 처리한다." .
-term:t5db516f70f235882 rdfs:isDefinedBy doc:d23d391a68e9056c7 .
 doc:ext5472ddee0d6e rdf:type eli:LegalResource .
 doc:ext5472ddee0d6e rdfs:label "유전자변형생물체의 국가간 이동 등에 관한 법률" .
 doc:ext5472ddee0d6e reg:external true .
@@ -42855,38 +42589,6 @@ doc:d397b5bf2fceb5810 dct:identifier "d397b5bf2fceb5810#0048" .
 doc:d397b5bf2fceb5810 dct:identifier "d397b5bf2fceb5810#0049" .
 doc:d397b5bf2fceb5810 dct:issued "2023-05-23"^^xsd:date .
 doc:d397b5bf2fceb5810 dct:modified "2023-05-23"^^xsd:date .
-term:t20caeef8972e55ec rdf:type skos:Concept .
-term:t20caeef8972e55ec skos:prefLabel "관리인" .
-term:t20caeef8972e55ec skos:definition "법제42조제1항단서규정및규칙제42조제1항의규정에 따라식용축산물보관장으로지정을받은자를말한다." .
-term:t20caeef8972e55ec rdfs:isDefinedBy doc:d397b5bf2fceb5810 .
-term:ta5ffd65aabf65ef3 rdf:type skos:Concept .
-term:ta5ffd65aabf65ef3 skos:prefLabel "검역보조원" .
-term:ta5ffd65aabf65ef3 skos:definition "검역시행장에서종사하는자로서관리수의사의지시에 따라검역물의상ㆍ하차, 입ㆍ출고, 장치, 전산관리등검역업무를보조 하는자를말한다." .
-term:ta5ffd65aabf65ef3 rdfs:isDefinedBy doc:d397b5bf2fceb5810 .
-term:t5b047005c0fc534a rdf:type skos:Concept .
-term:t5b047005c0fc534a skos:prefLabel "입고" .
-term:t5b047005c0fc534a skos:definition "법제36조제1항및규칙제37조제1항의규정에따라지정검역물이 수입검역을받기위하여검역시행장에반입되는것을말한다." .
-term:t5b047005c0fc534a rdfs:isDefinedBy doc:d397b5bf2fceb5810 .
-term:t89a9fc90e81e5a1b rdf:type skos:Concept .
-term:t89a9fc90e81e5a1b skos:prefLabel "출고" .
-term:t89a9fc90e81e5a1b skos:definition "법제36조제1항에따른수입검역을받지않은지정검역물이거나 수입검역중에불합격된지정검역물이검역시행장밖으로반출되는것을 말한다." .
-term:t89a9fc90e81e5a1b rdfs:isDefinedBy doc:d397b5bf2fceb5810 .
-term:tc2f89072ad8159c2 rdf:type skos:Concept .
-term:tc2f89072ad8159c2 skos:prefLabel "현물검사" .
-term:tc2f89072ad8159c2 skos:definition "지정검역물의검역방법및기준에따라육류등에대하여 실시하는관능검사등을말한다." .
-term:tc2f89072ad8159c2 rdfs:isDefinedBy doc:d397b5bf2fceb5810 .
-term:tc0a3c9a600a753bb rdf:type skos:Concept .
-term:tc0a3c9a600a753bb skos:prefLabel "문제축산물" .
-term:tc0a3c9a600a753bb skos:definition "농림축산식품부장관또는농림축산검역본부장(이하\" 검역본부장\"이라한다)이가축방역ㆍ공중위생상위해가발생할우려가 있다고인정하는축산물을말한다." .
-term:tc0a3c9a600a753bb rdfs:isDefinedBy doc:d397b5bf2fceb5810 .
-term:t4ee22cd403a65a15 rdf:type skos:Concept .
-term:t4ee22cd403a65a15 skos:prefLabel "비상근무" .
-term:t4ee22cd403a65a15 skos:definition "문제축산물등의발생으로인해농림축산식품부장관또는 검역본부장의지시에따라관리수의사가검역시행장에근무하는것을말한다." .
-term:t4ee22cd403a65a15 rdfs:isDefinedBy doc:d397b5bf2fceb5810 .
-term:t3299228e892f5e41 rdf:type skos:Concept .
-term:t3299228e892f5e41 skos:prefLabel "사용자아이디(ID)" .
-term:t3299228e892f5e41 skos:definition "검역본부장이운영하는검역시행장정보시스템을 사용하여업무를처리하고그결과를유지할수있도록검역본부장이 사용자(관리수의사, 관리인, 방역본부소속관련직원)에게부여하는고유 인증번호를말한다. - 3 - 제4조(관리수의사 임무) ①관리수의사의임무는다음각호와같다." .
-term:t3299228e892f5e41 rdfs:isDefinedBy doc:d397b5bf2fceb5810 .
 doc:ext75eca7bbd5b3 rdf:type eli:LegalResource .
 doc:ext75eca7bbd5b3 rdfs:label "가축전염병예방법 시행규칙" .
 doc:ext75eca7bbd5b3 reg:external true .
@@ -43204,17 +42906,9 @@ doc:ext606a0c5e5182 reg:external true .
 doc:extaee338b5ef6b rdf:type eli:LegalResource .
 doc:extaee338b5ef6b rdfs:label "어린이제품안전특별법" .
 doc:extaee338b5ef6b reg:external true .
-term:tbac1fe4aca8354f8 rdf:type skos:Concept .
-term:tbac1fe4aca8354f8 skos:prefLabel "수탁기관" .
-term:tbac1fe4aca8354f8 skos:definition "제품사고를 예방하기 위해 시장감시 등 「제품안전기본법시행령」제22조에서정하는사항에대하여 소비자및제품안전관련업무를수행하는법인또는단체등을 말한다." .
-term:tbac1fe4aca8354f8 rdfs:isDefinedBy doc:d098ecf8c36aa5388 .
 doc:exta17a61962696 rdf:type eli:LegalResource .
 doc:exta17a61962696 rdfs:label "제품안전기본법시행령" .
 doc:exta17a61962696 reg:external true .
-term:t6e84280e39d556b2 rdf:type skos:Concept .
-term:t6e84280e39d556b2 skos:prefLabel "안전감시원" .
-term:t6e84280e39d556b2 skos:definition "유통되는제품에대하여시장감시를수행 하는자를말한다. 제4조(안전감시원의자격) 안전감시원의자격은다음각호와같다." .
-term:t6e84280e39d556b2 rdfs:isDefinedBy doc:d098ecf8c36aa5388 .
 doc:d2b0ece8eec915394 rdf:type reg:Manual .
 doc:d2b0ece8eec915394 rdfs:label "액화석유가스 배관망공급사업 등에 관한 운영요령" .
 doc:d2b0ece8eec915394 dct:type "매뉴얼" .
@@ -43768,16 +43462,6 @@ doc:dae789c70c42a5350 dct:identifier "dae789c70c42a5350#0014" .
 doc:dae789c70c42a5350 dct:identifier "dae789c70c42a5350#0015" .
 doc:dae789c70c42a5350 dct:issued "2026-04-30"^^xsd:date .
 doc:dae789c70c42a5350 dct:modified "2026-04-30"^^xsd:date .
-term:tcb09b7bae5105b79 rdf:type skos:Concept .
-term:tcb09b7bae5105b79 skos:prefLabel "특화기업" .
-term:tcb09b7bae5105b79 skos:definition "법, 시행령, 시행규칙 및 본 요령 제3조의 신청자격 및 제5조의 지정요건을 충족하 여 기후에너지환경부장관이 법 제14조에 따라 지정한 기업을 말한다." .
-term:tcb09b7bae5105b79 rdfs:isDefinedBy doc:dae789c70c42a5350 .
-term:t2b2b6c61ebdf5762 rdfs:isDefinedBy doc:dae789c70c42a5350 .
-term:t01245a97de675855 rdf:type skos:Concept .
-term:t01245a97de675855 skos:prefLabel "사업장" .
-term:t01245a97de675855 skos:definition "부가가치세법 제6조(납세지), 같은 법 시행령 제8조(사업장)에 근거한 ‘사업자등록증’의 소재지를 말한다. 한편, 부가가치세법 제8조3항에 따른 사업자단위과세사업자는 종된사업장 명세서상 사 업장 소재지를 포함한다." .
-term:t01245a97de675855 rdfs:isDefinedBy doc:dae789c70c42a5350 .
-term:tec9f2729c60e5b2c rdfs:isDefinedBy doc:dae789c70c42a5350 .
 doc:extf7faf356c274 rdf:type eli:LegalResource .
 doc:extf7faf356c274 rdfs:label "중소기업 기본법 시행령" .
 doc:extf7faf356c274 reg:external true .
@@ -43866,22 +43550,9 @@ doc:df710b437395e5053 dct:identifier "df710b437395e5053#0038" .
 doc:df710b437395e5053 dct:identifier "df710b437395e5053#0039" .
 doc:df710b437395e5053 dct:issued "2026-01-30"^^xsd:date .
 doc:df710b437395e5053 dct:modified "2026-02-01"^^xsd:date .
-term:t200286e323f85071 rdf:type skos:Concept .
-term:t200286e323f85071 skos:prefLabel "법" .
-term:t200286e323f85071 skos:definition "「기업부설연구소등의연구개발지원에관한법률」을, \" 영\"이란같은법시행령을, \"규칙\"이란같은법시행규칙을말한다." .
-term:t200286e323f85071 rdfs:isDefinedBy doc:df710b437395e5053 .
 doc:extec29b95e4b29 rdf:type eli:LegalResource .
 doc:extec29b95e4b29 rdfs:label "기업부설연구소등의연구개발지원에관한법률" .
 doc:extec29b95e4b29 reg:external true .
-term:t0009e0103a06504f rdfs:isDefinedBy doc:df710b437395e5053 .
-term:ta94f84f565cd5199 rdf:type skos:Concept .
-term:ta94f84f565cd5199 skos:prefLabel "중견기업" .
-term:ta94f84f565cd5199 skos:definition "「중견기업성장촉진및경쟁력강화에관한 특별법」제2조제1호에따른중견기업을말한다. - 2 -" .
-term:ta94f84f565cd5199 rdfs:isDefinedBy doc:df710b437395e5053 .
-term:t16685235a67c516a rdf:type skos:Concept .
-term:t16685235a67c516a skos:prefLabel "종합평가시스템" .
-term:t16685235a67c516a skos:definition "제20조에따라우수기업부설연구소지 정의원활한운영및사후관리등을위해협회가구축ㆍ운영하는시 스템을말한다." .
-term:t16685235a67c516a rdfs:isDefinedBy doc:df710b437395e5053 .
 doc:d9f0d2c8484015930 rdf:type reg:Manual .
 doc:d9f0d2c8484015930 rdfs:label "우수 물류신기술등 지정제도 운영요령" .
 doc:d9f0d2c8484015930 dct:type "매뉴얼" .
@@ -43912,14 +43583,6 @@ doc:d9f0d2c8484015930 dct:identifier "d9f0d2c8484015930#0023" .
 doc:d9f0d2c8484015930 dct:identifier "d9f0d2c8484015930#0024" .
 doc:d9f0d2c8484015930 dct:issued "2024-12-24"^^xsd:date .
 doc:d9f0d2c8484015930 dct:modified "2024-12-24"^^xsd:date .
-term:tfe74363ef25054e6 rdf:type skos:Concept .
-term:tfe74363ef25054e6 skos:prefLabel "이해관계인" .
-term:tfe74363ef25054e6 skos:definition "신청기술과본인의기술간에관련이있는자로 「물류정책기본법시행령」(이하\"영\"이라한다) 제46조의4제3항에 따라이해관계의견을제출한자를말한다." .
-term:tfe74363ef25054e6 rdfs:isDefinedBy doc:d9f0d2c8484015930 .
-term:t0b33f79ed19556da rdf:type skos:Concept .
-term:t0b33f79ed19556da skos:prefLabel "이의신청" .
-term:t0b33f79ed19556da skos:definition "신기술지정신청기술을공고한후그사실에대하 여이해관계인이이의를제기하는것을말한다." .
-term:t0b33f79ed19556da rdfs:isDefinedBy doc:d9f0d2c8484015930 .
 doc:extac49f6a55866 rdf:type eli:LegalResource .
 doc:extac49f6a55866 rdfs:label "물류정책기본법시행규칙" .
 doc:extac49f6a55866 reg:external true .
@@ -44051,26 +43714,6 @@ doc:dff81314f8ac15970 dct:identifier "dff81314f8ac15970#0079" .
 doc:dff81314f8ac15970 dct:identifier "dff81314f8ac15970#0080" .
 doc:dff81314f8ac15970 dct:issued "2024-12-31"^^xsd:date .
 doc:dff81314f8ac15970 dct:modified "2024-12-31"^^xsd:date .
-term:ta4dc3efdea8250ae rdf:type skos:Concept .
-term:ta4dc3efdea8250ae skos:prefLabel "비상안전기능" .
-term:ta4dc3efdea8250ae skos:definition "특정장 치의상태를나타내는지시기 나 안전성을 견지하는 기타 요소들의기능이상실되는경 우에방사선피폭으로부터종 사자를보호하는기능을말한 다." .
-term:ta4dc3efdea8250ae rdfs:isDefinedBy doc:dff81314f8ac15970 .
-term:t5509c800494152ba rdf:type skos:Concept .
-term:t5509c800494152ba skos:prefLabel "탱크" .
-term:t5509c800494152ba skos:definition "기체또는액체상 태로적재되거나연이어응결 되는액체ㆍ분말ㆍ과립ㆍ슬러 리또는고화물등을운반하 기위한450리터이상또는기 체운반을위한1,000리터이상 의탱크컨테이너ㆍ휴대용탱 크ㆍ도로용탱크차량ㆍ철도용 탱크화물차량또는용기를말 한다. 이경우탱크컨테이너는 육상또는해상수송이가능하 며구조장치를제거하지않고 적재 및 하역이 가능하여야 하며, 셸의외부에안정부재 및결속부착물이있고, 또한 만재한 상태에서 인양할 수 있어야한다." .
-term:t5509c800494152ba rdfs:isDefinedBy doc:dff81314f8ac15970 .
-term:t19b526485e845c44 rdf:type skos:Concept .
-term:t19b526485e845c44 skos:prefLabel "지하수" .
-term:t19b526485e845c44 skos:definition "지표면아래로침 투하여지하의공극또는공 동을채우고있는모든물을 말한다." .
-term:t19b526485e845c44 rdfs:isDefinedBy doc:dff81314f8ac15970 .
-term:ta97e2b71919056cb rdf:type skos:Concept .
-term:ta97e2b71919056cb skos:prefLabel "고형화" .
-term:ta97e2b71919056cb skos:definition "유동성이있는물 질을하소(Calcination), 건조, 시멘트화, 아스팔트화, 유리화 등의방법으로물리적으로안 정한고체형태로바꾸는것 을말하며, 폐필터등의고체 물질을시멘트등으로고정화 하는것을포함한다." .
-term:ta97e2b71919056cb rdfs:isDefinedBy doc:dff81314f8ac15970 .
-term:td33a8a3cb51853ad rdf:type skos:Concept .
-term:td33a8a3cb51853ad skos:prefLabel "체내섭취" .
-term:td33a8a3cb51853ad skos:definition "경구, 호흡구, 피부또는상처등을통하여 방사성핵종이인체내부로들 어오는것을말한다." .
-term:td33a8a3cb51853ad rdfs:isDefinedBy doc:dff81314f8ac15970 .
 doc:d62cfb3c1af4b5188 rdf:type reg:Manual .
 doc:d62cfb3c1af4b5188 rdfs:label "위기관리 매뉴얼협의회 운영규정" .
 doc:d62cfb3c1af4b5188 dct:type "매뉴얼" .
@@ -44367,18 +44010,6 @@ doc:d94c8b1da70cf55c4 dct:identifier "d94c8b1da70cf55c4#0117" .
 doc:d94c8b1da70cf55c4 dct:identifier "d94c8b1da70cf55c4#0118" .
 doc:d94c8b1da70cf55c4 dct:issued "2025-12-18"^^xsd:date .
 doc:d94c8b1da70cf55c4 dct:modified "2025-12-18"^^xsd:date .
-term:t16b8f00da14b5d48 rdf:type skos:Concept .
-term:t16b8f00da14b5d48 skos:prefLabel "실질자산" .
-term:t16b8f00da14b5d48 skos:definition "제시된총자산에서부실자산을공제한자산을 말하며, \"실질부채\"라함은제시된총부채에서이요령에의한평정조 정금액을가감한부채를말한다." .
-term:t16b8f00da14b5d48 rdfs:isDefinedBy doc:d94c8b1da70cf55c4 .
-term:t415eb342358b5aaf rdf:type skos:Concept .
-term:t415eb342358b5aaf skos:prefLabel "비업무용자산" .
-term:t415eb342358b5aaf skos:definition "전기공사업에직접적으로제공되지않은임 야, 유휴토지, 전답또는가옥등을말한다." .
-term:t415eb342358b5aaf rdfs:isDefinedBy doc:d94c8b1da70cf55c4 .
-term:t0f85fea162a4584e rdf:type skos:Concept .
-term:t0f85fea162a4584e skos:prefLabel "겸업자산" .
-term:t0f85fea162a4584e skos:definition "전기공사업이외의사업에제공된자산을말하 며, \"겸업부채\"라함은겸업자산과관련되는부채를말한다." .
-term:t0f85fea162a4584e rdfs:isDefinedBy doc:d94c8b1da70cf55c4 .
 doc:extc7ae33c9c5aa rdf:type eli:LegalResource .
 doc:extc7ae33c9c5aa rdfs:label "중소기업진흥및제품구매촉진에관한법률" .
 doc:extc7ae33c9c5aa reg:external true .
@@ -44411,26 +44042,6 @@ doc:d4f55afa4d4ed5f4a dct:identifier "d4f55afa4d4ed5f4a#0022" .
 doc:d4f55afa4d4ed5f4a dct:identifier "d4f55afa4d4ed5f4a#0023" .
 doc:d4f55afa4d4ed5f4a dct:issued "2025-10-01"^^xsd:date .
 doc:d4f55afa4d4ed5f4a dct:modified "2025-10-01"^^xsd:date .
-term:tf7325a9fe99357a2 rdf:type skos:Concept .
-term:tf7325a9fe99357a2 skos:prefLabel "전기설비" .
-term:tf7325a9fe99357a2 skos:definition "전기사업법제2조제16호에서규정한전기설비를말한다." .
-term:tf7325a9fe99357a2 rdfs:isDefinedBy doc:d4f55afa4d4ed5f4a .
-term:t68b625139800552b rdf:type skos:Concept .
-term:t68b625139800552b skos:prefLabel "기술기준" .
-term:t68b625139800552b skos:definition "전기설비의안전관리를위하여기후에너지환경부장 관이고시하는\"전기설비기술기준\"을말한다." .
-term:t68b625139800552b rdfs:isDefinedBy doc:d4f55afa4d4ed5f4a .
-term:ta2e35a53b120512d rdf:type skos:Concept .
-term:ta2e35a53b120512d skos:prefLabel "판단기준" .
-term:ta2e35a53b120512d skos:definition "기후에너지환경부장관이공고하는\"전기설비기술기 준의판단기준\"을말한다." .
-term:ta2e35a53b120512d rdfs:isDefinedBy doc:d4f55afa4d4ed5f4a .
-term:t099e178a90aa5b61 rdf:type skos:Concept .
-term:t099e178a90aa5b61 skos:prefLabel "한국전기설비규정" .
-term:t099e178a90aa5b61 skos:definition "기후에너지환경부장관이공고하는\"한국전 기설비규정\"을 말하고, 그 영문 명칭은 \"Korea Electro-technical Code(KEC)\"로표기한다." .
-term:t099e178a90aa5b61 rdfs:isDefinedBy doc:d4f55afa4d4ed5f4a .
-term:tab26f62c461e5e65 rdf:type skos:Concept .
-term:tab26f62c461e5e65 skos:prefLabel "표준및지침" .
-term:tab26f62c461e5e65 skos:definition "기술기준, 한국전기설비규정제·개정위탁기관에 서발간하는상세핸드북, 한국전기기술기준위원회표준및기술지침 등을말한다 제3조(위탁기관지정) 전기사업법제98조제4항및같은법시행령제62 조제5항에의한위탁기관으로대한전기협회를지정한다." .
-term:tab26f62c461e5e65 rdfs:isDefinedBy doc:d4f55afa4d4ed5f4a .
 doc:ext61f5368f7865 rdf:type eli:LegalResource .
 doc:ext61f5368f7865 rdfs:label "전기안전관리법" .
 doc:ext61f5368f7865 reg:external true .
@@ -44582,68 +44193,12 @@ doc:df1a42cc50fda571a dct:identifier "df1a42cc50fda571a#0099" .
 doc:df1a42cc50fda571a dct:identifier "df1a42cc50fda571a#0100" .
 doc:df1a42cc50fda571a dct:issued "2025-12-18"^^xsd:date .
 doc:df1a42cc50fda571a dct:modified "2025-12-18"^^xsd:date .
-term:t9637f48b2e0c501f rdf:type skos:Concept .
-term:t9637f48b2e0c501f skos:prefLabel "설계" .
-term:t9637f48b2e0c501f skos:definition "법제2조제3호에따른설계로서영제2조제5호및제6 호에따른기본설계및실시설계를말한다." .
-term:t9637f48b2e0c501f rdfs:isDefinedBy doc:df1a42cc50fda571a .
-term:t4c1836dbc7215b2d rdf:type skos:Concept .
-term:t4c1836dbc7215b2d skos:prefLabel "발주자" .
-term:t4c1836dbc7215b2d skos:definition "전력시설물의설치·보수공사를발주하는자를말한다." .
-term:t4c1836dbc7215b2d rdfs:isDefinedBy doc:df1a42cc50fda571a .
-term:t72627f776f5b5ffb rdf:type skos:Concept .
-term:t72627f776f5b5ffb skos:prefLabel "공사비비율에의한방식" .
-term:t72627f776f5b5ffb skos:definition "공사비에일정비율을곱하여산 출한금액에추가업무비용과부가가치세를합산하여대가를산출 하는방식을말한다. - 2 -" .
-term:t72627f776f5b5ffb rdfs:isDefinedBy doc:df1a42cc50fda571a .
-term:tab92fbb984a75855 rdf:type skos:Concept .
-term:tab92fbb984a75855 skos:prefLabel "정액적산방식" .
-term:tab92fbb984a75855 skos:definition "직접인건비, 직접경비, 제경비와기술료, 추가 업무비용의합계금액에부가가치세를합산하여대가를산출하는 방식을말한다." .
-term:tab92fbb984a75855 rdfs:isDefinedBy doc:df1a42cc50fda571a .
-term:te166939a97e35bdc rdf:type skos:Concept .
-term:te166939a97e35bdc skos:prefLabel "직접인건비" .
-term:te166939a97e35bdc skos:definition "당해용역업무에직접종사하는기술자의인건비 를말한다." .
-term:te166939a97e35bdc rdfs:isDefinedBy doc:df1a42cc50fda571a .
-term:t620cc4fac03d5884 rdf:type skos:Concept .
-term:t620cc4fac03d5884 skos:prefLabel "감리원수" .
-term:t620cc4fac03d5884 skos:definition "당해감리용역직접인건비산정의기준이되는것 으로, 감리기간동안투입되는감리원의인원및배치일수를말한 다." .
-term:t620cc4fac03d5884 rdfs:isDefinedBy doc:df1a42cc50fda571a .
-term:t6a32ef3a8b595559 rdf:type skos:Concept .
-term:t6a32ef3a8b595559 skos:prefLabel "일급방식" .
-term:t6a32ef3a8b595559 skos:definition "과외업무및특별업무에대하여일당으로지급 하는방식으로직접인건비에제경비와기술료및직접경비를포함 하여지급하는것을말한다." .
-term:t6a32ef3a8b595559 rdfs:isDefinedBy doc:df1a42cc50fda571a .
-term:t778a2d665aa956ce rdf:type skos:Concept .
-term:t778a2d665aa956ce skos:prefLabel "직선보간법" .
-term:t778a2d665aa956ce skos:definition "공사비가요율표의각단위중간에있을때의 요율을산출하는방식을말한다." .
-term:t778a2d665aa956ce rdfs:isDefinedBy doc:df1a42cc50fda571a .
-term:tba8b848c415f5811 rdf:type skos:Concept .
-term:tba8b848c415f5811 skos:prefLabel "공사비" .
-term:tba8b848c415f5811 skos:definition "발주자의전력시설물공사총예정금액(지급자재대 및지입자재대포함) 중용지비, 보상비, 법률수속비및부가가치 세를제외한일체의공사비를말한다. 다만, 발주자가가격을명시 하지아니한재료를제공하는경우에는그재료의시가환산액을 포함한다." .
-term:tba8b848c415f5811 rdfs:isDefinedBy doc:df1a42cc50fda571a .
-term:tc12b4a8387ed579e rdf:type skos:Concept .
-term:tc12b4a8387ed579e skos:prefLabel "통합감리" .
-term:tc12b4a8387ed579e skos:definition "영제20조제3항에따라여러개의전력시설물공사 현장이인접하여이를하나의공사현장으로보고공사감리를할 수있는경우에는통합하여감리를발주하거나공사감리를수행 하게하는것을말한다. - 3 -" .
-term:tc12b4a8387ed579e rdfs:isDefinedBy doc:df1a42cc50fda571a .
-term:t890e33ee678854d1 rdf:type skos:Concept .
-term:t890e33ee678854d1 skos:prefLabel "제3자" .
-term:t890e33ee678854d1 skos:definition "보험또는공제에가입한설계업·감리업자와해당업 자의근로자를제외한모든자를말한다." .
-term:t890e33ee678854d1 rdfs:isDefinedBy doc:df1a42cc50fda571a .
-term:tfe659379f45259bb rdf:type skos:Concept .
-term:tfe659379f45259bb skos:prefLabel "실비정액가산방식" .
-term:tfe659379f45259bb skos:definition "감리원배치계획에따라산출된감리원 의등급별인원수에직접인건비, 직접경비, 제경비와기술료의합 계금액에부가가치세를합산하여대가를산출하는방식을말한다. 제3조(전력기술인단체) 영제28조제2항에따라기후에너지환경부장관 이고시하는전력기술인단체는한국전기기술인협회(이하\"협회\"라 한다)를말한다." .
-term:tfe659379f45259bb rdfs:isDefinedBy doc:df1a42cc50fda571a .
 doc:ext6b1704e5e493 rdf:type eli:LegalResource .
 doc:ext6b1704e5e493 rdfs:label "민방위 기본법" .
 doc:ext6b1704e5e493 reg:external true .
 doc:ext85b12843915c rdf:type eli:LegalResource .
 doc:ext85b12843915c rdfs:label "향토예비군설치법" .
 doc:ext85b12843915c reg:external true .
-term:tc50f912447e656e1 rdf:type skos:Concept .
-term:tc50f912447e656e1 skos:prefLabel "재직사실을증명하는서류" .
-term:tc50f912447e656e1 skos:definition "국민연금가입증명서·산재재해보험 확인서·건강보험자격득실확인서 또는 고용보험가입사실확인서를 말한다. 다만, 해당재직기간내에국민연금등을가입하지아니하 여전단의증명서등을제출하지못하는때에는인사기록부등을 제출할수있다. - 18 -" .
-term:tc50f912447e656e1 rdfs:isDefinedBy doc:df1a42cc50fda571a .
-term:t78de91c8985057fa rdf:type skos:Concept .
-term:t78de91c8985057fa skos:prefLabel "참여사업을증명하는서류" .
-term:t78de91c8985057fa skos:definition "실적증명서, 용역수행현황확인서, 자체사업계획서등을말한다." .
-term:t78de91c8985057fa rdfs:isDefinedBy doc:df1a42cc50fda571a .
 doc:ext4c5729b14da6 rdf:type eli:LegalResource .
 doc:ext4c5729b14da6 rdfs:label "신에너지및재생에너지개발․이용․보급촉진법" .
 doc:ext4c5729b14da6 reg:external true .
@@ -44852,10 +44407,6 @@ doc:dc48d0609491c588c dct:modified "2008-10-01"^^xsd:date .
 doc:ext1556863174e6 rdf:type eli:LegalResource .
 doc:ext1556863174e6 rdfs:label "자원봉사기본법" .
 doc:ext1556863174e6 reg:external true .
-term:tc48d0609491c588c rdf:type skos:Concept .
-term:tc48d0609491c588c skos:prefLabel "정책품질관리매뉴얼" .
-term:tc48d0609491c588c skos:definition "정책의형성, 홍보, 집행, 평가및환류등정책추진과정(이하“정책 단계”라한다)에서확인·점검하여야할사항을제시하고, 이에필요한세부적인확인사항및관련 기법등에관한정보를제공하기위한지침을말한다. 3.“정책품질관리카드”라함은정책담당자, 각정책단계별정책추진내용및주요실적등을기록하는 자료를말한다. 제3조(적용대상) 이규정은중앙행정기관에서추진하는정책에관하여적용한다. 제4조(책무) ①중앙행정기관의장은정책의품질을높이기위하여필요한시책을수립하여야한다. ②중앙행정기관의장은조직의역량을강화하고성과지향적인조직문화를정착시키기위하여정책추 진의기여도에따라성과평가와보상을공정하" .
-term:tc48d0609491c588c rdfs:isDefinedBy doc:dc48d0609491c588c .
 doc:ext626f1fa97a09 rdf:type eli:LegalResource .
 doc:ext626f1fa97a09 rdfs:label "정부업무평가기본법" .
 doc:ext626f1fa97a09 reg:external true .
@@ -44894,14 +44445,6 @@ doc:db8097edaff625e19 dct:identifier "db8097edaff625e19#0014" .
 doc:db8097edaff625e19 dct:identifier "db8097edaff625e19#0015" .
 doc:db8097edaff625e19 dct:issued "2024-04-17"^^xsd:date .
 doc:db8097edaff625e19 dct:modified "2024-04-17"^^xsd:date .
-term:t8c81c96f890b515c rdf:type skos:Concept .
-term:t8c81c96f890b515c skos:prefLabel "명문장수기업" .
-term:t8c81c96f890b515c skos:definition "중견기업법제15조의2 및중소기업진흥법제2 조제10호의2에의거, 장기간건실한기업운영으로사회에기여한 바가크고세대를이어지속적인성장이기대되는중견기업을말한 다." .
-term:t8c81c96f890b515c rdfs:isDefinedBy doc:db8097edaff625e19 .
-term:t87dc16b0ec1c5eb8 rdf:type skos:Concept .
-term:t87dc16b0ec1c5eb8 skos:prefLabel "관리기관" .
-term:t87dc16b0ec1c5eb8 skos:definition "명문장수기업확인의신청ㆍ접수, 평가, 심의위원회 운영및사후관리등명문장수기업확인제도의관리및운영기관으 로서한국중견기업연합회를말한다." .
-term:t87dc16b0ec1c5eb8 rdfs:isDefinedBy doc:db8097edaff625e19 .
 doc:d42b64d09feba59a3 rdf:type reg:Manual .
 doc:d42b64d09feba59a3 rdfs:label "중소기업 특성화고 인력양성사업 운영요령" .
 doc:d42b64d09feba59a3 dct:type "매뉴얼" .
@@ -44991,43 +44534,6 @@ doc:dc700f9991ed35d7c dct:identifier "dc700f9991ed35d7c#0024" .
 doc:dc700f9991ed35d7c dct:identifier "dc700f9991ed35d7c#0025" .
 doc:dc700f9991ed35d7c dct:issued "2023-05-02"^^xsd:date .
 doc:dc700f9991ed35d7c dct:modified "2023-05-02"^^xsd:date .
-term:te77d0ec8d6725052 rdf:type skos:Concept .
-term:te77d0ec8d6725052 skos:prefLabel "중소기업자" .
-term:te77d0ec8d6725052 skos:definition "법 제2조제1호가목에 따른 중소기업자를 말한다." .
-term:te77d0ec8d6725052 rdfs:isDefinedBy doc:dc700f9991ed35d7c .
-term:t6fc6aae5620857d8 rdf:type skos:Concept .
-term:t6fc6aae5620857d8 skos:prefLabel "협업" .
-term:t6fc6aae5620857d8 skos:definition "법 제2조제9호에 따른 협업을 말한다." .
-term:t6fc6aae5620857d8 rdfs:isDefinedBy doc:dc700f9991ed35d7c .
-term:ta75b88a4070d5cb0 rdf:type skos:Concept .
-term:ta75b88a4070d5cb0 skos:prefLabel "협업 추진기업" .
-term:ta75b88a4070d5cb0 skos:definition "영 제33조제1항제1호나목에 따른 중소기업자를 말한다." .
-term:ta75b88a4070d5cb0 rdfs:isDefinedBy doc:dc700f9991ed35d7c .
-term:tf6c63d8814a75609 rdf:type skos:Concept .
-term:tf6c63d8814a75609 skos:prefLabel "참여기업" .
-term:tf6c63d8814a75609 skos:definition "영 제33조제1항제1호나목에 따른 참여기업을 말한다." .
-term:tf6c63d8814a75609 rdfs:isDefinedBy doc:dc700f9991ed35d7c .
-term:tfe3e272764305cd7 rdf:type skos:Concept .
-term:tfe3e272764305cd7 skos:prefLabel "수행기업" .
-term:tfe3e272764305cd7 skos:definition "협업 추진기업과 참여기업을 말한다." .
-term:tfe3e272764305cd7 rdfs:isDefinedBy doc:dc700f9991ed35d7c .
-term:t130376aedfe15cd7 rdf:type skos:Concept .
-term:t130376aedfe15cd7 skos:prefLabel "협업기업" .
-term:t130376aedfe15cd7 skos:definition "법 제39조의2제2항에 따른 협업기업을 말한다." .
-term:t130376aedfe15cd7 rdfs:isDefinedBy doc:dc700f9991ed35d7c .
-term:tec9f2729c60e5b2c rdfs:isDefinedBy doc:dc700f9991ed35d7c .
-term:td89da498d9cd5c70 rdf:type skos:Concept .
-term:td89da498d9cd5c70 skos:prefLabel "협업지원사업" .
-term:td89da498d9cd5c70 skos:definition "법 제39조에 따른 지원사업을 말한다." .
-term:td89da498d9cd5c70 rdfs:isDefinedBy doc:dc700f9991ed35d7c .
-term:t8111b00b2a2b514d rdf:type skos:Concept .
-term:t8111b00b2a2b514d skos:prefLabel "협업계획" .
-term:t8111b00b2a2b514d skos:definition "영 제33조제1항제1호에 따른 계획을 말한다." .
-term:t8111b00b2a2b514d rdfs:isDefinedBy doc:dc700f9991ed35d7c .
-term:t40eed5b5d50e5fa6 rdf:type skos:Concept .
-term:t40eed5b5d50e5fa6 skos:prefLabel "협업정보시스템" .
-term:t40eed5b5d50e5fa6 skos:definition "협업기업 선정 및 관리, 협업 관련 정보 제공 등을 위하여 전담기관이 운영하는 시스템을 말한다. 제2조의2(참여기업의 범위) 제2조제9호 다목에서 \"중소벤처기업부장관이 협업의 활성 화를 위하여 필요하다고 인정하는 자\"란 다음 각 호의 어느 하나에 해당하는 자를 말한다." .
-term:t40eed5b5d50e5fa6 rdfs:isDefinedBy doc:dc700f9991ed35d7c .
 doc:ext23942471d532 rdf:type eli:LegalResource .
 doc:ext23942471d532 rdfs:label "산업기술단지 지원에 관한 특례법" .
 doc:ext23942471d532 reg:external true .
@@ -45409,30 +44915,6 @@ doc:dda32fb3872415d73 dct:identifier "dda32fb3872415d73#0030" .
 doc:dda32fb3872415d73 dct:identifier "dda32fb3872415d73#0031" .
 doc:dda32fb3872415d73 dct:issued "2025-10-30"^^xsd:date .
 doc:dda32fb3872415d73 dct:modified "2025-10-30"^^xsd:date .
-term:t234c1519398e5d5e rdf:type skos:Concept .
-term:t234c1519398e5d5e skos:prefLabel "지식재산경영" .
-term:t234c1519398e5d5e skos:definition "특허ㆍ실용신안ㆍ디자인ㆍ상표ㆍ영업비밀등 지식재산을기업의자산으로활용하는경영전략을통해수익을창출 함으로써기업가치를높이는경영활동을말한다." .
-term:t234c1519398e5d5e rdfs:isDefinedBy doc:dda32fb3872415d73 .
-term:t611e030ee3f152ff rdf:type skos:Concept .
-term:t611e030ee3f152ff skos:prefLabel "인증업무운영기관" .
-term:t611e030ee3f152ff skos:definition "인증신청접수, 인증심사진행등인증과 관련된지식재산처장의업무를대행하기위하여지식재산처장이지 정하는기관을말한다." .
-term:t611e030ee3f152ff rdfs:isDefinedBy doc:dda32fb3872415d73 .
-term:t431ceed9b9255291 rdf:type skos:Concept .
-term:t431ceed9b9255291 skos:prefLabel "기업합병" .
-term:t431ceed9b9255291 skos:definition "두개이상의회사가청산절차를거치지않고소멸 되면서소멸회사의권리와의무가포괄적으로존속회사또는신설회 사에게이전되는것을말한다." .
-term:t431ceed9b9255291 rdfs:isDefinedBy doc:dda32fb3872415d73 .
-term:te9bd0406e7145d58 rdf:type skos:Concept .
-term:te9bd0406e7145d58 skos:prefLabel "중소기업통합" .
-term:te9bd0406e7145d58 skos:definition "개인중소기업간의통합또는개인중소기업과 법인중소기업간의통합방식에의해법인중소기업으로전환하는것 을말한다." .
-term:te9bd0406e7145d58 rdfs:isDefinedBy doc:dda32fb3872415d73 .
-term:t00bad6fed0b45fbe rdf:type skos:Concept .
-term:t00bad6fed0b45fbe skos:prefLabel "회사분할" .
-term:t00bad6fed0b45fbe skos:definition "주식회사를분할하여1개또는수개의회사를설립 하는것을말한다." .
-term:t00bad6fed0b45fbe rdfs:isDefinedBy doc:dda32fb3872415d73 .
-term:tca3806b101a95c2c rdf:type skos:Concept .
-term:tca3806b101a95c2c skos:prefLabel "조직변경" .
-term:tca3806b101a95c2c skos:definition "회사가법인격의동일성을유지하면서그법률상의 조직을변경하여다른종류의회사로되는것을말한다. 제3조(인증신청 대상) 인증을받고자신청할수있는대상은중소기업 기본법제2조에따른중소기업으로한다. 제4조(인증기준) 인증기업선정을위한인증기준은[별표1]과같다. 제5조(제출서류) 인증신청서에첨부하여제출하여야하는서류는[별 표2]와같다. 단, 갱신심사를신청하는경우에는[별표2]의제3호, 제9호의서류는해당하지아니한다. 제6조(인증비용) ①인증을받고자신청하는중소기업은당해연도사 업공고에따라신청비용을납부해야하며, 인증업무운영기관이인증 신청비용을변경하고자할때에는지식재산처장" .
-term:tca3806b101a95c2c rdfs:isDefinedBy doc:dda32fb3872415d73 .
 doc:df5e8a1160933588c rdf:type reg:Manual .
 doc:df5e8a1160933588c rdfs:label "지역산업육성사업 운영요령" .
 doc:df5e8a1160933588c dct:type "매뉴얼" .
@@ -45647,7 +45129,6 @@ doc:d77a526b882b45772 dct:identifier "d77a526b882b45772#0018" .
 doc:d77a526b882b45772 dct:identifier "d77a526b882b45772#0019" .
 doc:d77a526b882b45772 dct:issued "2026-06-09"^^xsd:date .
 doc:d77a526b882b45772 dct:modified "2026-06-09"^^xsd:date .
-term:t6fc6aae5620857d8 rdfs:isDefinedBy doc:d77a526b882b45772 .
 doc:dd06f4a18527251b2 rdf:type reg:Manual .
 doc:dd06f4a18527251b2 rdfs:label "직무발명보상 우수기업 인증 등에 관한 운영요령" .
 doc:dd06f4a18527251b2 dct:type "매뉴얼" .
@@ -45876,49 +45357,6 @@ doc:dea3410394b49574d dct:identifier "dea3410394b49574d#0097" .
 doc:dea3410394b49574d dct:identifier "dea3410394b49574d#0098" .
 doc:dea3410394b49574d dct:issued "2025-02-04"^^xsd:date .
 doc:dea3410394b49574d dct:modified "2025-02-04"^^xsd:date .
-term:tfa09eed474c35636 rdf:type skos:Concept .
-term:tfa09eed474c35636 skos:prefLabel "창업보육" .
-term:tfa09eed474c35636 skos:definition "창업기업및예비창업자를대상으로법제53조제1항의 규정에의한시설과장소를제공하고, 기술의공동연구ㆍ개발및지도ㆍ 자문, 자금의지원ㆍ알선, 경영ㆍ회계ㆍ세무및법률에관한상담등창업 및성장에필요한각종지원을하는행위를말한다." .
-term:tfa09eed474c35636 rdfs:isDefinedBy doc:dea3410394b49574d .
-term:t87dc16b0ec1c5eb8 rdfs:isDefinedBy doc:dea3410394b49574d .
-term:taa909dbe524f5ff0 rdf:type skos:Concept .
-term:taa909dbe524f5ff0 skos:prefLabel "전문기관" .
-term:taa909dbe524f5ff0 skos:definition "중소벤처기업부장관(이하\"장관\"이라한다)이보육센터의 역량제고및창업보육센터지원사업에대한기획ㆍ평가ㆍ관리등의업무를 수행하기위하여지정한기관을말한다." .
-term:taa909dbe524f5ff0 rdfs:isDefinedBy doc:dea3410394b49574d .
-term:t607d1dd3c02b52db rdfs:isDefinedBy doc:dea3410394b49574d .
-term:t4785be945ca85867 rdf:type skos:Concept .
-term:t4785be945ca85867 skos:prefLabel "입주자" .
-term:t4785be945ca85867 skos:definition "사업자가제공하는창업보육을받기위하여사업자와입주 계약을맺고보육센터에입주하여사업활동을영위하는창업기업또는 예비창업자를말한다." .
-term:t4785be945ca85867 rdfs:isDefinedBy doc:dea3410394b49574d .
-term:tbee2eec62baa5dc5 rdf:type skos:Concept .
-term:tbee2eec62baa5dc5 skos:prefLabel "졸업기업" .
-term:tbee2eec62baa5dc5 skos:definition "입주자가자립경영기반이구축되었거나, 입주계약기간이 만료되어보육센터에서졸업한기업을말한다." .
-term:tbee2eec62baa5dc5 rdfs:isDefinedBy doc:dea3410394b49574d .
-term:td3458e178e3a54ff rdfs:isDefinedBy doc:dea3410394b49574d .
-term:t3869ba1ab4db5936 rdf:type skos:Concept .
-term:t3869ba1ab4db5936 skos:prefLabel "창업보육부담금" .
-term:t3869ba1ab4db5936 skos:definition "보육센터의보육(시설및장비의사용, 지원서비스 등)에대한대가로입주자가부담하는일체의비용을말한다." .
-term:t3869ba1ab4db5936 rdfs:isDefinedBy doc:dea3410394b49574d .
-term:tfbba317087ea52e3 rdf:type skos:Concept .
-term:tfbba317087ea52e3 skos:prefLabel "퇴거" .
-term:tfbba317087ea52e3 skos:definition "창업전망이불투명하거나입주계약위반등으로계약만료일 이전에사업자에의하거나또는입주자스스로보육센터를퇴소하는것을 말한다." .
-term:tfbba317087ea52e3 rdfs:isDefinedBy doc:dea3410394b49574d .
-term:tde73e3e8831e5534 rdf:type skos:Concept .
-term:tde73e3e8831e5534 skos:prefLabel "특화" .
-term:tde73e3e8831e5534 skos:definition "당해보육센터가특정분야또는특정대상에대하여중점적 으로보육하는것을말한다. 12의2. \"특화보육센터\"라함은특화분야또는장관이정한보육대상에해당 하는입주자가보육센터전체입주자의100분의70 이상이거나중소벤처 기업부와의협약에따라전체보육실면적중일정면적이상을확보하여 해당입주자에대한전문적인창업보육을지원하는보육센터를말한다." .
-term:tde73e3e8831e5534 rdfs:isDefinedBy doc:dea3410394b49574d .
-term:tb9a6d1e18d0a578a rdf:type skos:Concept .
-term:tb9a6d1e18d0a578a skos:prefLabel "공실률" .
-term:tb9a6d1e18d0a578a skos:definition "지정된보육센터의총보육실면적대비미입주보육실 면적의비율을말한다. 13의2. \"보육실\"이란보육센터가창업보육의원활한수행을위해창업자에게 제공하는보육공간으로입주기업이독자적으로사용하는개별보육실과 입주기업들이공동으로사용하는공동보육실을말한다. 13의3. \"공동보육실\"이란하나의공간에다수의(예비)창업자를보육하기 위해제공되는공간(공동창업실, 학생창업실등)과창업자간자유로운정 보교환및상호협력이가능한공간(회의실, 세미나실, 휴게실, 시제품제 작실등)을말한다. 13의4. \"지원시설\"이란입주기업지원을위한센터장실, 행정실, 창업투자회 사, 액셀러레이터, 경영·기술" .
-term:tb9a6d1e18d0a578a rdfs:isDefinedBy doc:dea3410394b49574d .
-term:t209892fef351528b rdf:type skos:Concept .
-term:t209892fef351528b skos:prefLabel "개소일" .
-term:t209892fef351528b skos:definition "신규설립ㆍ확장건립비를지원받은사업자가사업계획에 따라보육센터를신규개소하거나보육실확장건립을완료한날을말한다." .
-term:t209892fef351528b rdfs:isDefinedBy doc:dea3410394b49574d .
-term:t1e99d1f152185521 rdf:type skos:Concept .
-term:t1e99d1f152185521 skos:prefLabel "학생창업실" .
-term:t1e99d1f152185521 skos:definition "보육센터가대학(원) 재학생의창업활동을촉진하기 위하여보육센터면적의일정부분을5명이상의대학(원) 재학생이공동 으로활용할수있도록조성하는공간을말한다." .
-term:t1e99d1f152185521 rdfs:isDefinedBy doc:dea3410394b49574d .
 doc:d8cc88fc95d8d567e rdf:type reg:Manual .
 doc:d8cc88fc95d8d567e rdfs:label "첨단산업 인재혁신센터의 지정 및 등록 업무에 관한 운영요령" .
 doc:d8cc88fc95d8d567e dct:type "매뉴얼" .
@@ -45994,7 +45432,6 @@ doc:d87a77ec202975635 dct:identifier "d87a77ec202975635#0028" .
 doc:d87a77ec202975635 dct:identifier "d87a77ec202975635#0029" .
 doc:d87a77ec202975635 dct:issued "2024-04-08"^^xsd:date .
 doc:d87a77ec202975635 dct:modified "2024-04-08"^^xsd:date .
-term:ta50445754e335ad1 rdfs:isDefinedBy doc:d87a77ec202975635 .
 doc:d3372a2141da5537f rdf:type reg:Manual .
 doc:d3372a2141da5537f rdfs:label "친환경벌채 운영요령" .
 doc:d3372a2141da5537f dct:type "매뉴얼" .
@@ -46040,14 +45477,6 @@ doc:d87cbab4f44fd515e dct:identifier "d87cbab4f44fd515e#0021" .
 doc:d87cbab4f44fd515e dct:identifier "d87cbab4f44fd515e#0022" .
 doc:d87cbab4f44fd515e dct:issued "2025-11-27"^^xsd:date .
 doc:d87cbab4f44fd515e dct:modified "2025-11-27"^^xsd:date .
-term:ta558a1e7d1345558 rdf:type skos:Concept .
-term:ta558a1e7d1345558 skos:prefLabel "관할관청" .
-term:ta558a1e7d1345558 skos:definition "특별시장ㆍ광역시장ㆍ특별자치시장ㆍ도지사 또는특별자치도지사(이하\"시ㆍ도지사\"라한다)를말하며, 면허ㆍ 인가권등이재위임된경우에는시장ㆍ군수ㆍ구청장을말한다." .
-term:ta558a1e7d1345558 rdfs:isDefinedBy doc:d87cbab4f44fd515e .
-term:t6a01966cd45b502f rdf:type skos:Concept .
-term:t6a01966cd45b502f skos:prefLabel "택시구분" .
-term:t6a01966cd45b502f skos:definition "「여객자동차운수사업법시행규칙」(이하\"규칙\" 이라한다) 제9조에따른경형ㆍ소형ㆍ중형ㆍ대형ㆍ모범형및고급 형택시운송사업의구분을말한다. 제3조(운영계획의 수립) ①관할관청은매년택시제도운영에관한계 획(이하\"운영계획\"이라한다)을수립ㆍ시행하여야하며, 운영계획에 는다음사항이포함되어야한다." .
-term:t6a01966cd45b502f rdfs:isDefinedBy doc:d87cbab4f44fd515e .
 doc:extbbff86fc94b1 rdf:type eli:LegalResource .
 doc:extbbff86fc94b1 rdfs:label "여객자동차운수사업법시행규칙" .
 doc:extbbff86fc94b1 reg:external true .
@@ -46155,53 +45584,9 @@ doc:ddf3179ba43ff56d7 dct:identifier "ddf3179ba43ff56d7#0088" .
 doc:ddf3179ba43ff56d7 dct:identifier "ddf3179ba43ff56d7#0089" .
 doc:ddf3179ba43ff56d7 dct:issued "2025-12-31"^^xsd:date .
 doc:ddf3179ba43ff56d7 dct:modified "2025-12-31"^^xsd:date .
-term:t3f11be74282d5cba rdf:type skos:Concept .
-term:t3f11be74282d5cba skos:prefLabel "특별건축구역" .
-term:t3f11be74282d5cba skos:definition "조화롭고창의적인건축물의건축을통하여도 시경관의창출, 건설기술수준향상및건축관련제도개선을도모하 기위하여「건축법」또는관계법령에따라일부규정을적용하지 아니하거나완화또는통합하여적용할수있도록특별히지정하는 구역을말한다." .
-term:t3f11be74282d5cba rdfs:isDefinedBy doc:ddf3179ba43ff56d7 .
-term:te8f830401bf25e75 rdf:type skos:Concept .
-term:te8f830401bf25e75 skos:prefLabel "특별건축구역의건축물" .
-term:te8f830401bf25e75 skos:definition "「건축법」제70조에따라특별건축 구역에서건축기준등의특례사항을적용하여건축할수있는건축 물을말한다." .
-term:te8f830401bf25e75 rdfs:isDefinedBy doc:ddf3179ba43ff56d7 .
-term:t5319be6356be5daa rdf:type skos:Concept .
-term:t5319be6356be5daa skos:prefLabel "특례적용" .
-term:t5319be6356be5daa skos:definition "「건축법」제73조에따라「건축법」및관계법 령에따른규정을적용하지않거나완화하여적용하는것을말한다." .
-term:t5319be6356be5daa rdfs:isDefinedBy doc:ddf3179ba43ff56d7 .
-term:t8b9acf7e7f72545f rdf:type skos:Concept .
-term:t8b9acf7e7f72545f skos:prefLabel "적용배제특례" .
-term:t8b9acf7e7f72545f skos:definition "「건축법」제73조제1항에따라「건축법」및 - 2 - 「주택법」일부규정을적용하지않는것을말한다." .
-term:t8b9acf7e7f72545f rdfs:isDefinedBy doc:ddf3179ba43ff56d7 .
-term:tfb54f32fb2ae5948 rdf:type skos:Concept .
-term:tfb54f32fb2ae5948 skos:prefLabel "완화적용특례" .
-term:tfb54f32fb2ae5948 skos:definition "「건축법」제73조제2항에따라「건축법」및 「녹색건축물조성지원법」일부규정을전부또는일부완화하는 것을말한다." .
-term:tfb54f32fb2ae5948 rdfs:isDefinedBy doc:ddf3179ba43ff56d7 .
 doc:ext4085b573c775 rdf:type eli:LegalResource .
 doc:ext4085b573c775 rdfs:label "녹색건축물조성지원법" .
 doc:ext4085b573c775 reg:external true .
-term:t26d8ef526c6b55ba rdf:type skos:Concept .
-term:t26d8ef526c6b55ba skos:prefLabel "통합적용" .
-term:t26d8ef526c6b55ba skos:definition "「건축법」제74조제1항에따라미술작품, 부설주 차장, 공원등의시설에대해특별건축구역전부또는일부를대상으 로통합적으로기준을적용하는것을말한다." .
-term:t26d8ef526c6b55ba rdfs:isDefinedBy doc:ddf3179ba43ff56d7 .
-term:tab313a508a0152b0 rdf:type skos:Concept .
-term:tab313a508a0152b0 skos:prefLabel "모니터링" .
-term:tab313a508a0152b0 skos:definition "「건축법」제72조제6항에따라적용배제특례, 완 화적용특례, 통합적용등특례를적용한건축물에대하여해당건축 물의건축시공, 공사감리, 유지ㆍ관리등의과정을검토하고실제로 건축물에구현된기능ㆍ미관ㆍ환경등을분석하여평가하는것을말 한다." .
-term:tab313a508a0152b0 rdfs:isDefinedBy doc:ddf3179ba43ff56d7 .
-term:t3b7b5b5e15665c2a rdf:type skos:Concept .
-term:t3b7b5b5e15665c2a skos:prefLabel "지정권자" .
-term:t3b7b5b5e15665c2a skos:definition "특별건축구역을지정할수있는자로서국토교통부 장관과시ㆍ도지사를말한다." .
-term:t3b7b5b5e15665c2a rdfs:isDefinedBy doc:ddf3179ba43ff56d7 .
-term:t29f1e4573b5f5155 rdf:type skos:Concept .
-term:t29f1e4573b5f5155 skos:prefLabel "지정신청기관" .
-term:t29f1e4573b5f5155 skos:definition "중앙행정기관의장, 「건축법」제69조제1항 각호의사업구역을관할하는시ㆍ도지사또는시장ㆍ군수ㆍ구청장 과같이특별건축구역지정을신청할수있는자를말한다." .
-term:t29f1e4573b5f5155 rdfs:isDefinedBy doc:ddf3179ba43ff56d7 .
-term:t41f256ca2d135385 rdf:type skos:Concept .
-term:t41f256ca2d135385 skos:prefLabel "지정제안자" .
-term:t41f256ca2d135385 skos:definition "「건축법」제71조제2항에따라지정신청기관외 에지정을제안하는자를말한다." .
-term:t41f256ca2d135385 rdfs:isDefinedBy doc:ddf3179ba43ff56d7 .
-term:t96a17db92ffd524b rdf:type skos:Concept .
-term:t96a17db92ffd524b skos:prefLabel "허가권자" .
-term:t96a17db92ffd524b skos:definition "「건축법」제11조에따라특별자치시장․특별자치 도지사또는시장ㆍ군수ㆍ구청장을말한다. - 3 - ②그밖에용어의정의는이고시에서특별히규정하는경우를제외 하고는「건축기본법」, 「건축법」등건축관계법령에서정하는바 를따른다. 제3조(적용범위) ①이고시는「건축법」제69조부터제77조까지에따 른특별건축구역관련규정운영시적용한다. ②이고시는「건축법」제71조제4항및제72조제2항에따라건축위 원회의심의기준으로활용한다. ③이고시는「공공주택특별법」에따른공공주택통합심의위원회 등관련법에따라별도위원회에서특별건축구역지정및건축물의특 례심의를하는경우심의기준으로활용한다. ④이고시의" .
-term:t96a17db92ffd524b rdfs:isDefinedBy doc:ddf3179ba43ff56d7 .
 doc:ext16dcfe97c86f rdf:type eli:LegalResource .
 doc:ext16dcfe97c86f rdfs:label "건축기본법" .
 doc:ext16dcfe97c86f reg:external true .
@@ -46253,18 +45638,6 @@ doc:dc6e17351df6450fd dct:identifier "dc6e17351df6450fd#0023" .
 doc:dc6e17351df6450fd dct:identifier "dc6e17351df6450fd#0024" .
 doc:dc6e17351df6450fd dct:issued "2024-05-24"^^xsd:date .
 doc:dc6e17351df6450fd dct:modified "2024-05-24"^^xsd:date .
-term:tb658c3a73eec5447 rdf:type skos:Concept .
-term:tb658c3a73eec5447 skos:prefLabel "용접(Welding)" .
-term:tb658c3a73eec5447 skos:definition "금속을 부분적으로 가열 융해(融解)하여 야금식 접합(Metallurgical Jointing; 고체상태의 두 금속을 열ㆍ압력을 가하여 서로 접합하는 것)하는 것으로써 크게 융접(融接, Fusion Welding)과 압접(壓接, Pressure Welding)으로 구분된다." .
-term:tb658c3a73eec5447 rdfs:isDefinedBy doc:dc6e17351df6450fd .
-term:t8527af74f85353a2 rdf:type skos:Concept .
-term:t8527af74f85353a2 skos:prefLabel "초기교육훈련(Initial Training)" .
-term:t8527af74f85353a2 skos:definition "특수정비업무 종사자에게 직무를 부여하기 위하여 필요로 하는 직무와 관련한 기본적인 지식과 기량을 전수하 기 위하여 실시하는 교육훈련을 말한다." .
-term:t8527af74f85353a2 rdfs:isDefinedBy doc:dc6e17351df6450fd .
-term:t3a2c152fad40539c rdf:type skos:Concept .
-term:t3a2c152fad40539c skos:prefLabel "정기교육훈련(Recurrent Training)" .
-term:t3a2c152fad40539c skos:definition "소관업무 내용의 변경 또는 추 가와 신기술의 도입 등에 따라 특수정비업무 종사자에게 필요한 지식과 기량 을 전수하기 위하여 해당 직무에 따라 정기적으로 실시하는 교육훈련을 말한 다. 제3조(적용범위) 본 지침은 정비조직에서 수행하는 다음의 특수정비업무에 대한 자격을 관리하는데 적용한다." .
-term:t3a2c152fad40539c rdfs:isDefinedBy doc:dc6e17351df6450fd .
 doc:d1b3b31c7d9255ff1 rdf:type reg:Manual .
 doc:d1b3b31c7d9255ff1 rdfs:label "파리협약 제6조의3에 의한 파리협약 등의 동맹국 공익표장의 보호에 관한 운영요령" .
 doc:d1b3b31c7d9255ff1 dct:type "매뉴얼" .
@@ -46424,10 +45797,6 @@ doc:d4c64db9b0da65cb4 dct:identifier "d4c64db9b0da65cb4#0031" .
 doc:d4c64db9b0da65cb4 dct:identifier "d4c64db9b0da65cb4#0032" .
 doc:d4c64db9b0da65cb4 dct:issued "2025-12-22"^^xsd:date .
 doc:d4c64db9b0da65cb4 dct:modified "2025-12-22"^^xsd:date .
-term:t9069fca9f11752c5 rdf:type skos:Concept .
-term:t9069fca9f11752c5 skos:prefLabel "활용기술" .
-term:t9069fca9f11752c5 skos:definition "원자료및가공자료를활용하여연구ㆍ개발되거나이차적으로발생한결과물로 더미ㆍ휴먼스케일ㆍ인체치수산정소프트웨어등을말한다. 제3조(인체표준정보대상) 이요령에서대상으로하는인체표준정보는다음각호의자료및기술중에서 국가기술표준원장이보유한것으로한다." .
-term:t9069fca9f11752c5 rdfs:isDefinedBy doc:d4c64db9b0da65cb4 .
 doc:ext2c0c3f8be83e rdf:type eli:LegalResource .
 doc:ext2c0c3f8be83e rdfs:label "공공기관의정보공개에관한법률시 행규칙" .
 doc:ext2c0c3f8be83e reg:external true .
@@ -46999,14 +46368,6 @@ doc:d8278a41510935356 dct:identifier "d8278a41510935356#0155" .
 doc:d8278a41510935356 dct:identifier "d8278a41510935356#0156" .
 doc:d8278a41510935356 dct:issued "2026-03-31"^^xsd:date .
 doc:d8278a41510935356 dct:modified "2026-03-31"^^xsd:date .
-term:t205752b7c6b156d1 rdf:type skos:Concept .
-term:t205752b7c6b156d1 skos:prefLabel "수용량" .
-term:t205752b7c6b156d1 skos:definition "공항및공역에서항공교통을안전하고효율적으로 처리할수있는단위시간당최대항공기처리량을말하며다음각 목과같이구분한다. 가. \"기본수용량\"이란공항및공역의설계, 교통밀도및복잡도, 항공 로구조, 시스템등에따라서관제시설, 공항운영자등이선포한관 할구역(공항, 섹터, TMA 등)의수용량을말한다. 나. \"운영수용량\"이란위험기상, 장비·시설장애등비정상상황발생 또는예상에따라해당구역의교통량을조절하기위해CDM을통해 참여자간협의·결정한수용량을말한다." .
-term:t205752b7c6b156d1 rdfs:isDefinedBy doc:d8278a41510935356 .
-term:tc0c758b459ff52b3 rdf:type skos:Concept .
-term:tc0c758b459ff52b3 skos:prefLabel "국가공역" .
-term:tc0c758b459ff52b3 skos:definition "「항공안전법시행규칙」제221조에따른공역을 말한다." .
-term:tc0c758b459ff52b3 rdfs:isDefinedBy doc:d8278a41510935356 .
 doc:d0dd4dbf4fb3957c3 rdf:type reg:Manual .
 doc:d0dd4dbf4fb3957c3 rdfs:label "항공기사고 수습대책 매뉴얼" .
 doc:d0dd4dbf4fb3957c3 dct:type "매뉴얼" .
@@ -47128,33 +46489,9 @@ doc:dbbbbd065a2ac58f0 dct:identifier "dbbbbd065a2ac58f0#0065" .
 doc:dbbbbd065a2ac58f0 dct:identifier "dbbbbd065a2ac58f0#0066" .
 doc:dbbbbd065a2ac58f0 dct:issued "2025-03-31"^^xsd:date .
 doc:dbbbbd065a2ac58f0 dct:modified "2025-03-31"^^xsd:date .
-term:t435657282aa25e1b rdf:type skos:Concept .
-term:t435657282aa25e1b skos:prefLabel "경관" .
-term:t435657282aa25e1b skos:definition "「경관법」제2조에따른자연, 인공요소및주민의생 활상등으로이루어진일단(一團)의지역환경적특징을나타내는것 을말한다." .
-term:t435657282aa25e1b rdfs:isDefinedBy doc:dbbbbd065a2ac58f0 .
 doc:ext4b98f347f2df rdf:type eli:LegalResource .
 doc:ext4b98f347f2df rdfs:label "경관법" .
 doc:ext4b98f347f2df reg:external true .
-term:t2a1fa6139c9a593c rdf:type skos:Concept .
-term:t2a1fa6139c9a593c skos:prefLabel "조망" .
-term:t2a1fa6139c9a593c skos:definition "관찰자와일정한거리를두고한눈에바라다보이는대 상물과그주변환경을말한다." .
-term:t2a1fa6139c9a593c rdfs:isDefinedBy doc:dbbbbd065a2ac58f0 .
-term:tc752b99776705fea rdf:type skos:Concept .
-term:tc752b99776705fea skos:prefLabel "조망축" .
-term:tc752b99776705fea skos:definition "조망점에서경관요소를바라다보는가상의축으로서, 조망가치가있는특정경관에대한가시권(可視圈)을보호하기위해 설정한직선형태의개방공간을말한다." .
-term:tc752b99776705fea rdfs:isDefinedBy doc:dbbbbd065a2ac58f0 .
-term:t660c1196d49651ba rdf:type skos:Concept .
-term:t660c1196d49651ba skos:prefLabel "통경(通經)축" .
-term:t660c1196d49651ba skos:definition "인공시설이밀집되어일정거리의개방적인가 시권확보가어려운지역에서개방감을높이기위해설정한선형의 개방공간을말한다." .
-term:t660c1196d49651ba rdfs:isDefinedBy doc:dbbbbd065a2ac58f0 .
-term:ta85f50ef37e05439 rdf:type skos:Concept .
-term:ta85f50ef37e05439 skos:prefLabel "스카이라인" .
-term:ta85f50ef37e05439 skos:definition "연속된산이나건축물의외곽선이하늘과맞닿아 드러난선을말한다." .
-term:ta85f50ef37e05439 rdfs:isDefinedBy doc:dbbbbd065a2ac58f0 .
-term:tf1622eadfc565fc6 rdf:type skos:Concept .
-term:tf1622eadfc565fc6 skos:prefLabel "경관요소" .
-term:tf1622eadfc565fc6 skos:definition "경관을규정하는산, 하천, 지형, 수목등의자연요소, 건축물, 도시기반시설물, 공공시설물등의인공요소, 그리고지역의 역사, 문화등의생활요소중항만재개발및마리나항만구역의특성 을나타내는요소를말한다. 제3조(적용대상) 이가이드라인은「항만재개발및주변지역발전에 관한법률」제5조에따라지정ㆍ고시된항만재개발대상항만, 「마리 나항만의조성및관리등에관한법률」제2조제1호및제2호의마리 나항만또는그시설에적용한다. 제4조(다른 규정과의 관계) ①「경관법」제6조에따라지방자치단체 에서수립하는경관계획은다른법률에특별한규정이있는경우를제 외하고는이가이드라인에부합해야한다. ②항만" .
-term:tf1622eadfc565fc6 rdfs:isDefinedBy doc:dbbbbd065a2ac58f0 .
 doc:d0230998583fe5571 rdf:type reg:Manual .
 doc:d0230998583fe5571 rdfs:label "해안경관 관리 가이드라인" .
 doc:d0230998583fe5571 dct:type "매뉴얼" .
@@ -47401,23 +46738,9 @@ doc:ext41015d20055a reg:external true .
 doc:extac4a4d6ca44b rdf:type eli:LegalResource .
 doc:extac4a4d6ca44b rdfs:label "해양수산과학기술육성법시행규칙" .
 doc:extac4a4d6ca44b reg:external true .
-term:t8d7ecbc490d055ed rdfs:isDefinedBy doc:d45c9c1bb46395208 .
 doc:ext3847bea94422 rdf:type eli:LegalResource .
 doc:ext3847bea94422 rdfs:label "해양수산과학기술육성법" .
 doc:ext3847bea94422 reg:external true .
-term:t815e86e66b275259 rdf:type skos:Concept .
-term:t815e86e66b275259 skos:prefLabel "상용화" .
-term:t815e86e66b275259 skos:definition "연구개발된새로운기술을이용하여시제품을제작하여 시장에제품을출하, 판매하기전까지의과정을말한다." .
-term:t815e86e66b275259 rdfs:isDefinedBy doc:d45c9c1bb46395208 .
-term:t0b33f79ed19556da rdfs:isDefinedBy doc:d45c9c1bb46395208 .
-term:t1a1900e16b9e53f2 rdf:type skos:Concept .
-term:t1a1900e16b9e53f2 skos:prefLabel "인증신기술" .
-term:t1a1900e16b9e53f2 skos:definition "법제17조제1항, 「해양수산과학기술육성 법시행령」(이하\"영\"이라한다) 제15조제1항및제2항에따라해양 수산부장관(이하\"장관\"이라한다)이인증한신기술을말한다." .
-term:t1a1900e16b9e53f2 rdfs:isDefinedBy doc:d45c9c1bb46395208 .
-term:t9eae98cda8955891 rdf:type skos:Concept .
-term:t9eae98cda8955891 skos:prefLabel "신기술적용제품ㆍ시설" .
-term:t9eae98cda8955891 skos:definition "인증신기술을이용하여제조한 제품이나설치한시설을말한다." .
-term:t9eae98cda8955891 rdfs:isDefinedBy doc:d45c9c1bb46395208 .
 doc:d74d56292c8a85930 rdf:type reg:Manual .
 doc:d74d56292c8a85930 rdfs:label "행정제도진단 매뉴얼" .
 doc:d74d56292c8a85930 dct:type "매뉴얼" .
@@ -47638,29 +46961,6 @@ doc:da717ef86df115496 dct:identifier "da717ef86df115496#0056" .
 doc:da717ef86df115496 dct:identifier "da717ef86df115496#0057" .
 doc:da717ef86df115496 dct:issued "2023-07-20"^^xsd:date .
 doc:da717ef86df115496 dct:modified "2023-07-20"^^xsd:date .
-term:tec9f2729c60e5b2c rdfs:isDefinedBy doc:da717ef86df115496 .
-term:t0071b3bd11d25bc5 rdf:type skos:Concept .
-term:t0071b3bd11d25bc5 skos:prefLabel "공공기관" .
-term:t0071b3bd11d25bc5 skos:definition "법제2조제2호에따른기관또는법인을말한다." .
-term:t0071b3bd11d25bc5 rdfs:isDefinedBy doc:da717ef86df115496 .
-term:tf6c63d8814a75609 rdfs:isDefinedBy doc:da717ef86df115496 .
-term:t2b2b6c61ebdf5762 rdfs:isDefinedBy doc:da717ef86df115496 .
-term:t25199145194851a4 rdf:type skos:Concept .
-term:t25199145194851a4 skos:prefLabel "신청제품" .
-term:t25199145194851a4 skos:definition "신청기업이현장검증형기술개발제품선정을위해신청한제품을말하며, 다음각목의 어느하나에해당하는제품을말한다. 가. 영제13조각호의제품으로우선구매대상기술개발제품 나. 법제20조의2에따른공공조달상생협력지원제도에선정되어지원기간이유효한상생협력제품" .
-term:t25199145194851a4 rdfs:isDefinedBy doc:da717ef86df115496 .
-term:t704afefe8bd15630 rdf:type skos:Concept .
-term:t704afefe8bd15630 skos:prefLabel "공공구매정보망" .
-term:t704afefe8bd15630 skos:definition "법제25조제2항에따른공공구매종합정보망(www.smpp.go.kr)으로현장검증형 기술개발제품선정및관리등을하는시스템을말한다." .
-term:t704afefe8bd15630 rdfs:isDefinedBy doc:da717ef86df115496 .
-term:teda1e5767ee55d2d rdf:type skos:Concept .
-term:teda1e5767ee55d2d skos:prefLabel "현장검증비" .
-term:teda1e5767ee55d2d skos:definition "현장검증형기술개발제품의설치또는성능ㆍ기술검증을위한시험검사및성능측 정등에소요되는비용을말한다." .
-term:teda1e5767ee55d2d rdfs:isDefinedBy doc:da717ef86df115496 .
-term:t5e145f16aa4b5726 rdf:type skos:Concept .
-term:t5e145f16aa4b5726 skos:prefLabel "기업부담금" .
-term:t5e145f16aa4b5726 skos:definition "현장검증비중참여기업이부담하는비용을말한다." .
-term:t5e145f16aa4b5726 rdfs:isDefinedBy doc:da717ef86df115496 .
 doc:ext27a110570ea7 rdf:type eli:LegalResource .
 doc:ext27a110570ea7 rdfs:label "중소기업제품 구매촉진 및 판로지원에 관한 법률 시행령" .
 doc:ext27a110570ea7 reg:external true .
@@ -47782,24 +47082,17 @@ doc:ext4a3b1ccc77e9 reg:external true .
 doc:ext63f3421b3e8a rdf:type eli:LegalResource .
 doc:ext63f3421b3e8a rdfs:label "환경친화 적선박의기준및인증에관한규칙" .
 doc:ext63f3421b3e8a reg:external true .
-term:t48757ca3ca4a55d7 rdf:type skos:Concept .
-term:t48757ca3ca4a55d7 skos:prefLabel "환경친화적선박" .
-term:t48757ca3ca4a55d7 skos:definition "「환경친화적선박의개발및보급촉진에관한 법률」제2조제3호각목의어느하나에해당하는선박을말한다." .
-term:t48757ca3ca4a55d7 rdfs:isDefinedBy doc:da7f9801963315b32 .
-term:t2b02dce18f8a5a9b rdf:type skos:Concept .
-term:t2b02dce18f8a5a9b skos:prefLabel "환경친화적기자재" .
-term:t2b02dce18f8a5a9b skos:definition "다음각목의어느하나에해당하는기자재를말 하며, 별표1의분류에따른다. 가. 선박으로부터온실가스를저감하는기술이반영된기자재 나. 선박으로부터해양오염을저감하는기술이반영된기자재 다. 선박에너지효율을향상시킬수있는기술이반영된기자재 - 6 - 라. 그밖에해양및대기환경보호를위한목적달성을위한기자재" .
-term:t2b02dce18f8a5a9b rdfs:isDefinedBy doc:da7f9801963315b32 .
-term:tcfba74fa9261561c rdf:type skos:Concept .
-term:tcfba74fa9261561c skos:prefLabel "인증기관" .
-term:tcfba74fa9261561c skos:definition "「환경친화적선박의개발및보급촉진에관한법률시 행령」제14조제7항및규칙제6조제2항에따른한국해양교통안전공단 을말한다. 제3조(세부심사기준) ①규칙제5조에따른환경친화적선박의세부심사기준 은별표2와같다. ②규칙제5조에따른환경친화적기자재의세부심사기준은인증기관과 「선박안전법」제60조제2항전단에따른선급법인이정하는기준에따른 다. 제4조(인증등급등) ①규칙제5조에따른환경친화적선박의인증등급은별 표3을따른다. ②규칙제5조에따른환경친화적기자재의인증기준은별표4와같다. - 7 - 제5조(환경친화적기자재인증기준제안) ①제2조제3호가목에따라환경친 화적기자재를제작하거" .
-term:tcfba74fa9261561c rdfs:isDefinedBy doc:da7f9801963315b32 .
 doc:extdbda31a8c7e7 rdf:type eli:LegalResource .
 doc:extdbda31a8c7e7 rdfs:label "환경친화적선박의개발및보급촉진에관한법률시 행령" .
 doc:extdbda31a8c7e7 reg:external true .
 doc:extabb58ff075de rdf:type eli:LegalResource .
 doc:extabb58ff075de rdfs:label "선박 에서의 오염방지에 관한 규칙" .
 doc:extabb58ff075de reg:external true .
+orgn:oa1319275260256ec rdf:type org:Organization .
+orgn:oa1319275260256ec rdfs:label "가대상분야별로실무위원회" .
+orgn:oa1319275260256ec reg:mentionedIn doc:d4f55afa4d4ed5f4a .
+orgn:oa1319275260256ec reg:establishedBy doc:d4f55afa4d4ed5f4a .
+orgn:oa1319275260256ec dct:identifier "d4f55afa4d4ed5f4a#0018" .
 orgn:o28d9820cdf9f51f8 rdf:type org:Organization .
 orgn:o28d9820cdf9f51f8 rdfs:label "가축재해보험분과위원회" .
 orgn:o28d9820cdf9f51f8 reg:mentionedIn doc:df217d91e3c03516b .
@@ -47873,6 +47166,10 @@ orgn:offc2594a56545403 rdf:type org:Organization .
 orgn:offc2594a56545403 rdfs:label "개발협력위원회" .
 orgn:offc2594a56545403 reg:mentionedIn doc:d90958738218a59d2 .
 orgn:offc2594a56545403 dct:identifier "d90958738218a59d2#0050" .
+orgn:o268e8d3b05905d6c rdf:type org:Organization .
+orgn:o268e8d3b05905d6c rdfs:label "거나평가위원회" .
+orgn:o268e8d3b05905d6c reg:mentionedIn doc:d42b64d09feba59a3 .
+orgn:o268e8d3b05905d6c dct:identifier "d42b64d09feba59a3#0027" .
 orgn:o2581630a04c65935 rdf:type org:Organization .
 orgn:o2581630a04c65935 rdfs:label "건강보험공표심의위원회" .
 orgn:o2581630a04c65935 reg:mentionedIn doc:de44f2c22c394540e .
@@ -47980,6 +47277,10 @@ orgn:o5c361d6b80ef5b40 rdf:type org:Organization .
 orgn:o5c361d6b80ef5b40 rdfs:label "경제사회발전노사정위원회" .
 orgn:o5c361d6b80ef5b40 reg:mentionedIn doc:ddbd71458d6185e2f .
 orgn:o5c361d6b80ef5b40 dct:identifier "ddbd71458d6185e2f#0002" .
+orgn:o034b29f8df3051ad rdf:type org:Organization .
+orgn:o034b29f8df3051ad rdfs:label "경제적파급효과등을지정평가위원회" .
+orgn:o034b29f8df3051ad reg:mentionedIn doc:d1362a99e0fff5f23 .
+orgn:o034b29f8df3051ad dct:identifier "d1362a99e0fff5f23#0004" .
 orgn:o8607fee506835849 rdf:type org:Organization .
 orgn:o8607fee506835849 rdfs:label "계약심의위원회" .
 orgn:o8607fee506835849 reg:mentionedIn doc:d37a11c9456b45c81 .
@@ -48136,6 +47437,10 @@ orgn:o0c0e01dddbeb50e2 reg:establishedBy doc:d0ab001393c91566c .
 orgn:o0c0e01dddbeb50e2 dct:identifier "d0ab001393c91566c#0005" .
 orgn:o0c0e01dddbeb50e2 dct:identifier "d0ab001393c91566c#0012" .
 orgn:o0c0e01dddbeb50e2 dct:identifier "d0ab001393c91566c#0033" .
+orgn:o45406457d8fd5778 rdf:type org:Organization .
+orgn:o45406457d8fd5778 rdfs:label "구부동산가격공시위원회" .
+orgn:o45406457d8fd5778 reg:mentionedIn doc:dcafce347569557fe .
+orgn:o45406457d8fd5778 dct:identifier "dcafce347569557fe#0012" .
 orgn:o7c34fd16eef6517b rdf:type org:Organization .
 orgn:o7c34fd16eef6517b rdfs:label "국가기록관리위원회" .
 orgn:o7c34fd16eef6517b reg:mentionedIn doc:d4a6ca51c9e295196 .
@@ -48236,6 +47541,14 @@ orgn:o1a8945e80c0b520a reg:mentionedIn doc:dc48d0609491c588c .
 orgn:o1a8945e80c0b520a reg:establishedBy doc:dc48d0609491c588c .
 orgn:o1a8945e80c0b520a dct:identifier "dc48d0609491c588c#0024" .
 orgn:o1a8945e80c0b520a dct:identifier "dc48d0609491c588c#0026" .
+orgn:o253207f6ae0451ec rdf:type org:Organization .
+orgn:o253207f6ae0451ec rdfs:label "그목록을보호위원회" .
+orgn:o253207f6ae0451ec reg:mentionedIn doc:dc17e34fd39ca5c4a .
+orgn:o253207f6ae0451ec dct:identifier "dc17e34fd39ca5c4a#0008" .
+orgn:o51efbf3de27c5279 rdf:type org:Organization .
+orgn:o51efbf3de27c5279 rdfs:label "그외사전평가위원회" .
+orgn:o51efbf3de27c5279 reg:mentionedIn doc:d89eee24e64525bec .
+orgn:o51efbf3de27c5279 dct:identifier "d89eee24e64525bec#0037" .
 orgn:ofedecebb8b26537d rdf:type org:Organization .
 orgn:ofedecebb8b26537d rdfs:label "금융감독위원회" .
 orgn:ofedecebb8b26537d reg:mentionedIn doc:d56735900707b5552 .
@@ -48436,6 +47749,10 @@ orgn:o61b135c6744e5795 rdfs:label "기술심의회" .
 orgn:o61b135c6744e5795 reg:mentionedIn doc:da6c852b48b9d54c6 .
 orgn:o61b135c6744e5795 dct:identifier "da6c852b48b9d54c6#0009" .
 orgn:o61b135c6744e5795 dct:identifier "da6c852b48b9d54c6#0068" .
+orgn:o776e21c0199956a3 rdf:type org:Organization .
+orgn:o776e21c0199956a3 rdfs:label "기술은참석한전문분과위원회" .
+orgn:o776e21c0199956a3 reg:mentionedIn doc:d9f0d2c8484015930 .
+orgn:o776e21c0199956a3 dct:identifier "d9f0d2c8484015930#0005" .
 orgn:o64abdf2fdedc5f93 rdf:type org:Organization .
 orgn:o64abdf2fdedc5f93 rdfs:label "기술자문위원회" .
 orgn:o64abdf2fdedc5f93 reg:mentionedIn doc:d9d4cd34af7d65b9d .
@@ -48493,6 +47810,15 @@ orgn:o86b3e3331d075966 reg:mentionedIn doc:df217d91e3c03516b .
 orgn:o86b3e3331d075966 reg:mentionedIn doc:ddf10c502454f5070 .
 orgn:o86b3e3331d075966 dct:identifier "ddf10c502454f5070#0004" .
 orgn:o86b3e3331d075966 dct:identifier "df217d91e3c03516b#0005" .
+orgn:off7c81a334cc5cb6 rdf:type org:Organization .
+orgn:off7c81a334cc5cb6 rdfs:label "는기술분야별전문분과위원회" .
+orgn:off7c81a334cc5cb6 reg:mentionedIn doc:d45c9c1bb46395208 .
+orgn:off7c81a334cc5cb6 reg:establishedBy doc:d45c9c1bb46395208 .
+orgn:off7c81a334cc5cb6 dct:identifier "d45c9c1bb46395208#0012" .
+orgn:o216716bfbd3c5681 rdf:type org:Organization .
+orgn:o216716bfbd3c5681 rdfs:label "단체의장에게추가적인의견수렴과심사위원회" .
+orgn:o216716bfbd3c5681 reg:mentionedIn doc:da6c852b48b9d54c6 .
+orgn:o216716bfbd3c5681 dct:identifier "da6c852b48b9d54c6#0017" .
 orgn:o5acb98ef6fbc569e rdf:type org:Organization .
 orgn:o5acb98ef6fbc569e rdfs:label "단체표준심사위원회" .
 orgn:o5acb98ef6fbc569e reg:mentionedIn doc:da6c852b48b9d54c6 .
@@ -48540,16 +47866,36 @@ orgn:o8b61e330d04d503a rdfs:label "대행기관선정위원회" .
 orgn:o8b61e330d04d503a reg:mentionedIn doc:d4c017d94c228599e .
 orgn:o8b61e330d04d503a dct:identifier "d4c017d94c228599e#0001" .
 orgn:o8b61e330d04d503a dct:identifier "d4c017d94c228599e#0002" .
+orgn:o66d2db42ea5f55f8 rdf:type org:Organization .
+orgn:o66d2db42ea5f55f8 rdfs:label "도도시계획위원회" .
+orgn:o66d2db42ea5f55f8 reg:mentionedIn doc:d34bfa7077e1e546e .
+orgn:o66d2db42ea5f55f8 dct:identifier "d34bfa7077e1e546e#0003" .
+orgn:oa639f21d1db65ca1 rdf:type org:Organization .
+orgn:oa639f21d1db65ca1 rdfs:label "도의작업반이나실무위원회" .
+orgn:oa639f21d1db65ca1 reg:mentionedIn doc:dfd754406410e5017 .
+orgn:oa639f21d1db65ca1 dct:identifier "dfd754406410e5017#0075" .
 orgn:o1d30e96c59355024 rdf:type org:Organization .
 orgn:o1d30e96c59355024 rdfs:label "동의등급평가위원회" .
 orgn:o1d30e96c59355024 reg:mentionedIn doc:da3171f4ee4b857d7 .
 orgn:o1d30e96c59355024 reg:establishedBy doc:da3171f4ee4b857d7 .
 orgn:o1d30e96c59355024 dct:identifier "da3171f4ee4b857d7#0028" .
+orgn:o1dffc8cad12d5733 rdf:type org:Organization .
+orgn:o1dffc8cad12d5733 rdfs:label "된기술위원회" .
+orgn:o1dffc8cad12d5733 reg:mentionedIn doc:d0886601ed8985672 .
+orgn:o1dffc8cad12d5733 dct:identifier "d0886601ed8985672#0058" .
+orgn:o1bb9423b816a5081 rdf:type org:Organization .
+orgn:o1bb9423b816a5081 rdfs:label "된자료의정정은직권정정과경력심사관리위원회" .
+orgn:o1bb9423b816a5081 reg:mentionedIn doc:d94c8b1da70cf55c4 .
+orgn:o1bb9423b816a5081 dct:identifier "d94c8b1da70cf55c4#0014" .
 orgn:o2a179fdc99a05b11 rdf:type org:Organization .
 orgn:o2a179fdc99a05b11 rdfs:label "디자인전시회출품물심사위원회" .
 orgn:o2a179fdc99a05b11 reg:mentionedIn doc:dc7a94480a96a581d .
 orgn:o2a179fdc99a05b11 reg:establishedBy doc:dc7a94480a96a581d .
 orgn:o2a179fdc99a05b11 dct:identifier "dc7a94480a96a581d#0043" .
+orgn:oe2f881a6e7ff555a rdf:type org:Organization .
+orgn:oe2f881a6e7ff555a rdfs:label "령에규정되지아니한사항에대해서는심의위원회" .
+orgn:oe2f881a6e7ff555a reg:mentionedIn doc:d4c64db9b0da65cb4 .
+orgn:oe2f881a6e7ff555a dct:identifier "d4c64db9b0da65cb4#0016" .
 orgn:o44e975493ec5580b rdf:type org:Organization .
 orgn:o44e975493ec5580b rdfs:label "리스크관리소위원회" .
 orgn:o44e975493ec5580b reg:mentionedIn doc:d505eb3e4d54e5658 .
@@ -48570,10 +47916,24 @@ orgn:oa200d13dd66b5015 rdfs:label "면접심사위원회" .
 orgn:oa200d13dd66b5015 reg:mentionedIn doc:d90395f39835850cc .
 orgn:oa200d13dd66b5015 reg:establishedBy doc:d90395f39835850cc .
 orgn:oa200d13dd66b5015 dct:identifier "d90395f39835850cc#0002" .
+orgn:oe5c8b7c74f5a59a8 rdf:type org:Organization .
+orgn:oe5c8b7c74f5a59a8 rdfs:label "면제기준공정거래위원회" .
+orgn:oe5c8b7c74f5a59a8 reg:mentionedIn doc:d7ce9ff8d6bc95432 .
+orgn:oe5c8b7c74f5a59a8 reg:mentionedIn doc:d97bc9c6bf2e65616 .
+orgn:oe5c8b7c74f5a59a8 dct:identifier "d7ce9ff8d6bc95432#0000" .
+orgn:oe5c8b7c74f5a59a8 dct:identifier "d97bc9c6bf2e65616#0000" .
+orgn:o34def2b5369e52ce rdf:type org:Organization .
+orgn:o34def2b5369e52ce rdfs:label "명문장수기업심의위원회" .
+orgn:o34def2b5369e52ce reg:mentionedIn doc:db8097edaff625e19 .
+orgn:o34def2b5369e52ce dct:identifier "db8097edaff625e19#0003" .
 orgn:oc84a77373ca957c7 rdf:type org:Organization .
 orgn:oc84a77373ca957c7 rdfs:label "모집인운영협의회" .
 orgn:oc84a77373ca957c7 reg:mentionedIn doc:dc5066ddc3a9d50ce .
 orgn:oc84a77373ca957c7 dct:identifier "dc5066ddc3a9d50ce#0015" .
+orgn:o9cf442dc1bb85971 rdf:type org:Organization .
+orgn:o9cf442dc1bb85971 rdfs:label "문가는심의위원회" .
+orgn:o9cf442dc1bb85971 reg:mentionedIn doc:d0e8bc5e356e85e90 .
+orgn:o9cf442dc1bb85971 dct:identifier "d0e8bc5e356e85e90#0010" .
 orgn:o53c62f4ada285561 rdf:type org:Organization .
 orgn:o53c62f4ada285561 rdfs:label "물품등록심의위원회" .
 orgn:o53c62f4ada285561 reg:mentionedIn doc:d1362a99e0fff5f23 .
@@ -48624,6 +47984,10 @@ orgn:o737bb074db21579d rdf:type org:Organization .
 orgn:o737bb074db21579d rdfs:label "백년소상공인지정심의위원회" .
 orgn:o737bb074db21579d reg:mentionedIn doc:d9e7d294a66c45bad .
 orgn:o737bb074db21579d dct:identifier "d9e7d294a66c45bad#0005" .
+orgn:ofa6f48fdb41e5d12 rdf:type org:Organization .
+orgn:ofa6f48fdb41e5d12 rdfs:label "범사위원회" .
+orgn:ofa6f48fdb41e5d12 reg:mentionedIn doc:dc48d0609491c588c .
+orgn:ofa6f48fdb41e5d12 dct:identifier "dc48d0609491c588c#0049" .
 orgn:o3ea22445910c5d67 rdf:type org:Organization .
 orgn:o3ea22445910c5d67 rdfs:label "법령용어정비위원회" .
 orgn:o3ea22445910c5d67 reg:mentionedIn doc:d4b205bd0757453ef .
@@ -48690,6 +48054,11 @@ orgn:o1c74ce9118c85f86 reg:establishedBy doc:d8c6c415363c85b48 .
 orgn:o1c74ce9118c85f86 dct:identifier "d8c6c415363c85b48#0035" .
 orgn:o1c74ce9118c85f86 dct:identifier "d8c6c415363c85b48#0036" .
 orgn:o1c74ce9118c85f86 dct:identifier "de44f2c22c394540e#0069" .
+orgn:o6caaa2f04fad5759 rdf:type org:Organization .
+orgn:o6caaa2f04fad5759 rdfs:label "분과위원회는위원회" .
+orgn:o6caaa2f04fad5759 reg:mentionedIn doc:d4f55afa4d4ed5f4a .
+orgn:o6caaa2f04fad5759 reg:establishedBy doc:d4f55afa4d4ed5f4a .
+orgn:o6caaa2f04fad5759 dct:identifier "d4f55afa4d4ed5f4a#0018" .
 orgn:o48289c991e2f577a rdf:type org:Organization .
 orgn:o48289c991e2f577a rdfs:label "분양소위원회" .
 orgn:o48289c991e2f577a reg:mentionedIn doc:d9e422cbe66c657ce .
@@ -48730,6 +48099,10 @@ orgn:of648374f7ed15242 reg:mentionedIn doc:d09fee7aafd245c64 .
 orgn:of648374f7ed15242 reg:establishedBy doc:d09fee7aafd245c64 .
 orgn:of648374f7ed15242 dct:identifier "d09fee7aafd245c64#0028" .
 orgn:of648374f7ed15242 dct:identifier "d09fee7aafd245c64#0047" .
+orgn:od8219bfea798598c rdf:type org:Organization .
+orgn:od8219bfea798598c rdfs:label "사항은심의회" .
+orgn:od8219bfea798598c reg:mentionedIn doc:da6c852b48b9d54c6 .
+orgn:od8219bfea798598c dct:identifier "da6c852b48b9d54c6#0009" .
 orgn:ofa5fdc00dc0e516f rdf:type org:Organization .
 orgn:ofa5fdc00dc0e516f rdfs:label "사행산업통합감독위원회" .
 orgn:ofa5fdc00dc0e516f reg:mentionedIn doc:d4f2a3428e7af539e .
@@ -48743,11 +48116,19 @@ orgn:ofa5fdc00dc0e516f dct:identifier "d4f2a3428e7af539e#0003" .
 orgn:ofa5fdc00dc0e516f dct:identifier "d4f2a3428e7af539e#0004" .
 orgn:ofa5fdc00dc0e516f dct:identifier "d94e77ee646b15f22#0011" .
 orgn:ofa5fdc00dc0e516f dct:identifier "dd53b72074d6f5547#0021" .
+orgn:oa93679b746e156b1 rdf:type org:Organization .
+orgn:oa93679b746e156b1 rdfs:label "사회재난총괄부서를협의회" .
+orgn:oa93679b746e156b1 reg:mentionedIn doc:d62cfb3c1af4b5188 .
+orgn:oa93679b746e156b1 dct:identifier "d62cfb3c1af4b5188#0002" .
 orgn:o8779bdcce3735c4b rdf:type org:Organization .
 orgn:o8779bdcce3735c4b rdfs:label "산업단지심의위원회" .
 orgn:o8779bdcce3735c4b reg:mentionedIn doc:d17a692748d5a5f68 .
 orgn:o8779bdcce3735c4b dct:identifier "d17a692748d5a5f68#0035" .
 orgn:o8779bdcce3735c4b dct:identifier "d17a692748d5a5f68#0036" .
+orgn:oe24e2b689fae5a39 rdf:type org:Organization .
+orgn:oe24e2b689fae5a39 rdfs:label "산업부의전문가자문위원회" .
+orgn:oe24e2b689fae5a39 reg:mentionedIn doc:dd0c5de1fd0ee5ef3 .
+orgn:oe24e2b689fae5a39 dct:identifier "dd0c5de1fd0ee5ef3#0034" .
 orgn:oa2a97d81876b58cf rdf:type org:Organization .
 orgn:oa2a97d81876b58cf rdfs:label "산업재해보상보험재심사위원회" .
 orgn:oa2a97d81876b58cf reg:mentionedIn doc:ddbd71458d6185e2f .
@@ -48756,6 +48137,14 @@ orgn:o79335514787b5147 rdf:type org:Organization .
 orgn:o79335514787b5147 rdfs:label "산업정책심의회" .
 orgn:o79335514787b5147 reg:mentionedIn doc:d7ec87cec7d755db7 .
 orgn:o79335514787b5147 dct:identifier "d7ec87cec7d755db7#0008" .
+orgn:oda001771141d5e78 rdf:type org:Organization .
+orgn:oda001771141d5e78 rdfs:label "산하에분야별전문위원회" .
+orgn:oda001771141d5e78 reg:mentionedIn doc:d4f55afa4d4ed5f4a .
+orgn:oda001771141d5e78 dct:identifier "d4f55afa4d4ed5f4a#0018" .
+orgn:o0a7450f96d8851fb rdf:type org:Organization .
+orgn:o0a7450f96d8851fb rdfs:label "상기한직무발명심의위원회" .
+orgn:o0a7450f96d8851fb reg:mentionedIn doc:d0e8bc5e356e85e90 .
+orgn:o0a7450f96d8851fb dct:identifier "d0e8bc5e356e85e90#0015" .
 orgn:odb0cdbc8aa36577f rdf:type org:Organization .
 orgn:odb0cdbc8aa36577f rdfs:label "상시평가위원회" .
 orgn:odb0cdbc8aa36577f reg:mentionedIn doc:da3171f4ee4b857d7 .
@@ -48822,6 +48211,11 @@ orgn:oe21a970d646f5b4d reg:establishedBy doc:d552efa17279f54b3 .
 orgn:oe21a970d646f5b4d dct:identifier "d552efa17279f54b3#0022" .
 orgn:oe21a970d646f5b4d dct:identifier "d8f024651ee765b43#0023" .
 orgn:oe21a970d646f5b4d dct:identifier "d8f024651ee765b43#0028" .
+orgn:oea977e96f83456d6 rdf:type org:Organization .
+orgn:oea977e96f83456d6 rdfs:label "서품목별관리위원회" .
+orgn:oea977e96f83456d6 reg:mentionedIn doc:d78fd1a786f2e5c5d .
+orgn:oea977e96f83456d6 reg:establishedBy doc:d78fd1a786f2e5c5d .
+orgn:oea977e96f83456d6 dct:identifier "d78fd1a786f2e5c5d#0009" .
 orgn:o9ebf0d4efe81588d rdf:type org:Organization .
 orgn:o9ebf0d4efe81588d rdfs:label "선발심의위원회" .
 orgn:o9ebf0d4efe81588d reg:mentionedIn doc:d0e097e67a6ee5036 .
@@ -48848,6 +48242,11 @@ orgn:o49726814902952fd reg:mentionedIn doc:d13f4bd8a00e65a81 .
 orgn:o49726814902952fd reg:mentionedIn doc:d3b503d72a6a656e1 .
 orgn:o49726814902952fd dct:identifier "d13f4bd8a00e65a81#0046" .
 orgn:o49726814902952fd dct:identifier "d3b503d72a6a656e1#0028" .
+orgn:o06d6b852f44153f5 rdf:type org:Organization .
+orgn:o06d6b852f44153f5 rdfs:label "수당현실화등협의회" .
+orgn:o06d6b852f44153f5 reg:mentionedIn doc:d62cfb3c1af4b5188 .
+orgn:o06d6b852f44153f5 reg:establishedBy doc:d62cfb3c1af4b5188 .
+orgn:o06d6b852f44153f5 dct:identifier "d62cfb3c1af4b5188#0001" .
 orgn:o37503b0dcf215d34 rdf:type org:Organization .
 orgn:o37503b0dcf215d34 rdfs:label "수사심의위원회" .
 orgn:o37503b0dcf215d34 reg:mentionedIn doc:d4d65dfa86aa75608 .
@@ -48859,6 +48258,11 @@ orgn:o6e5cc31a1b0451a9 rdf:type org:Organization .
 orgn:o6e5cc31a1b0451a9 rdfs:label "수사심의회" .
 orgn:o6e5cc31a1b0451a9 reg:mentionedIn doc:d126c9c18cd795f40 .
 orgn:o6e5cc31a1b0451a9 dct:identifier "d126c9c18cd795f40#0028" .
+orgn:o043cd50b6d895f88 rdf:type org:Organization .
+orgn:o043cd50b6d895f88 rdfs:label "수행결과의평가등평가위원회" .
+orgn:o043cd50b6d895f88 reg:mentionedIn doc:d90958738218a59d2 .
+orgn:o043cd50b6d895f88 reg:establishedBy doc:d90958738218a59d2 .
+orgn:o043cd50b6d895f88 dct:identifier "d90958738218a59d2#0035" .
 orgn:o392f594342a95ed4 rdf:type org:Organization .
 orgn:o392f594342a95ed4 rdfs:label "시장감시위원회" .
 orgn:o392f594342a95ed4 reg:mentionedIn doc:d227144750297591e .
@@ -48889,6 +48293,10 @@ orgn:o18912b27ace85c00 rdf:type org:Organization .
 orgn:o18912b27ace85c00 rdfs:label "식물검역심의위원회" .
 orgn:o18912b27ace85c00 reg:mentionedIn doc:df7ac34c912d7536c .
 orgn:o18912b27ace85c00 dct:identifier "df7ac34c912d7536c#0000" .
+orgn:ob6ca7b19caa0542c rdf:type org:Organization .
+orgn:ob6ca7b19caa0542c rdfs:label "신기술지정선정기술은참석한종합심사위원회" .
+orgn:ob6ca7b19caa0542c reg:mentionedIn doc:d9f0d2c8484015930 .
+orgn:ob6ca7b19caa0542c dct:identifier "d9f0d2c8484015930#0013" .
 orgn:of7dfe5579d2055f0 rdf:type org:Organization .
 orgn:of7dfe5579d2055f0 rdfs:label "신용정보집중관리위원회" .
 orgn:of7dfe5579d2055f0 reg:mentionedIn doc:da3171f4ee4b857d7 .
@@ -48950,6 +48358,14 @@ orgn:o7044d229334c5640 rdf:type org:Organization .
 orgn:o7044d229334c5640 rdfs:label "신의료기술평가위원회" .
 orgn:o7044d229334c5640 reg:mentionedIn doc:d9f6179a71eb958fa .
 orgn:o7044d229334c5640 dct:identifier "d9f6179a71eb958fa#0017" .
+orgn:ocb1f33d349925d7e rdf:type org:Organization .
+orgn:ocb1f33d349925d7e rdfs:label "신청기술의연구개발자를전문분과위원회" .
+orgn:ocb1f33d349925d7e reg:mentionedIn doc:d35b3a613ff325036 .
+orgn:ocb1f33d349925d7e dct:identifier "d35b3a613ff325036#0003" .
+orgn:of99803a5e7055630 rdf:type org:Organization .
+orgn:of99803a5e7055630 rdfs:label "실시하지않을예정이므로각부처자체평가위원회" .
+orgn:of99803a5e7055630 reg:mentionedIn doc:dc48d0609491c588c .
+orgn:of99803a5e7055630 dct:identifier "dc48d0609491c588c#0073" .
 orgn:o4a9dd4943f285659 rdf:type org:Organization .
 orgn:o4a9dd4943f285659 rdfs:label "심리기관협의회" .
 orgn:o4a9dd4943f285659 reg:mentionedIn doc:d227144750297591e .
@@ -48962,6 +48378,10 @@ orgn:o38af584ca3905cb9 reg:mentionedIn doc:d9f6179a71eb958fa .
 orgn:o38af584ca3905cb9 reg:establishedBy doc:d9f6179a71eb958fa .
 orgn:o38af584ca3905cb9 dct:identifier "d9f6179a71eb958fa#0007" .
 orgn:o38af584ca3905cb9 dct:identifier "d9f6179a71eb958fa#0010" .
+orgn:odab3cd721f395e15 rdf:type org:Organization .
+orgn:odab3cd721f395e15 rdfs:label "심의위원회는전략기획투자협의회" .
+orgn:odab3cd721f395e15 reg:mentionedIn doc:ded052b803aa051a8 .
+orgn:odab3cd721f395e15 dct:identifier "ded052b803aa051a8#0064" .
 orgn:o52a85be6430a540d rdf:type org:Organization .
 orgn:o52a85be6430a540d rdfs:label "심의조정위원회" .
 orgn:o52a85be6430a540d reg:mentionedIn doc:ded02a0b750ba514e .
@@ -48973,6 +48393,10 @@ orgn:o52a85be6430a540d dct:identifier "d87a77ec202975635#0014" .
 orgn:o52a85be6430a540d dct:identifier "d87a77ec202975635#0015" .
 orgn:o52a85be6430a540d dct:identifier "ded02a0b750ba514e#0014" .
 orgn:o52a85be6430a540d dct:identifier "ded02a0b750ba514e#0015" .
+orgn:o36b5cf3f6d815e28 rdf:type org:Organization .
+orgn:o36b5cf3f6d815e28 rdfs:label "심의회는심의회" .
+orgn:o36b5cf3f6d815e28 reg:mentionedIn doc:da6c852b48b9d54c6 .
+orgn:o36b5cf3f6d815e28 dct:identifier "da6c852b48b9d54c6#0008" .
 orgn:o939abd9b3d7851e7 rdf:type org:Organization .
 orgn:o939abd9b3d7851e7 rdfs:label "안전관리협의회" .
 orgn:o939abd9b3d7851e7 reg:mentionedIn doc:d6adb4fe6b2465318 .
@@ -49035,6 +48459,15 @@ orgn:o2bc3f6eca08a55f1 reg:establishedBy doc:de9cc2b3e1ff85984 .
 orgn:o2bc3f6eca08a55f1 dct:identifier "d9eb2a40b4bd956ed#0020" .
 orgn:o2bc3f6eca08a55f1 dct:identifier "da893811cf13a5bc2#0020" .
 orgn:o2bc3f6eca08a55f1 dct:identifier "de9cc2b3e1ff85984#0025" .
+orgn:o37bb29dcec9e5450 rdf:type org:Organization .
+orgn:o37bb29dcec9e5450 rdfs:label "여평가기관운영협의회" .
+orgn:o37bb29dcec9e5450 reg:mentionedIn doc:dc7a94480a96a581d .
+orgn:o37bb29dcec9e5450 reg:establishedBy doc:dc7a94480a96a581d .
+orgn:o37bb29dcec9e5450 dct:identifier "dc7a94480a96a581d#0077" .
+orgn:o106b1543a83a5547 rdf:type org:Organization .
+orgn:o106b1543a83a5547 rdfs:label "역중소기업지원협의회" .
+orgn:o106b1543a83a5547 reg:mentionedIn doc:d77a526b882b45772 .
+orgn:o106b1543a83a5547 dct:identifier "d77a526b882b45772#0014" .
 orgn:o7eb464b102fe530d rdf:type org:Organization .
 orgn:o7eb464b102fe530d rdfs:label "연구과제선정심의위원회" .
 orgn:o7eb464b102fe530d reg:mentionedIn doc:d07c059ae92ef525a .
@@ -49043,6 +48476,10 @@ orgn:ocff99297dc8150a9 rdf:type org:Organization .
 orgn:ocff99297dc8150a9 rdfs:label "연구실안전위원회" .
 orgn:ocff99297dc8150a9 reg:mentionedIn doc:d07c059ae92ef525a .
 orgn:ocff99297dc8150a9 dct:identifier "d07c059ae92ef525a#0009" .
+orgn:o23e799214f4f541f rdf:type org:Organization .
+orgn:o23e799214f4f541f rdfs:label "연장평가위원회" .
+orgn:o23e799214f4f541f reg:mentionedIn doc:d5d939906f81a5c02 .
+orgn:o23e799214f4f541f dct:identifier "d5d939906f81a5c02#0050" .
 orgn:oacc5766399c3582c rdf:type org:Organization .
 orgn:oacc5766399c3582c rdfs:label "영향평가조정협의회" .
 orgn:oacc5766399c3582c reg:mentionedIn doc:d17a692748d5a5f68 .
@@ -49057,6 +48494,10 @@ orgn:ob81759f493265af4 rdf:type org:Organization .
 orgn:ob81759f493265af4 rdfs:label "예산결산특별위원회" .
 orgn:ob81759f493265af4 reg:mentionedIn doc:d7a10d1a91abe5d05 .
 orgn:ob81759f493265af4 dct:identifier "d7a10d1a91abe5d05#0015" .
+orgn:o549b079f31fc5e1f rdf:type org:Organization .
+orgn:o549b079f31fc5e1f rdfs:label "완료평가위원회" .
+orgn:o549b079f31fc5e1f reg:mentionedIn doc:d5d939906f81a5c02 .
+orgn:o549b079f31fc5e1f dct:identifier "d5d939906f81a5c02#0050" .
 orgn:oe47667c004315e60 rdf:type org:Organization .
 orgn:oe47667c004315e60 rdfs:label "외국인투자위원회" .
 orgn:oe47667c004315e60 reg:mentionedIn doc:d89eee24e64525bec .
@@ -49066,6 +48507,11 @@ orgn:o0dc74c73ab3851b6 rdfs:label "외환건전성협의회" .
 orgn:o0dc74c73ab3851b6 reg:mentionedIn doc:d121af93a819957d6 .
 orgn:o0dc74c73ab3851b6 reg:establishedBy doc:d121af93a819957d6 .
 orgn:o0dc74c73ab3851b6 dct:identifier "d121af93a819957d6#0030" .
+orgn:o4a66bbca485e57f3 rdf:type org:Organization .
+orgn:o4a66bbca485e57f3 rdfs:label "요하다고공공조달상생협력지원제도운영위원회" .
+orgn:o4a66bbca485e57f3 reg:mentionedIn doc:d5d939906f81a5c02 .
+orgn:o4a66bbca485e57f3 reg:establishedBy doc:d5d939906f81a5c02 .
+orgn:o4a66bbca485e57f3 dct:identifier "d5d939906f81a5c02#0090" .
 orgn:o1ca7ab0ca7b55cd1 rdf:type org:Organization .
 orgn:o1ca7ab0ca7b55cd1 rdfs:label "우전문분과위원회" .
 orgn:o1ca7ab0ca7b55cd1 reg:mentionedIn doc:d35b3a613ff325036 .
@@ -49106,6 +48552,10 @@ orgn:oa66759c62f7750fa dct:identifier "d38429adbd31d5713#0481" .
 orgn:oa66759c62f7750fa dct:identifier "d38429adbd31d5713#0485" .
 orgn:oa66759c62f7750fa dct:identifier "d38429adbd31d5713#0490" .
 orgn:oa66759c62f7750fa dct:identifier "d94e1e66f62155fe0#0473" .
+orgn:o042baf4362165cc6 rdf:type org:Organization .
+orgn:o042baf4362165cc6 rdfs:label "이예규는개인정보보호위원회" .
+orgn:o042baf4362165cc6 reg:mentionedIn doc:dc17e34fd39ca5c4a .
+orgn:o042baf4362165cc6 dct:identifier "dc17e34fd39ca5c4a#0000" .
 orgn:o0a49160810d857f9 rdf:type org:Organization .
 orgn:o0a49160810d857f9 rdfs:label "이의신청위원회" .
 orgn:o0a49160810d857f9 reg:mentionedIn doc:d8c6c415363c85b48 .
@@ -49120,6 +48570,10 @@ orgn:o829954c6e4715cbb reg:establishedBy doc:d5d939906f81a5c02 .
 orgn:o829954c6e4715cbb dct:identifier "d5d939906f81a5c02#0025" .
 orgn:o829954c6e4715cbb dct:identifier "d5d939906f81a5c02#0048" .
 orgn:o829954c6e4715cbb dct:identifier "d5d939906f81a5c02#0100" .
+orgn:oda0df2c859d25beb rdf:type org:Organization .
+orgn:oda0df2c859d25beb rdfs:label "이지정심의위원회" .
+orgn:oda0df2c859d25beb reg:mentionedIn doc:d1362a99e0fff5f23 .
+orgn:oda0df2c859d25beb dct:identifier "d1362a99e0fff5f23#0013" .
 orgn:o679174629c0d520c rdf:type org:Organization .
 orgn:o679174629c0d520c rdfs:label "인력양성위원회" .
 orgn:o679174629c0d520c reg:mentionedIn doc:d42b64d09feba59a3 .
@@ -49183,6 +48637,10 @@ orgn:o5adc31b498d6552b dct:identifier "da7f9801963315b32#0018" .
 orgn:o5adc31b498d6552b dct:identifier "da7f9801963315b32#0021" .
 orgn:o5adc31b498d6552b dct:identifier "da7f9801963315b32#0028" .
 orgn:o5adc31b498d6552b dct:identifier "da7f9801963315b32#0037" .
+orgn:o08c96b33a3015ed6 rdf:type org:Organization .
+orgn:o08c96b33a3015ed6 rdfs:label "일반심사와심사위원회" .
+orgn:o08c96b33a3015ed6 reg:mentionedIn doc:df1a42cc50fda571a .
+orgn:o08c96b33a3015ed6 dct:identifier "df1a42cc50fda571a#0054" .
 orgn:o074d658e450d5521 rdf:type org:Organization .
 orgn:o074d658e450d5521 rdfs:label "임산물재해보험분과위원회" .
 orgn:o074d658e450d5521 reg:mentionedIn doc:df217d91e3c03516b .
@@ -49198,6 +48656,10 @@ orgn:obd2e899957c5517c rdf:type org:Organization .
 orgn:obd2e899957c5517c rdfs:label "임의자조금위원회" .
 orgn:obd2e899957c5517c reg:mentionedIn doc:d5b09080a1b9a5040 .
 orgn:obd2e899957c5517c dct:identifier "d5b09080a1b9a5040#0029" .
+orgn:o819110b8eaa85e31 rdf:type org:Organization .
+orgn:o819110b8eaa85e31 rdfs:label "있는지여부를현장심사위원회" .
+orgn:o819110b8eaa85e31 reg:mentionedIn doc:d1362a99e0fff5f23 .
+orgn:o819110b8eaa85e31 dct:identifier "d1362a99e0fff5f23#0003" .
 orgn:o64c28f087b125ed3 rdf:type org:Organization .
 orgn:o64c28f087b125ed3 rdfs:label "자격심의위원회" .
 orgn:o64c28f087b125ed3 reg:mentionedIn doc:d0886601ed8985672 .
@@ -49232,6 +48694,10 @@ orgn:o173b3c95531f5f0b rdf:type org:Organization .
 orgn:o173b3c95531f5f0b rdfs:label "자원은행운영위원회" .
 orgn:o173b3c95531f5f0b reg:mentionedIn doc:de6440737db1954b5 .
 orgn:o173b3c95531f5f0b dct:identifier "de6440737db1954b5#0016" .
+orgn:obb53b478d62f5de9 rdf:type org:Organization .
+orgn:obb53b478d62f5de9 rdfs:label "자유공모연구개발과제에대해서는별도의위원회" .
+orgn:obb53b478d62f5de9 reg:mentionedIn doc:ded052b803aa051a8 .
+orgn:obb53b478d62f5de9 dct:identifier "ded052b803aa051a8#0147" .
 orgn:o71658cf5962654c9 rdf:type org:Organization .
 orgn:o71658cf5962654c9 rdfs:label "자율규제위원회" .
 orgn:o71658cf5962654c9 reg:mentionedIn doc:da068f95476bb589c .
@@ -49272,6 +48738,14 @@ orgn:o36cb825470915623 rdfs:label "작품구입심의위원회" .
 orgn:o36cb825470915623 reg:mentionedIn doc:d0bbc7625a5e4582e .
 orgn:o36cb825470915623 reg:establishedBy doc:d0bbc7625a5e4582e .
 orgn:o36cb825470915623 dct:identifier "d0bbc7625a5e4582e#0009" .
+orgn:ob11547d2f1915de2 rdf:type org:Organization .
+orgn:ob11547d2f1915de2 rdfs:label "잔여면적에대해보육센터별심사위원회" .
+orgn:ob11547d2f1915de2 reg:mentionedIn doc:dea3410394b49574d .
+orgn:ob11547d2f1915de2 dct:identifier "dea3410394b49574d#0047" .
+orgn:o702b60b598b35206 rdf:type org:Organization .
+orgn:o702b60b598b35206 rdfs:label "장관이심의위원회" .
+orgn:o702b60b598b35206 reg:mentionedIn doc:ded052b803aa051a8 .
+orgn:o702b60b598b35206 dct:identifier "ded052b803aa051a8#0066" .
 orgn:od78f60db3e245d88 rdf:type org:Organization .
 orgn:od78f60db3e245d88 rdfs:label "장기요양급여심사위원회" .
 orgn:od78f60db3e245d88 reg:mentionedIn doc:d5941e7e3add1523f .
@@ -49334,11 +48808,27 @@ orgn:ob4a7aafe86255be3 reg:mentionedIn doc:df5e8a1160933588c .
 orgn:ob4a7aafe86255be3 reg:establishedBy doc:df5e8a1160933588c .
 orgn:ob4a7aafe86255be3 dct:identifier "df5e8a1160933588c#0006" .
 orgn:ob4a7aafe86255be3 dct:identifier "df5e8a1160933588c#0077" .
+orgn:o8b4d379402bc54b0 rdf:type org:Organization .
+orgn:o8b4d379402bc54b0 rdfs:label "장에게기술위원회" .
+orgn:o8b4d379402bc54b0 reg:mentionedIn doc:d5ffaf670284a5fdf .
+orgn:o8b4d379402bc54b0 dct:identifier "d5ffaf670284a5fdf#0029" .
 orgn:o82571931ec08533a rdf:type org:Organization .
 orgn:o82571931ec08533a rdfs:label "장외파생상품심의위원회" .
 orgn:o82571931ec08533a reg:mentionedIn doc:d38429adbd31d5713 .
 orgn:o82571931ec08533a reg:establishedBy doc:d38429adbd31d5713 .
 orgn:o82571931ec08533a dct:identifier "d38429adbd31d5713#0357" .
+orgn:o61e432500aee56b6 rdf:type org:Organization .
+orgn:o61e432500aee56b6 rdfs:label "재검토기한공정거래위원회" .
+orgn:o61e432500aee56b6 reg:mentionedIn doc:d326ab47635885130 .
+orgn:o61e432500aee56b6 reg:mentionedIn doc:d7ce9ff8d6bc95432 .
+orgn:o61e432500aee56b6 reg:mentionedIn doc:d97bc9c6bf2e65616 .
+orgn:o61e432500aee56b6 dct:identifier "d326ab47635885130#0000" .
+orgn:o61e432500aee56b6 dct:identifier "d7ce9ff8d6bc95432#0000" .
+orgn:o61e432500aee56b6 dct:identifier "d97bc9c6bf2e65616#0000" .
+orgn:o58cda5ec601d581b rdf:type org:Organization .
+orgn:o58cda5ec601d581b rdfs:label "재산처장의허가를얻어그심의위원회" .
+orgn:o58cda5ec601d581b reg:mentionedIn doc:d0e8bc5e356e85e90 .
+orgn:o58cda5ec601d581b dct:identifier "d0e8bc5e356e85e90#0009" .
 orgn:o0e17ca83c6195337 rdf:type org:Organization .
 orgn:o0e17ca83c6195337 rdfs:label "재정운영위원회" .
 orgn:o0e17ca83c6195337 reg:mentionedIn doc:d56f5b74f098f5f60 .
@@ -49396,6 +48886,11 @@ orgn:o28250add96e356a0 reg:establishedBy doc:d4f55afa4d4ed5f4a .
 orgn:o28250add96e356a0 dct:identifier "d4f55afa4d4ed5f4a#0018" .
 orgn:o28250add96e356a0 dct:identifier "d9f6179a71eb958fa#0020" .
 orgn:o28250add96e356a0 dct:identifier "d9f6179a71eb958fa#0029" .
+orgn:o5e6eac78794551d2 rdf:type org:Organization .
+orgn:o5e6eac78794551d2 rdfs:label "전문가로종합심사위원회와전문분과위원회" .
+orgn:o5e6eac78794551d2 reg:mentionedIn doc:d35b3a613ff325036 .
+orgn:o5e6eac78794551d2 reg:establishedBy doc:d35b3a613ff325036 .
+orgn:o5e6eac78794551d2 dct:identifier "d35b3a613ff325036#0003" .
 orgn:od793dca9a0d3555c rdf:type org:Organization .
 orgn:od793dca9a0d3555c rdfs:label "전문평가위원회" .
 orgn:od793dca9a0d3555c reg:mentionedIn doc:d9f6179a71eb958fa .
@@ -49405,6 +48900,10 @@ orgn:od793dca9a0d3555c dct:identifier "d9f6179a71eb958fa#0020" .
 orgn:od793dca9a0d3555c dct:identifier "d9f6179a71eb958fa#0025" .
 orgn:od793dca9a0d3555c dct:identifier "d9f6179a71eb958fa#0027" .
 orgn:od793dca9a0d3555c dct:identifier "d9f6179a71eb958fa#0028" .
+orgn:odfbb7936fb0755c7 rdf:type org:Organization .
+orgn:odfbb7936fb0755c7 rdfs:label "전에지정평가위원회" .
+orgn:odfbb7936fb0755c7 reg:mentionedIn doc:d1362a99e0fff5f23 .
+orgn:odfbb7936fb0755c7 dct:identifier "d1362a99e0fff5f23#0027" .
 orgn:o952336dcacc25b86 rdf:type org:Organization .
 orgn:o952336dcacc25b86 rdfs:label "정례금융위원회" .
 orgn:o952336dcacc25b86 reg:mentionedIn doc:da893811cf13a5bc2 .
@@ -49428,6 +48927,10 @@ orgn:oa61d53d4dc295846 rdfs:label "정부위원회" .
 orgn:oa61d53d4dc295846 reg:mentionedIn doc:dc48d0609491c588c .
 orgn:oa61d53d4dc295846 reg:establishedBy doc:dc48d0609491c588c .
 orgn:oa61d53d4dc295846 dct:identifier "dc48d0609491c588c#0066" .
+orgn:oaa8ee39da8745bc8 rdf:type org:Organization .
+orgn:oaa8ee39da8745bc8 rdfs:label "정책대안의결정과집행이사회" .
+orgn:oaa8ee39da8745bc8 reg:mentionedIn doc:d74d56292c8a85930 .
+orgn:oaa8ee39da8745bc8 dct:identifier "d74d56292c8a85930#0041" .
 orgn:odfd97f1ce3165b97 rdf:type org:Organization .
 orgn:odfd97f1ce3165b97 rdfs:label "정책평가위원회" .
 orgn:odfd97f1ce3165b97 reg:mentionedIn doc:d95d2b85f01425a01 .
@@ -49442,6 +48945,10 @@ orgn:odfd97f1ce3165b97 dct:identifier "d95d2b85f01425a01#0006" .
 orgn:odfd97f1ce3165b97 dct:identifier "d95d2b85f01425a01#0007" .
 orgn:odfd97f1ce3165b97 dct:identifier "d95d2b85f01425a01#0008" .
 orgn:odfd97f1ce3165b97 dct:identifier "d95d2b85f01425a01#0010" .
+orgn:o88c61ba8c20c5cca rdf:type org:Organization .
+orgn:o88c61ba8c20c5cca rdfs:label "정할때는공정거래위원회" .
+orgn:o88c61ba8c20c5cca reg:mentionedIn doc:ded052b803aa051a8 .
+orgn:o88c61ba8c20c5cca dct:identifier "ded052b803aa051a8#0269" .
 orgn:o992bea2b7e8e5a1d rdf:type org:Organization .
 orgn:o992bea2b7e8e5a1d rdfs:label "제도개선협의회" .
 orgn:o992bea2b7e8e5a1d reg:mentionedIn doc:dc48d0609491c588c .
@@ -49504,6 +49011,10 @@ orgn:o27ba688f888a545d reg:mentionedIn doc:d59c1f4f3cd8a543b .
 orgn:o27ba688f888a545d reg:establishedBy doc:d59c1f4f3cd8a543b .
 orgn:o27ba688f888a545d dct:identifier "d59c1f4f3cd8a543b#0018" .
 orgn:o27ba688f888a545d dct:identifier "df2f9e29a03765444#0028" .
+orgn:o4158d06b50e151b5 rdf:type org:Organization .
+orgn:o4158d06b50e151b5 rdfs:label "종합심사위원회의의사결정은각종합심사위원회" .
+orgn:o4158d06b50e151b5 reg:mentionedIn doc:d35b3a613ff325036 .
+orgn:o4158d06b50e151b5 dct:identifier "d35b3a613ff325036#0021" .
 orgn:o0a91f54f1bd653b0 rdf:type org:Organization .
 orgn:o0a91f54f1bd653b0 rdfs:label "중앙노동위원회" .
 orgn:o0a91f54f1bd653b0 reg:mentionedIn doc:ddbd71458d6185e2f .
@@ -49726,6 +49237,10 @@ orgn:o2fd6856a1a2555f6 rdfs:label "채권은행협의회" .
 orgn:o2fd6856a1a2555f6 reg:mentionedIn doc:dfd754406410e5017 .
 orgn:o2fd6856a1a2555f6 reg:establishedBy doc:dfd754406410e5017 .
 orgn:o2fd6856a1a2555f6 dct:identifier "dfd754406410e5017#0052" .
+orgn:o6c7bb9e5440e535b rdf:type org:Organization .
+orgn:o6c7bb9e5440e535b rdfs:label "책임회피성위원회" .
+orgn:o6c7bb9e5440e535b reg:mentionedIn doc:dc48d0609491c588c .
+orgn:o6c7bb9e5440e535b dct:identifier "dc48d0609491c588c#0066" .
 orgn:o027f0ddf196d5636 rdf:type org:Organization .
 orgn:o027f0ddf196d5636 rdfs:label "첨단전략산업기금운용심의회" .
 orgn:o027f0ddf196d5636 reg:mentionedIn doc:d43f438f8a14450c0 .
@@ -49738,10 +49253,26 @@ orgn:o027f0ddf196d5636 dct:identifier "d43f438f8a14450c0#0016" .
 orgn:o027f0ddf196d5636 dct:identifier "d43f438f8a14450c0#0036" .
 orgn:o027f0ddf196d5636 dct:identifier "d43f438f8a14450c0#0037" .
 orgn:o027f0ddf196d5636 dct:identifier "d43f438f8a14450c0#0038" .
+orgn:o7e9908278c8e5aa5 rdf:type org:Organization .
+orgn:o7e9908278c8e5aa5 rdfs:label "청을받았으면위원회" .
+orgn:o7e9908278c8e5aa5 reg:mentionedIn doc:dc7a94480a96a581d .
+orgn:o7e9908278c8e5aa5 dct:identifier "dc7a94480a96a581d#0076" .
+orgn:o536d1e009d595326 rdf:type org:Organization .
+orgn:o536d1e009d595326 rdfs:label "체정기회의에광역경제권별산학협력총괄협의회" .
+orgn:o536d1e009d595326 reg:mentionedIn doc:d694bf9e2f6b75f8d .
+orgn:o536d1e009d595326 dct:identifier "d694bf9e2f6b75f8d#0008" .
 orgn:ofab47099d7fa5889 rdf:type org:Organization .
 orgn:ofab47099d7fa5889 rdfs:label "최저임금위원회" .
 orgn:ofab47099d7fa5889 reg:mentionedIn doc:ddbd71458d6185e2f .
 orgn:ofab47099d7fa5889 dct:identifier "ddbd71458d6185e2f#0002" .
+orgn:o4b2736ea38af535d rdf:type org:Organization .
+orgn:o4b2736ea38af535d rdfs:label "타전문기관의장이연구장비도입심사평가위원회" .
+orgn:o4b2736ea38af535d reg:mentionedIn doc:dfd754406410e5017 .
+orgn:o4b2736ea38af535d dct:identifier "dfd754406410e5017#0083" .
+orgn:o2af393801b9b5f6b rdf:type org:Organization .
+orgn:o2af393801b9b5f6b rdfs:label "토와건축위원회" .
+orgn:o2af393801b9b5f6b reg:mentionedIn doc:ddf3179ba43ff56d7 .
+orgn:o2af393801b9b5f6b dct:identifier "ddf3179ba43ff56d7#0017" .
 orgn:o82c9516016545a67 rdf:type org:Organization .
 orgn:o82c9516016545a67 rdfs:label "투자심의위원회" .
 orgn:o82c9516016545a67 reg:mentionedIn doc:d94e1e66f62155fe0 .
@@ -49756,14 +49287,34 @@ orgn:o395c9fc910e65653 rdfs:label "평가기관운영위원회" .
 orgn:o395c9fc910e65653 reg:mentionedIn doc:d46ea81196fe25903 .
 orgn:o395c9fc910e65653 reg:establishedBy doc:d46ea81196fe25903 .
 orgn:o395c9fc910e65653 dct:identifier "d46ea81196fe25903#0011" .
+orgn:o5a69b8fb76365f92 rdf:type org:Organization .
+orgn:o5a69b8fb76365f92 rdfs:label "평가에참석한전문분과위원회" .
+orgn:o5a69b8fb76365f92 reg:mentionedIn doc:d9f0d2c8484015930 .
+orgn:o5a69b8fb76365f92 reg:mentionedIn doc:d45c9c1bb46395208 .
+orgn:o5a69b8fb76365f92 dct:identifier "d45c9c1bb46395208#0014" .
+orgn:o5a69b8fb76365f92 dct:identifier "d9f0d2c8484015930#0017" .
+orgn:ofeba5f1f07a3585c rdf:type org:Organization .
+orgn:ofeba5f1f07a3585c rdfs:label "평가에참석한종합심사위원회" .
+orgn:ofeba5f1f07a3585c reg:mentionedIn doc:d9f0d2c8484015930 .
+orgn:ofeba5f1f07a3585c reg:mentionedIn doc:d45c9c1bb46395208 .
+orgn:ofeba5f1f07a3585c dct:identifier "d45c9c1bb46395208#0017" .
+orgn:ofeba5f1f07a3585c dct:identifier "d9f0d2c8484015930#0020" .
 orgn:od171db443f3c50f6 rdf:type org:Organization .
 orgn:od171db443f3c50f6 rdfs:label "평가자문위원회" .
 orgn:od171db443f3c50f6 reg:mentionedIn doc:dc48d0609491c588c .
 orgn:od171db443f3c50f6 dct:identifier "dc48d0609491c588c#0040" .
+orgn:of2949a0d01115794 rdf:type org:Organization .
+orgn:of2949a0d01115794 rdfs:label "폐지를심의회" .
+orgn:of2949a0d01115794 reg:mentionedIn doc:da6c852b48b9d54c6 .
+orgn:of2949a0d01115794 dct:identifier "da6c852b48b9d54c6#0022" .
 orgn:o86379723156e547c rdf:type org:Organization .
 orgn:o86379723156e547c rdfs:label "포상심의위원회" .
 orgn:o86379723156e547c reg:mentionedIn doc:da893811cf13a5bc2 .
 orgn:o86379723156e547c dct:identifier "da893811cf13a5bc2#0034" .
+orgn:o8a305e146b3e5ee1 rdf:type org:Organization .
+orgn:o8a305e146b3e5ee1 rdfs:label "표할수있는자를종합심사위원회" .
+orgn:o8a305e146b3e5ee1 reg:mentionedIn doc:df710b437395e5053 .
+orgn:o8a305e146b3e5ee1 dct:identifier "df710b437395e5053#0021" .
 orgn:obffc36ae67e95f02 rdf:type org:Organization .
 orgn:obffc36ae67e95f02 rdfs:label "한국대학교육협의회" .
 orgn:obffc36ae67e95f02 reg:mentionedIn doc:d88f81ccb617b5bde .
@@ -49815,11 +49366,31 @@ orgn:o6e5092913ae15080 reg:mentionedIn doc:d59f0b4ca18f45023 .
 orgn:o6e5092913ae15080 reg:establishedBy doc:d59f0b4ca18f45023 .
 orgn:o6e5092913ae15080 dct:identifier "d59f0b4ca18f45023#0000" .
 orgn:o6e5092913ae15080 dct:identifier "d59f0b4ca18f45023#0001" .
+orgn:o1f0a4887eba25d2a rdf:type org:Organization .
+orgn:o1f0a4887eba25d2a rdfs:label "행한평가위원회" .
+orgn:o1f0a4887eba25d2a reg:mentionedIn doc:d5d939906f81a5c02 .
+orgn:o1f0a4887eba25d2a dct:identifier "d5d939906f81a5c02#0101" .
+orgn:o885e3e74bd6e5d5f rdf:type org:Organization .
+orgn:o885e3e74bd6e5d5f rdfs:label "현장심사결과지정심의위원회" .
+orgn:o885e3e74bd6e5d5f reg:mentionedIn doc:d1362a99e0fff5f23 .
+orgn:o885e3e74bd6e5d5f dct:identifier "d1362a99e0fff5f23#0027" .
+orgn:oa190ea58b25b5b31 rdf:type org:Organization .
+orgn:oa190ea58b25b5b31 rdfs:label "현장심사결과현장심사위원회" .
+orgn:oa190ea58b25b5b31 reg:mentionedIn doc:df710b437395e5053 .
+orgn:oa190ea58b25b5b31 dct:identifier "df710b437395e5053#0020" .
 orgn:oddcdb7fa55c95f57 rdf:type org:Organization .
 orgn:oddcdb7fa55c95f57 rdfs:label "협력개발지원사업심의위원회" .
 orgn:oddcdb7fa55c95f57 reg:mentionedIn doc:d90958738218a59d2 .
 orgn:oddcdb7fa55c95f57 reg:establishedBy doc:d90958738218a59d2 .
 orgn:oddcdb7fa55c95f57 dct:identifier "d90958738218a59d2#0031" .
+orgn:o6e504459cb75527a rdf:type org:Organization .
+orgn:o6e504459cb75527a rdfs:label "협의부진시입법정책협의회" .
+orgn:o6e504459cb75527a reg:mentionedIn doc:dc48d0609491c588c .
+orgn:o6e504459cb75527a dct:identifier "dc48d0609491c588c#0050" .
+orgn:o3e84db2d1eac5bb3 rdf:type org:Organization .
+orgn:o3e84db2d1eac5bb3 rdfs:label "협회는의견조정심의위원회" .
+orgn:o3e84db2d1eac5bb3 reg:mentionedIn doc:df710b437395e5053 .
+orgn:o3e84db2d1eac5bb3 dct:identifier "df710b437395e5053#0021" .
 orgn:o230dff3ea7c45f8f rdf:type org:Organization .
 orgn:o230dff3ea7c45f8f rdfs:label "휴면예금관리위원회" .
 orgn:o230dff3ea7c45f8f reg:mentionedIn doc:d8f024651ee765b43 .
@@ -49830,279 +49401,89 @@ orgn:o230dff3ea7c45f8f dct:identifier "d552efa17279f54b3#0016" .
 orgn:o230dff3ea7c45f8f dct:identifier "d8f024651ee765b43#0006" .
 orgn:o230dff3ea7c45f8f dct:identifier "d8f024651ee765b43#0019" .
 term:t0009e0103a06504f dct:identifier "d9eb2a40b4bd956ed#0001" .
-term:t0009e0103a06504f dct:identifier "df710b437395e5053#0005" .
-term:t0071b3bd11d25bc5 dct:identifier "da717ef86df115496#0004" .
-term:t00bad6fed0b45fbe dct:identifier "dda32fb3872415d73#0005" .
-term:t01245a97de675855 dct:identifier "dae789c70c42a5350#0003" .
-term:t026b8a0be81858e9 dct:identifier "d3d3af491619f5696#0005" .
-term:t0359c5b919175139 dct:identifier "dc4a48081b69d5157#0004" .
-term:t03fd175f743355d8 dct:identifier "d9e7d294a66c45bad#0003" .
-term:t073e9752f512580f dct:identifier "d1febaaa5777851e9#0002" .
-term:t099e178a90aa5b61 dct:identifier "d4f55afa4d4ed5f4a#0009" .
-term:t0b33f79ed19556da dct:identifier "d45c9c1bb46395208#0003" .
-term:t0b33f79ed19556da dct:identifier "d9f0d2c8484015930#0003" .
-term:t0f85fea162a4584e dct:identifier "d94c8b1da70cf55c4#0003" .
 term:t12b30c9408ed5e4a dct:identifier "d5941e7e3add1523f#0001" .
-term:t130376aedfe15cd7 dct:identifier "dc700f9991ed35d7c#0006" .
-term:t16685235a67c516a dct:identifier "df710b437395e5053#0007" .
-term:t16b8f00da14b5d48 dct:identifier "d94c8b1da70cf55c4#0001" .
 term:t17ec0a2beb905941 dct:identifier "d13f4bd8a00e65a81#0001" .
-term:t19b526485e845c44 dct:identifier "dff81314f8ac15970#0030" .
-term:t1a1900e16b9e53f2 dct:identifier "d45c9c1bb46395208#0004" .
-term:t1abe4c468a255843 dct:identifier "d285e2dac282a5e31#0002" .
 term:t1c498e5f08025857 dct:identifier "d13985f2074c153eb#0001" .
 term:t1e2c6657463c534a dct:identifier "d64cbffb7cd705b49#0001" .
-term:t1e6af85392225628 dct:identifier "d6adb4fe6b2465318#0023" .
-term:t1e99d1f152185521 dct:identifier "dea3410394b49574d#0017" .
 term:t1f465a194c6a5af9 dct:identifier "d12bb186696a05899#0001" .
-term:t200286e323f85071 dct:identifier "df710b437395e5053#0002" .
-term:t205752b7c6b156d1 dct:identifier "d8278a41510935356#0017" .
-term:t209892fef351528b dct:identifier "dea3410394b49574d#0015" .
-term:t20caeef8972e55ec dct:identifier "d397b5bf2fceb5810#0001" .
 term:t218bdbcc2ec55148 dct:identifier "da8ce6944ffa45c34#0001" .
-term:t234c1519398e5d5e dct:identifier "dda32fb3872415d73#0001" .
-term:t25199145194851a4 dct:identifier "da717ef86df115496#0007" .
-term:t26d8ef526c6b55ba dct:identifier "ddf3179ba43ff56d7#0007" .
 term:t26dcf01423f05ab0 dct:identifier "d46906f613c285676#0001" .
 term:t28ac27b8ba3650fc dct:identifier "d338cefe14f78534b#0001" .
 term:t29db86a96bdf5515 dct:identifier "dc5066ddc3a9d50ce#0001" .
-term:t29f1e4573b5f5155 dct:identifier "ddf3179ba43ff56d7#0010" .
-term:t2a1fa6139c9a593c dct:identifier "dbbbbd065a2ac58f0#0003" .
-term:t2b02dce18f8a5a9b dct:identifier "da7f9801963315b32#0006" .
-term:t2b2b6c61ebdf5762 dct:identifier "d3d3af491619f5696#0003" .
-term:t2b2b6c61ebdf5762 dct:identifier "da717ef86df115496#0006" .
-term:t2b2b6c61ebdf5762 dct:identifier "dae789c70c42a5350#0002" .
 term:t2c24d534970e5077 dct:identifier "d8f024651ee765b43#0001" .
 term:t2c24d534970e5077 dct:identifier "dcdc110e61a9d569f#0001" .
 term:t2c24d534970e5077 dct:identifier "dce2112bb50695abe#0001" .
 term:t2d360e56ec0651a3 dct:identifier "dee4eff662ea25b70#0002" .
 term:t2e9da8a9991e5032 dct:identifier "df2f9e29a03765444#0001" .
-term:t30fcd9da728354af dct:identifier "d0886601ed8985672#0005" .
-term:t31b60dd30e1758c0 dct:identifier "d3d3af491619f5696#0011" .
-term:t3299228e892f5e41 dct:identifier "d397b5bf2fceb5810#0008" .
-term:t32af5cf82c855d31 dct:identifier "d6adb4fe6b2465318#0042" .
-term:t338d709b83bf5b67 dct:identifier "d6adb4fe6b2465318#0031" .
-term:t3869ba1ab4db5936 dct:identifier "dea3410394b49574d#0011" .
 term:t38c0deb5bcad5161 dct:identifier "dcb7656ba2a0851f3#0001" .
-term:t3a2c152fad40539c dct:identifier "dc6e17351df6450fd#0010" .
-term:t3b7b5b5e15665c2a dct:identifier "ddf3179ba43ff56d7#0009" .
 term:t3cd741bbd9085fb4 dct:identifier "d0c5fc4d348c5572d#0002" .
-term:t3f11be74282d5cba dct:identifier "ddf3179ba43ff56d7#0002" .
-term:t3f1dc3957e3d5d75 dct:identifier "d6adb4fe6b2465318#0038" .
-term:t3ff53555aebf5ae9 dct:identifier "d6adb4fe6b2465318#0022" .
-term:t40eed5b5d50e5fa6 dct:identifier "dc700f9991ed35d7c#0010" .
-term:t415eb342358b5aaf dct:identifier "d94c8b1da70cf55c4#0002" .
-term:t41b655a445f255eb dct:identifier "d6adb4fe6b2465318#0032" .
-term:t41e44e581a865041 dct:identifier "d0886601ed8985672#0002" .
-term:t41f256ca2d135385 dct:identifier "ddf3179ba43ff56d7#0011" .
-term:t431ceed9b9255291 dct:identifier "dda32fb3872415d73#0003" .
-term:t435657282aa25e1b dct:identifier "dbbbbd065a2ac58f0#0002" .
 term:t44761ce8c40f5e8d dct:identifier "db00648fd034b5d14#0002" .
-term:t4785be945ca85867 dct:identifier "dea3410394b49574d#0008" .
-term:t48757ca3ca4a55d7 dct:identifier "da7f9801963315b32#0005" .
-term:t4899606d38f458ac dct:identifier "d6adb4fe6b2465318#0021" .
 term:t4a7e5cc302cb56bf dct:identifier "de5f8edd7e10354f5#0001" .
-term:t4a9f3a0eac4b51f2 dct:identifier "d60e00f6bb33b5cfd#0003" .
-term:t4c1836dbc7215b2d dct:identifier "df1a42cc50fda571a#0002" .
-term:t4c48058b92ab50c7 dct:identifier "dc4a48081b69d5157#0006" .
 term:t4e976659b2d35033 dct:identifier "d78a06d62ad265113#0001" .
-term:t4ee22cd403a65a15 dct:identifier "d397b5bf2fceb5810#0007" .
-term:t4f1d733bf22a5eb4 dct:identifier "d3d3af491619f5696#0002" .
 term:t508e58eee6595fa5 dct:identifier "de1472e465b625a1b#0001" .
-term:t5319be6356be5daa dct:identifier "ddf3179ba43ff56d7#0004" .
 term:t54dcebc7aaae5e6a dct:identifier "de6440737db1954b5#0001" .
-term:t5509c800494152ba dct:identifier "dff81314f8ac15970#0016" .
 term:t5605f899da105954 dct:identifier "d69bbc1af106c555b#0002" .
-term:t5723012568545a71 dct:identifier "d6adb4fe6b2465318#0018" .
 term:t5760ef7f72765150 dct:identifier "d965e09ca447f5bc8#0001" .
 term:t57c5746900a25414 dct:identifier "d20af5e6245b65111#0005" .
 term:t59adfd61d0a95a26 dct:identifier "dd01d77b0ef345c05#0001" .
 term:t5afacfbedec25271 dct:identifier "db00648fd034b5d14#0004" .
-term:t5b047005c0fc534a dct:identifier "d397b5bf2fceb5810#0003" .
 term:t5bb16e94b7aa5bbc dct:identifier "d3a91ed3c0f655036#0002" .
-term:t5db516f70f235882 dct:identifier "d23d391a68e9056c7#0003" .
-term:t5e145f16aa4b5726 dct:identifier "da717ef86df115496#0010" .
-term:t5e898079cec75ded dct:identifier "d1febaaa5777851e9#0004" .
-term:t607d1dd3c02b52db dct:identifier "d3d3af491619f5696#0010" .
 term:t607d1dd3c02b52db dct:identifier "d9009f47312e755fd#0001" .
 term:t607d1dd3c02b52db dct:identifier "dc3fd8d2977445958#0001" .
-term:t607d1dd3c02b52db dct:identifier "dea3410394b49574d#0007" .
-term:t611e030ee3f152ff dct:identifier "dda32fb3872415d73#0002" .
-term:t620cc4fac03d5884 dct:identifier "df1a42cc50fda571a#0006" .
 term:t62656ff40fbc5cc2 dct:identifier "dc1995e50a6b350d1#0005" .
 term:t652c171326c3552b dct:identifier "de6b2201bb5e85720#0001" .
 term:t655389cb42cf5201 dct:identifier "dd1cabd328878512b#0001" .
 term:t65ad46072dae5fa5 dct:identifier "dcafce347569557fe#0002" .
-term:t660c1196d49651ba dct:identifier "dbbbbd065a2ac58f0#0005" .
-term:t68b625139800552b dct:identifier "d4f55afa4d4ed5f4a#0007" .
 term:t69cafb7fc60e5a53 dct:identifier "d569000e538905840#0001" .
-term:t6a01966cd45b502f dct:identifier "d87cbab4f44fd515e#0002" .
-term:t6a13ad46dbee58e5 dct:identifier "d6adb4fe6b2465318#0035" .
-term:t6a32ef3a8b595559 dct:identifier "df1a42cc50fda571a#0007" .
-term:t6a48b056fa7a5ea8 dct:identifier "dd0c5de1fd0ee5ef3#0006" .
 term:t6d7ddaffc1b85b30 dct:identifier "df4ef8859d7be583f#0001" .
-term:t6dfb5875290e5abb dct:identifier "dc17e34fd39ca5c4a#0001" .
-term:t6e84280e39d556b2 dct:identifier "d098ecf8c36aa5388#0003" .
 term:t6f3a21a21f705c69 dct:identifier "d16c93254898d5e72#0001" .
-term:t6fc6aae5620857d8 dct:identifier "d77a526b882b45772#0002" .
-term:t6fc6aae5620857d8 dct:identifier "dc700f9991ed35d7c#0002" .
-term:t704afefe8bd15630 dct:identifier "da717ef86df115496#0008" .
 term:t70fbf9dfffe9577f dct:identifier "d5568021bd092541e#0002" .
-term:t72627f776f5b5ffb dct:identifier "df1a42cc50fda571a#0003" .
-term:t729276edeb075435 dct:identifier "d6adb4fe6b2465318#0039" .
-term:t73e33bbca46c5666 dct:identifier "dd0c5de1fd0ee5ef3#0005" .
-term:t74999f713a3a5c89 dct:identifier "d0886601ed8985672#0006" .
-term:t778a2d665aa956ce dct:identifier "df1a42cc50fda571a#0008" .
 term:t7793165150825cd0 dct:identifier "df436c53c02c854ec#0001" .
 term:t7793ac4387d15ce0 dct:identifier "d7a10d1a91abe5d05#0002" .
-term:t78de91c8985057fa dct:identifier "df1a42cc50fda571a#0050" .
 term:t79170bd8eef75f8f dct:identifier "df217d91e3c03516b#0001" .
-term:t797b1612f532575d dct:identifier "d6adb4fe6b2465318#0027" .
-term:t79bc6376afb45942 dct:identifier "dc4a48081b69d5157#0005" .
-term:t7ae06479a13d52e4 dct:identifier "d285e2dac282a5e31#0004" .
 term:t7b4b484d36b859bf dct:identifier "dcbdfa3dee63a5aba#0002" .
-term:t7b5f94104b8e5bc2 dct:identifier "dd0c5de1fd0ee5ef3#0009" .
 term:t7d50296d6ce85b75 dct:identifier "daee3fda9fd755648#0001" .
-term:t7e0dd07242eb5cc4 dct:identifier "dc4a48081b69d5157#0002" .
 term:t7eadc44737745f07 dct:identifier "d5f6f83ba24b15430#0001" .
-term:t8111b00b2a2b514d dct:identifier "dc700f9991ed35d7c#0009" .
 term:t812ed0adb4725a95 dct:identifier "df5abe11a7d2e501f#0001" .
-term:t815e86e66b275259 dct:identifier "d45c9c1bb46395208#0002" .
 term:t8233d521b5bc5e48 dct:identifier "d455ddd1e267d5ec3#0001" .
 term:t841c33aac95c50c9 dct:identifier "dcbf556855c565216#0001" .
 term:t84675a589b7357cf dct:identifier "d6848a68e5b4459be#0001" .
-term:t84f42906aafe5730 dct:identifier "d6adb4fe6b2465318#0015" .
-term:t8527af74f85353a2 dct:identifier "dc6e17351df6450fd#0008" .
 term:t8652635c33b85926 dct:identifier "d20af5e6245b65111#0006" .
 term:t87aa682473fd5c4b dct:identifier "d56735900707b5552#0001" .
 term:t87aa682473fd5c4b dct:identifier "d8706bb55a2b458b2#0001" .
 term:t87aa682473fd5c4b dct:identifier "da8d10f25d7f05c9f#0001" .
 term:t87aa682473fd5c4b dct:identifier "db8d0fe11be1754a6#0001" .
-term:t87dc16b0ec1c5eb8 dct:identifier "db8097edaff625e19#0002" .
-term:t87dc16b0ec1c5eb8 dct:identifier "dea3410394b49574d#0004" .
-term:t890e33ee678854d1 dct:identifier "df1a42cc50fda571a#0011" .
-term:t899713c4a1045c18 dct:identifier "dc4a48081b69d5157#0001" .
-term:t89a9fc90e81e5a1b dct:identifier "d397b5bf2fceb5810#0004" .
-term:t8b9acf7e7f72545f dct:identifier "ddf3179ba43ff56d7#0005" .
 term:t8c81903db5275d04 dct:identifier "d6ea45b4c4fa453c8#0001" .
-term:t8c81c96f890b515c dct:identifier "db8097edaff625e19#0001" .
 term:t8cb95ca948765d20 dct:identifier "dd9769048705b54a1#0001" .
-term:t8d7ecbc490d055ed dct:identifier "d45c9c1bb46395208#0001" .
 term:t8d7ecbc490d055ed dct:identifier "d9d4cd34af7d65b9d#0001" .
 term:t8e54d39239045b6e dct:identifier "dc2b4f7938d135d43#0001" .
 term:t9004043ba93b5b67 dct:identifier "d16fc073e200051f1#0001" .
 term:t90144d3a5ca15236 dct:identifier "d96c5a1570d8358dc#0001" .
-term:t9069fca9f11752c5 dct:identifier "d4c64db9b0da65cb4#0005" .
 term:t925f4ce18acd5f9b dct:identifier "d79375cb3ab675c53#0001" .
-term:t930f0bb24a915acf dct:identifier "d6adb4fe6b2465318#0024" .
 term:t93274473afba5fd2 dct:identifier "da8941b07d0e75dc6#0001" .
 term:t9367067b04335df5 dct:identifier "d54b487a7d73b5272#0001" .
-term:t9384f18151195cea dct:identifier "d23d391a68e9056c7#0002" .
-term:t93d2a2cc7eb650a4 dct:identifier "d60e00f6bb33b5cfd#0001" .
-term:t960c753bca9252a6 dct:identifier "d3d3af491619f5696#0009" .
-term:t9637f48b2e0c501f dct:identifier "df1a42cc50fda571a#0001" .
-term:t96a17db92ffd524b dct:identifier "ddf3179ba43ff56d7#0012" .
 term:t980b2851299c5aac dct:identifier "d2a163d7bd6405414#0001" .
-term:t981940b9d2b0553a dct:identifier "d9e7d294a66c45bad#0006" .
-term:t9eae98cda8955891 dct:identifier "d45c9c1bb46395208#0005" .
-term:ta2e35a53b120512d dct:identifier "d4f55afa4d4ed5f4a#0008" .
-term:ta381b5ae685f5113 dct:identifier "d0886601ed8985672#0004" .
-term:ta44b25493ba95731 dct:identifier "d6adb4fe6b2465318#0028" .
-term:ta4686123ac925f08 dct:identifier "d6adb4fe6b2465318#0019" .
-term:ta4dc3efdea8250ae dct:identifier "dff81314f8ac15970#0013" .
-term:ta50445754e335ad1 dct:identifier "d79430e64f5745d29#0016" .
-term:ta50445754e335ad1 dct:identifier "d87a77ec202975635#0016" .
-term:ta50445754e335ad1 dct:identifier "ded02a0b750ba514e#0016" .
-term:ta558a1e7d1345558 dct:identifier "d87cbab4f44fd515e#0001" .
-term:ta5ffd65aabf65ef3 dct:identifier "d397b5bf2fceb5810#0002" .
-term:ta75b88a4070d5cb0 dct:identifier "dc700f9991ed35d7c#0003" .
 term:ta767b7faae23554b dct:identifier "dd5f5479d628f5f1e#0001" .
-term:ta85f50ef37e05439 dct:identifier "dbbbbd065a2ac58f0#0006" .
-term:ta94f84f565cd5199 dct:identifier "df710b437395e5053#0006" .
-term:ta97e2b71919056cb dct:identifier "dff81314f8ac15970#0046" .
-term:taa909dbe524f5ff0 dct:identifier "dea3410394b49574d#0005" .
-term:tab26f62c461e5e65 dct:identifier "d4f55afa4d4ed5f4a#0010" .
-term:tab313a508a0152b0 dct:identifier "ddf3179ba43ff56d7#0008" .
-term:tab92fbb984a75855 dct:identifier "df1a42cc50fda571a#0004" .
-term:tac7fe73e8fda504a dct:identifier "d6adb4fe6b2465318#0016" .
-term:tacf89a2466035067 dct:identifier "d0886601ed8985672#0003" .
-term:tae8cef2fd7ea5b6c dct:identifier "d1febaaa5777851e9#0007" .
-term:taf1bf464bbc45343 dct:identifier "dd0c5de1fd0ee5ef3#0007" .
 term:tb56bd3d8cecb50fa dct:identifier "d35858849db3c5d85#0001" .
-term:tb658c3a73eec5447 dct:identifier "dc6e17351df6450fd#0005" .
-term:tb65d2545d6595f01 dct:identifier "d6adb4fe6b2465318#0037" .
 term:tb80a21f680395d2e dct:identifier "df88c105756185ea8#0001" .
 term:tb93cd24c68885fed dct:identifier "dd683c02f3b41503e#0001" .
-term:tb9a6d1e18d0a578a dct:identifier "dea3410394b49574d#0014" .
-term:tba8b848c415f5811 dct:identifier "df1a42cc50fda571a#0009" .
-term:tbac1fe4aca8354f8 dct:identifier "d098ecf8c36aa5388#0002" .
-term:tbe0fcad54aff5984 dct:identifier "dc17e34fd39ca5c4a#0004" .
 term:tbe75f4bee5b856ab dct:identifier "dcc49a5123cc655f1#0002" .
-term:tbee2eec62baa5dc5 dct:identifier "dea3410394b49574d#0009" .
-term:tc0a3c9a600a753bb dct:identifier "d397b5bf2fceb5810#0006" .
-term:tc0c758b459ff52b3 dct:identifier "d8278a41510935356#0022" .
-term:tc12b4a8387ed579e dct:identifier "df1a42cc50fda571a#0010" .
-term:tc2f80de3b3bf5304 dct:identifier "d1febaaa5777851e9#0003" .
-term:tc2f89072ad8159c2 dct:identifier "d397b5bf2fceb5810#0005" .
 term:tc39a0136489e501f dct:identifier "d00cb54b8ab9659e4#0008" .
-term:tc48d0609491c588c dct:identifier "dc48d0609491c588c#0058" .
-term:tc50f912447e656e1 dct:identifier "df1a42cc50fda571a#0049" .
 term:tc68e6b766265526d dct:identifier "d82f081a7aec3519e#0001" .
 term:tc72df4bb98f65d01 dct:identifier "de44f2c22c394540e#0002" .
-term:tc752b99776705fea dct:identifier "dbbbbd065a2ac58f0#0004" .
-term:tca3806b101a95c2c dct:identifier "dda32fb3872415d73#0006" .
-term:tcb09b7bae5105b79 dct:identifier "dae789c70c42a5350#0001" .
 term:tcbc5a41d9d565ee7 dct:identifier "d88f81ccb617b5bde#0001" .
-term:tcd29c551c3e458f8 dct:identifier "dd0c5de1fd0ee5ef3#0002" .
-term:tcefa7fa0de585ae2 dct:identifier "d60e00f6bb33b5cfd#0002" .
-term:tcfa7320bd758528d dct:identifier "dd0c5de1fd0ee5ef3#0003" .
-term:tcfba74fa9261561c dct:identifier "da7f9801963315b32#0008" .
-term:tcfbb9aa45415553f dct:identifier "dc17e34fd39ca5c4a#0003" .
-term:td1d86da613855ae9 dct:identifier "d1febaaa5777851e9#0005" .
-term:td33a8a3cb51853ad dct:identifier "dff81314f8ac15970#0079" .
-term:td3458e178e3a54ff dct:identifier "dd0c5de1fd0ee5ef3#0008" .
-term:td3458e178e3a54ff dct:identifier "dea3410394b49574d#0010" .
 term:td44ecde827525620 dct:identifier "da4b77edb39165b3d#0001" .
 term:td815aa82c8535c65 dct:identifier "d72625254530456a4#0001" .
-term:td89da498d9cd5c70 dct:identifier "dc700f9991ed35d7c#0008" .
-term:tde73e3e8831e5534 dct:identifier "dea3410394b49574d#0013" .
-term:te166939a97e35bdc dct:identifier "df1a42cc50fda571a#0005" .
 term:te1f84e41b17c51ce dct:identifier "d4d0771434f2b5fb9#0001" .
 term:te1f84e41b17c51ce dct:identifier "d7acc831c4bc35ba2#0001" .
 term:te1f84e41b17c51ce dct:identifier "de8200151965852f2#0001" .
 term:te388eb42bde9585c dct:identifier "db8d0fe11be1754a6#0011" .
-term:te3bf25748f0c56eb dct:identifier "d6adb4fe6b2465318#0040" .
 term:te46cf486dfde5968 dct:identifier "d93f2dac402a45a50#0001" .
-term:te77d0ec8d6725052 dct:identifier "dc700f9991ed35d7c#0001" .
 term:te8c75a6daae159d0 dct:identifier "d752fd9ac02de5933#0001" .
-term:te8ec33f510dd5ba1 dct:identifier "dd0c5de1fd0ee5ef3#0004" .
-term:te8f830401bf25e75 dct:identifier "ddf3179ba43ff56d7#0003" .
-term:te9bd0406e7145d58 dct:identifier "dda32fb3872415d73#0004" .
-term:tec9f2729c60e5b2c dct:identifier "d9e7d294a66c45bad#0004" .
-term:tec9f2729c60e5b2c dct:identifier "da717ef86df115496#0003" .
-term:tec9f2729c60e5b2c dct:identifier "dae789c70c42a5350#0004" .
-term:tec9f2729c60e5b2c dct:identifier "dc700f9991ed35d7c#0007" .
-term:teda1e5767ee55d2d dct:identifier "da717ef86df115496#0009" .
 term:tee9147acb8605cd6 dct:identifier "d7ec87cec7d755db7#0001" .
 term:tf0130a2258c55d17 dct:identifier "d4c30cef1cf555b62#0001" .
-term:tf1622eadfc565fc6 dct:identifier "dbbbbd065a2ac58f0#0007" .
 term:tf40bc79876a7581d dct:identifier "df2a68bf78b5a5f19#0001" .
-term:tf488d4ca291e5dbf dct:identifier "d6adb4fe6b2465318#0020" .
-term:tf6c63d8814a75609 dct:identifier "da717ef86df115496#0005" .
-term:tf6c63d8814a75609 dct:identifier "dc700f9991ed35d7c#0004" .
-term:tf7325a9fe99357a2 dct:identifier "d4f55afa4d4ed5f4a#0006" .
-term:tf7d7c8e19c085cbd dct:identifier "dc4a48081b69d5157#0003" .
-term:tf9d1233b1bb35879 dct:identifier "dc17e34fd39ca5c4a#0002" .
-term:tfa09eed474c35636 dct:identifier "dea3410394b49574d#0002" .
 term:tfa226ed687e150f6 dct:identifier "db67881ad16395bcd#0001" .
-term:tfb54f32fb2ae5948 dct:identifier "ddf3179ba43ff56d7#0006" .
-term:tfbba317087ea52e3 dct:identifier "dea3410394b49574d#0012" .
-term:tfc628cb700e5585f dct:identifier "d6adb4fe6b2465318#0041" .
-term:tfd018e36f56a5dbb dct:identifier "d6adb4fe6b2465318#0043" .
-term:tfd53711ff7ae5e35 dct:identifier "d6adb4fe6b2465318#0034" .
-term:tfe3e272764305cd7 dct:identifier "dc700f9991ed35d7c#0005" .
-term:tfe659379f45259bb dct:identifier "df1a42cc50fda571a#0012" .
-term:tfe74363ef25054e6 dct:identifier "d9f0d2c8484015930#0002" .
 doc:d0008f941f0815843 dct:references doc:d038f9ec10ee059dd .
 doc:d0008f941f0815843 dct:references doc:d43f438f8a14450c0 .
 doc:d0008f941f0815843 dct:references doc:dd1cabd328878512b .
@@ -51729,6 +51110,9 @@ doc:d5fabdbf3a1a25189 dct:references doc:d7c77406824025da1 .
 doc:d5ffaf670284a5fdf dct:references doc:ext44964de7cd1b .
 doc:d6024df2d97205b1d dct:references doc:ext532548793dec .
 doc:d6024df2d97205b1d dct:references doc:exted75e8d9d274 .
+doc:d60e00f6bb33b5cfd dct:references doc:ext00c7cd190f93 .
+doc:d60e00f6bb33b5cfd dct:references doc:ext54299aa654c7 .
+doc:d60e00f6bb33b5cfd dct:references doc:ext5e3a0de49ed5 .
 doc:d62cfb3c1af4b5188 dct:references doc:extea1473eaee43 .
 doc:d645a3e1073855532 dct:references doc:ext4ce6caad2724 .
 doc:d645a3e1073855532 dct:references doc:extbf59cdafd9ff .
@@ -52400,9 +51784,6 @@ doc:d8a37086fda185534 dct:references doc:extf030a63c7390 .
 doc:d8a37086fda185534 dct:references doc:extf048ad620b01 .
 doc:d8a37086fda185534 dct:references doc:extf1b6c7dc3a5d .
 doc:d8a37086fda185534 dct:references doc:extfe89ba7ca3aa .
-doc:d8bc09d77c86a588b dct:references doc:ext00c7cd190f93 .
-doc:d8bc09d77c86a588b dct:references doc:ext54299aa654c7 .
-doc:d8bc09d77c86a588b dct:references doc:ext5e3a0de49ed5 .
 doc:d8c6c415363c85b48 dct:references doc:d338cefe14f78534b .
 doc:d8c6c415363c85b48 dct:references doc:d4c30cef1cf555b62 .
 doc:d8c6c415363c85b48 dct:references doc:d4d0771434f2b5fb9 .

@@ -570,7 +570,7 @@ function grp(es,cls){const by={};es.forEach(([p,o])=>{(by[p]=by[p]||[]).push(o);
  return Object.keys(by).map(p=>'<div class=pred>'+esc(p)+' <span class=dist>'+by[p].length+'</span></div>'+by[p].slice(0,200).map(o=>'<span class="chip '+cls+'" data-i="'+esc(o)+'">'+esc(DATA[o]?DATA[o].label:o)+'</span>').join('')).join('');}
 function nshow(i,push){if(push!==false)hist.push(i);const d=DATA[i];
  let h=(hist.length>1?'<span class="pg nav" id=nback>← 뒤로</span> ':'')+'<b style=font-size:15px>'+esc(d.label)+'</b> '+tags(i)+'<div class=dist style=font-size:11px>'+esc(i)+'</div>';
- const ak=Object.keys(d.attrs||{});if(ak.length)h+='<div style=margin-top:6px>'+ak.map(k=>'<div class=row><b style=color:#06a>'+esc(k.split(':').pop())+'</b>: '+(d.attrs[k]||[]).map(esc).join(', ')+'</div>').join('')+'</div>';
+ const ak=Object.keys(d.attrs||{}).filter(k=>k!=='dct:identifier');if(ak.length)  // 청크 링크(내부 키)는 상세에 안 보임h+='<div style=margin-top:6px>'+ak.map(k=>'<div class=row><b style=color:#06a>'+esc(k.split(':').pop())+'</b>: '+(d.attrs[k]||[]).map(esc).join(', ')+'</div>').join('')+'</div>';
  if(d.out.length+d.in.length)h+=ego(i);
  h+='<div style=margin-top:8px><b>→ 나가는 관계 '+d.out.length+'</b>'+(grp(d.out,'')||'<div class=dist>없음</div>')+'</div>';
  h+='<div style=margin-top:8px><b>← 들어오는 관계 '+d.in.length+'</b>'+(grp(d.in,'in')||'<div class=dist>없음</div>')+'</div>';

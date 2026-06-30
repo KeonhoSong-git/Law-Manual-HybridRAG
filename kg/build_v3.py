@@ -113,9 +113,10 @@ def _is_bad_title(t: str) -> bool:
     s = t.strip()
     if _BAD_TITLE.search(s):
         return True
-    # 괄호·문장부호로 시작 → 첫단락 잡문. (숫자 시작은 제외 — '2026년…','1회용…' 등 정상 제목이 많아
+    # 문장부호로 시작 → 첫단락 잡문. (숫자 시작은 제외 — '2026년…','1회용…' 등 정상 제목이 많아
     # 숫자만으로 깨진 제목 판정하면 서로 다른 문서가 파일명 폴백으로 같은 제목에 충돌해 노드가 병합됨.)
-    if re.match(r"""^[(\[{.,·\-–—'"]""", s):
+    # 괄호 '(' 시작도 제외 — '(서해어업관리단)…','(고용노동부)…' 등 부처/지역 접두가 흔한 정상 제목.
+    if re.match(r"""^[.,·\-–—'"]""", s):
         return True
     if len(re.sub(r"\s+", "", s)) < 3:                    # 정규화 3자 미만
         return True
@@ -130,7 +131,7 @@ def _clean_title(title: str, source: str) -> str:
     t = (title or "").strip()
     if not _is_bad_title(t):
         return t
-    stem = re.sub(r"\.(hwpx|HWPX|json)$", "", source or t)
+    stem = re.sub(r"\.(hwpx|HWPX|json|pdf|PDF|txt)$", "", source or t)
     stem = re.sub(r"_?\(?\d{4}[.\-]\s*\d{1,2}[.\-]\s*\d{1,2}\)?", "", stem)  # 완전 날짜 제거
     parts = [p.strip() for p in stem.split("_") if p.strip()]
     # 후보: 해시·부분날짜(괄호/숫자 시작)·일반 토큰 제외
@@ -338,7 +339,9 @@ def build(records: list[dict]) -> tuple[str, dict]:
         # ── 청크 단위 추출(단일 패스) ──────────────────────────────────────────────
         # 정의용어·인용·기관을 **청크별 본문에서 추출하면서 그 자리에서 chunk↔node 링크를 기록**한다.
         # (별도 재스캔 패스 없음 — 추출과 귀속이 한 번에 일어난다.)
-        has_def_article = bool(_DEF_ARTICLE.search(r["text"]))  # 정의조항 보유 문서(문서 단위 게이트)
+        # 정의조항 보유 문서(문서 단위 게이트). 공문체(매뉴얼)는 PDF 띄어쓰기 붕괴로 정의 경계가
+        # 무너져 garbled blob·일반어가 노드화되므로 제외(Lean KG: 공문체=문서·관계 수준만).
+        has_def_article = r["family"] == "법규체" and bool(_DEF_ARTICLE.search(r["text"]))
         for ch_id, ctext in r.get("all_chunks", []):
             if not ctext:
                 continue
