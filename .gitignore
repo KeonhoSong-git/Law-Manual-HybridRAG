@@ -1,0 +1,29 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# 데이터/대용량 산출물 (로컬에서 생성)
+*.jsonl
+*.npy
+*.ttl
+demo/data/*
+# 단, 공개 코퍼스(law.go.kr)로 만든 데모 데이터는 포함 (시크릿·비공개 데이터 없음)
+!demo/data/kg.ttl
+!demo/data/vectors.npy
+!demo/data/vectors.meta.jsonl
+
+# os/ide
+.DS_Store
+.idea/
+.vscode/
+datasets/
+_out/

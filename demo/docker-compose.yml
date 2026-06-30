@@ -1,0 +1,16 @@
+services:
+  kg-qa:
+    build: .
+    image: reg-kg-qa
+    container_name: reg-kg-qa
+    ports:
+      - "${DEMO_PORT:-8800}:8800"
+    env_file:
+      - ../.env                 # LLM_API_BASE / API_KEY / LLM_MODEL (.env.example 참고)
+    environment:
+      KG_TTL: /data/kg.ttl
+      VECTORS_PATH: /data/vectors.jsonl
+      TOP_K: "6"
+    volumes:
+      - ./data:/data:ro         # 생성한 kg.ttl + vectors.jsonl 을 여기에 둔다
+    restart: unless-stopped
