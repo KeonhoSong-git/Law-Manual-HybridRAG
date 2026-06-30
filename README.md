@@ -3,8 +3,6 @@
 **법령(Law)과 지침·매뉴얼(Manual)** 문서 코퍼스에 대한 **하이브리드 RAG**(벡터 검색 + 지식그래프) 데모.
 "규칙으로 만들 수 있는 구조는 코드가 결정적으로, 의미 판단만 LLM이" 라는 원칙으로, 환각을 게이트로 거른다.
 
-> 📝 주요 변경·개선 내역은 [`CHANGELOG.md`](CHANGELOG.md) 참고.
-
 ---
 
 ## 무엇인가 / 왜
@@ -32,38 +30,22 @@
 | **HWPX 입력(선택)** | 로컬 HWPX 규정·공문은 **[hwpx_chunker](https://github.com/KeonhoSong-git/hwpx_chunker)**([rhwp](https://github.com/edwardkim/rhwp) 소스 사용)로 조문/절 청킹 | law.go.kr 외에 보유한 HWPX 문서를 적재할 때 사용 — 동일 `by_document` 형식으로 출력해 그대로 KG·벡터에 투입 |
 | **KG 구축 LLM** | **Gemma 4 31B** | 인용 *종류분류*에만 사용. 구조 추출은 규칙(결정적), LLM은 evidence·방향·domain/range 게이트 안에서만 |
 | **임베딩** | **BGE-M3 (1024-dim)** | 문서·질문 동일 모델. `data_tools/embed_corpus.py` |
-| **데모 서빙 LLM** | Jetson Origin Nano 8GB | 서빙하는 LLM의 파라미터가 4B라 응답 품질이 낮을 수 있음 |
+| **데모 서빙 LLM** | **NVIDIA Nemotron 3 Nano 4B** (Jetson Orin Nano 8GB · GGUF Q4_K_M) | 온디바이스 로컬 추론. 4B라 응답 품질은 대형 모델보다 낮을 수 있음 |
 
 > LLM·임베딩은 모두 **OpenAI 호환 엔드포인트**로 호출 → 로컬(llama.cpp/TEI 등)이든 원격이든 `.env`만 바꿔 연결.
 
 ## 개발 / 데모 환경
 
-현재 배포: **NVIDIA Jetson Orin Nano 8GB 한 대에서 전부 온디바이스(로컬·오프라인) 구동.** 외부 클라우드 LLM 미사용.
-
-- 공개 데모 접속: **https://construct-joyride-cartoon.ngrok-free.dev**
-  - 비밀번호 없음. 첫 접속 시 ngrok 경고 페이지에서 `Visit Site` 클릭.
-- 하드웨어: Jetson Orin Nano 8GB (6-core Arm Cortex-A78AE · Ampere GPU · 8GB 공유 메모리)
-- OS: Ubuntu 22.04 / JetPack 6.2.1 (L4T R36.4.4) · CUDA 12.6
-- 사용 모델: 생성 LLM = **NVIDIA Nemotron 3 Nano 4B**, 임베딩 = **BGE-M3** (둘 다 로컬 구동 · OpenAI 호환)
-- 구성요소 (모두 OpenAI 호환 API · systemd 서비스로 부팅 자동 시작):
-
-| 역할 | 모델 / 엔진 | 엔드포인트 |
-|------|-------------|-----------|
-| 생성 LLM | **NVIDIA Nemotron 3 Nano 4B** · `nvidia/NVIDIA-Nemotron-3-Nano-4B-GGUF` (Q4_K_M) · llama.cpp(CUDA) | `:8080` |
-| 임베딩 | **BGE-M3** · `BAAI/bge-m3` (GGUF FP16) · llama.cpp | `:8081` |
-| RAG API | FastAPI (`demo/kg_api.py`) | `:8800` |
-| 공개 터널 | ngrok (고정 도메인) | 위 데모 URL |
-
-- 데이터: 저장소에 번들된 KG(`kg.ttl`) + 벡터(`vectors.npy` / `vectors.meta.jsonl`) 사용 (청크 17,340).
-- 교체 가능: OpenAI 호환 엔드포인트만 바라보므로 `.env` 만 바꾸면 외부 추론서버(H100 등)로 전환 가능.
-
-운영 메모
-- 8GB 공유 메모리 한계 — LLM + 임베딩 + RAG 동시 구동이 안전선. whisper 등 대형 모델을 추가 적재하면 OOM.
-- Nemotron은 추론(reasoning) 모델 — LLM 호출 본문에 `chat_template_kwargs.enable_thinking=false` 를 넣어야 답변 본문이 정상 출력됨(미적용 시 추론에 토큰을 소진해 답변이 빔).
+| 역할 | 사양 |
+|------|------|
+| 추론·임베딩·데모 | NVIDIA Jetson Orin Nano 8GB · Ubuntu 22.04 / JetPack 6.2.1 · CUDA 12.6 — 전부 온디바이스 |
+| 생성 LLM | NVIDIA Nemotron 3 Nano 4B (GGUF Q4_K_M) |
+| 임베딩 | BGE-M3 (1024-dim) |
+| 데이터 | 저장소 번들 KG(`kg.ttl`) + 벡터(`vectors.npy`) |
 
 ## 데모 화면
 
-`http://localhost:8800` (공개 접속은 위 데모 URL) — 단일 페이지.
+공개 데모 **https://construct-joyride-cartoon.ngrok-free.dev** — 단일 페이지.
 
 **상단**
 - 제목 `⌂ Law & Manual HybridRAG` = **홈 버튼**(클릭 시 초기화) · 질문 입력창 · `질문` 버튼.
@@ -72,12 +54,15 @@
 
 ## 동작 원리
 
+KG 구축은 harness **[law-regulation-kg-harness](https://github.com/KeonhoSong-git/law-regulation-kg-harness)** 의 결정적 파이프라인(`kg/build_v3.py`, `kg/classify_edges_v3.py`)을 그대로 사용한다.
+
 | 원칙 | 내용 |
 |------|------|
-| **구조는 결정적, 의미는 LLM** | 조문 분해·날짜·IRI는 정규식/규칙(`uuid5`), 인용의 *종류*만 LLM이 제안 |
-| **제안 → 코드 검증 게이트** | LLM 제안을 ① 근거(evidence)∈원문 ② 방향(상위/하위 위계) ③ domain/range 로 검증, 통과만 채택 |
-| **표준 어휘만, 관계 날조 금지** | ELI(법령)·Dublin Core·SKOS·W3C ORG. 매핑 없는 관계는 버림 |
-| **Lean KG** | 핵심 노드(문서·조문)까지만 만들고 본문 세부는 벡터 청크에 위임(중복 방지) |
+| **구조는 결정적, 의미만 LLM** | 조문·날짜·정의용어·「」참조·IRI(`uuid5`)는 정규식/규칙으로 추출. 인용의 *종류*와 기관 판정만 LLM이 제안 |
+| **인용 종류분류** | 참조를 위임(`based_on`)·준용(`applies`)·개정(`amends`)·단순참조(`cites`)로 구분 |
+| **제안 → 코드 게이트** | LLM 제안을 ① evidence∈원문 ② 방향(하위→상위 위계) ③ 신호어(위임/준용) ④ domain/range ⑤ 기관 named-body 판정 게이트로 검증, 통과만 채택 |
+| **표준 어휘만, 날조 금지** | ELI(법령)·Dublin Core·SKOS(정의)·W3C ORG(기관). 매핑 없는 술어·타입은 드롭 |
+| **Lean KG** | 문서·조문·정의·기관 노드까지만. 본문 세부는 벡터 청크에 위임(`dct:identifier`로 링크) |
 
 문서 유형별 처리:
 - **법령(법규체)**: `제N조(제목)` 구조가 정형 → 조문 노드 + 「」 인용을 정밀 추출.
