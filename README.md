@@ -20,6 +20,10 @@
 - **하이브리드 질의응답(웹 데모)** — 시드 문서 탐색 → 3홉 관련 문서 → 벡터 검색 → 근거 기반 답변을 **SSE 스트리밍**.
 - **지식그래프 탐색기** — 노드 타입별 색상 범례·이름검색·가나다순·페이지네이션, 노드 상세(관계 + 에고 그래프 시각화).
 
+## 데모 화면
+
+공개 데모: **https://construct-joyride-cartoon.ngrok-free.dev**
+
 ## 데이터 · 모델
 
 | 구분 | 사용한 것 | 비고 |
@@ -32,29 +36,16 @@
 | **임베딩** | **BGE-M3 (1024-dim)** | 문서·질문 동일 모델. `data_tools/embed_corpus.py` |
 | **데모 서빙 LLM** | **NVIDIA Nemotron 3 Nano 4B** (Jetson Orin Nano 8GB · GGUF Q4_K_M) | 온디바이스 로컬 추론. 4B라 응답 품질은 대형 모델보다 낮을 수 있음 |
 
-> LLM·임베딩은 모두 **OpenAI 호환 엔드포인트**로 호출 → 로컬(llama.cpp/TEI 등)이든 원격이든 `.env`만 바꿔 연결.
+> LLM·임베딩: **OpenAI 호환 엔드포인트**. `.env` 변경만으로 교체(llama.cpp·vLLM·클라우드 등).
 
 ## 개발 / 데모 환경
 
-| 역할 | 사양 |
-|------|------|
-| 추론·임베딩·데모 | NVIDIA Jetson Orin Nano 8GB · Ubuntu 22.04 / JetPack 6.2.1 · CUDA 12.6 — 전부 온디바이스 |
-| 생성 LLM | NVIDIA Nemotron 3 Nano 4B (GGUF Q4_K_M) |
-| 임베딩 | BGE-M3 (1024-dim) |
-| 데이터 | 저장소 번들 KG(`kg.ttl`) + 벡터(`vectors.npy`) |
-
-## 데모 화면
-
-공개 데모 **https://construct-joyride-cartoon.ngrok-free.dev** — 단일 페이지.
-
-**상단**
-- 제목 `⌂ Law & Manual HybridRAG` = **홈 버튼**(클릭 시 초기화) · 질문 입력창 · `질문` 버튼.
-
----
+- NVIDIA Jetson Orin Nano 8GB
+- Ubuntu 22.04 / JetPack 6.2.1 · CUDA 12.6
 
 ## 동작 원리
 
-KG 구축은 harness **[law-regulation-kg-harness](https://github.com/KeonhoSong-git/law-regulation-kg-harness)** 의 결정적 파이프라인(`kg/build_v3.py`, `kg/classify_edges_v3.py`)을 그대로 사용한다.
+> KG 생성 방법론은 동반 하네스 **[law-regulation-kg-harness](https://github.com/KeonhoSong-git/law-regulation-kg-harness)** 와 동일하다.
 
 | 원칙 | 내용 |
 |------|------|
@@ -109,23 +100,33 @@ demo/data/{kg.ttl, vectors.npy}
 ## 데이터 형식
 
 ### (입력) 청킹 JSON — `by_document/<문서>.json`
-문서 1개 = 청크 dict의 배열. 첫 원소가 문서 메타를 운반한다.
+문서 1개 = 청크 dict의 배열. **첫 청크가 문서 메타를 운반**한다.
 ```json
 [
   {
-    "doc_title": "감사규정",
-    "source_file": "감사규정_2023.hwpx",
-    "doc_family": "법규체",
-    "doc_type": "규정",
-    "enacted": "2010. 1. 1.",
-    "last_amended": "2023. 5. 1.",
-    "unit": "조",
+    "doc_title": "○○감독규정 시행세칙",
+    "source_file": "행정규칙_○○감독규정_시행세칙.json",
+    "doc_family": "법규체",          // 법규체(조문 구조) | 공문체(매뉴얼·지침)
+    "doc_type": "행정규칙",          // 법령 | 행정규칙 | 매뉴얼
+    "enacted": "2010. 1. 1.",        // 제정일
+    "last_amended": "2023. 5. 1.",   // 최종 개정일
+    "unit": "조",                    // 조 | 본문 | 문서
     "article_label": "제1조",
     "article_title": "목적",
-    "text": "제1조(목적) 이 규정은 …"
+    "text": "제1조(목적) 이 세칙은 「○○감독규정」에서 위임된 사항을 정한다 …",
+    "chunk_id": "d8f1a2…#0001",
+    "content_hash": "9c3f…"
   }
 ]
 ```
+
+| 필드 | 용도 |
+|------|------|
+| `doc_family` | 법규체(제N조 정형 → 조문 노드) / 공문체(서술형 → 문서 노드만) 분기 |
+| `doc_type` · `unit` · `article_label`/`title` | 문서·조문 노드 라벨 |
+| `enacted` · `last_amended` | 제정·개정일 리터럴(`xsd:date`) |
+| `text` | 결정적 추출의 원천 — 모든 evidence가 여기 실재해야 채택 |
+| `chunk_id` · `content_hash` | KG↔벡터 조인(`dct:identifier`) · 증분 재추출 |
 
 ### (KG) `kg.ttl` — RDF/Turtle
 ```turtle
@@ -217,19 +218,6 @@ cat _out/kg.ttl _out/kg_relations.ttl > demo/data/kg.ttl
 
 # 4) cd demo && docker compose up -d --build
 ```
-
-### 지원 파일 형식
-| 단계 | 형식 | 도구 |
-|------|------|------|
-| **입력 소스** | law.go.kr **법령·행정규칙** 조문(OPEN API, JSON) — 법규체 | `fetch_law.py` |
-| | law.go.kr **매뉴얼·지침서** PDF 첨부(텍스트 추출) — 공문체 | `fetch_manual.py` (pymupdf) |
-| | `.hwpx`(OWPML zip, 본문 텍스트 추출) · `.txt` | `ingest_hwpx.py` |
-| **중간(청크)** | `by_document/*.json` — 청크 dict 배열([데이터 형식](#데이터-형식) 참고) | — |
-| **지식그래프** | `kg.ttl` — RDF/Turtle | `build_v3` / `classify_edges_v3` |
-| **벡터** | `vectors.npy`(float16, N×1024) + `vectors.meta.jsonl` | `embed_corpus.py` |
-
-- **PDF**: `fetch_manual.py`가 law.go.kr 매뉴얼 첨부 PDF를 pymupdf로 텍스트 추출(스캔·글자깨짐 PDF는 한글 글자수 게이트로 자동 제외). 구버전 `.hwp`(바이너리)는 외부 변환으로 `.hwpx`/`.txt`로 바꿔 ingest.
-- `ingest_hwpx`는 **본문 텍스트 위주 경량 추출**(외부 의존 0). 표·도형·페이지순서까지 정밀 복원이 필요하면 동반 프로젝트 [**hwpx_chunker**](https://github.com/KeonhoSong-git/hwpx_chunker)(rhwp 엔진)로 청킹해 `by_document`로 넣는다.
 
 > 임베더를 바꿔도 코드 수정 불필요 — 문서·질문을 **같은 모델**로만 맞추고 `vectors.npy` 만 재생성하면 된다(차원이 1024가 아니어도 numpy가 데이터 차원을 따른다).
 
