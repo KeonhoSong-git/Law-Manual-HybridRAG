@@ -41,6 +41,7 @@ _load_env()
 KG_TTL = os.environ.get("KG_TTL", os.path.expanduser("~/reg_chunks/kg.ttl"))
 CHUNKS_DIR = os.environ.get("CHUNKS_DIR", os.path.expanduser("~/reg_chunks"))
 HOPS = int(os.environ.get("KG_GRAPH_HOPS", "3"))
+ANSWER_HOPS = int(os.environ.get("KG_ANSWER_HOPS", "2"))   # 표출은 HOPS(3), 답변 컨텍스트는 이 홉까지만
 TOP_K = int(os.environ.get("TOP_K", "6"))
 MAX_RELATED = int(os.environ.get("KG_MAX_RELATED", "50"))   # related 패널·노이즈 캡
 
@@ -293,12 +294,12 @@ def traverse(question, hops=HOPS):
                for i, d in rel_sorted[:MAX_RELATED]]              # UI·노이즈 방지 캡
     seed_labels = [REG_LABEL.get(s, s) for s in seeds]
     docs = seed_labels + [r["label"] for r in related]
+    # 표출(related)은 3홉 전체, 답변 컨텍스트(벡터 스코프)는 관련성 높은 ANSWER_HOPS(기본 2)홉까지만
+    answer_scope = seed_labels + [r["label"] for r in related if r["distance"] <= ANSWER_HOPS]
     return {"method": method, "seeds": seed_labels,
             "seed_iris": list(seeds), "related": related,
             "docs": docs,
-            # 벡터 스코프 = 그래프가 N홉(기본 3) 좁힌 집합 전체. (기존 1홉은 선언된 3홉 narrowing 과 불일치 —
-            # 벡터는 이 스코프 안에서 TOP_K 만 고르므로 3홉으로 둬도 폭주하지 않음.)
-            "scope": docs}
+            "scope": answer_scope}
 
 
 _REL_PRIO = {"위임받음": 0, "준용": 1, "개정": 2, "폐지": 3, "참조": 4}   # 고신호 관계 우선
@@ -487,7 +488,7 @@ svg{border:1px solid #eee;border-radius:8px;background:#fcfcfd;max-width:100%;he
  <div class=side><div class=card id=ndetail><div class=dist>왼쪽 목록·검색결과에서 노드를 누르면 여기에 상세(유형·관계·미니그래프)가 고정 표시됩니다.</div></div></div>
 </div>
 <script>
-(function(){var q=document.getElementById('q'),EX='할인율 적용 감면에 대해 알려줘';q.addEventListener('keydown',function(e){if(e.key==='ArrowRight'&&q.value===''){q.value=EX;e.preventDefault();}});})();
+(function(){var q=document.getElementById('q');var EXS=['할인율 적용 감면에 대해 알려줘','기술보증기금의 보증 대상은?','신용보증기금법 시행령의 주요 내용은?','정부물품 재활용사업 운영요령 요약','수수료 산정 기준 알려줘','재보증의 최고한도는?'];var EX=EXS[Math.floor(Math.random()*EXS.length)];q.setAttribute('placeholder','예) '+EX+'   ( → 키로 자동완성 )');q.addEventListener('keydown',function(e){if(e.key==='ArrowRight'&&q.value===''){q.value=EX;e.preventDefault();}});})();
 function esc(s){return (s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
 function md(t){t=esc(t||'');
  t=t.replace(/\\$([^$]{0,40})\\$/g,function(m,inner){
