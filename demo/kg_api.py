@@ -77,7 +77,7 @@ def parse_ttl(text):
 # ---------- LLM/임베딩 ----------
 def chat(system, user, max_tokens=500):
     base = os.environ["LLM_API_BASE"].rstrip("/")
-    body = json.dumps({"model": os.environ.get("LLM_MODEL", "instruct"), "temperature": 0, "chat_template_kwargs": {"enable_thinking": False},
+    body = json.dumps({"model": os.environ.get("LLM_MODEL", "instruct"), "temperature": 0, "frequency_penalty": 0.4, "repeat_penalty": 1.2, "chat_template_kwargs": {"enable_thinking": False},
                        "max_tokens": max_tokens, "messages": [{"role": "system", "content": system},
                                                               {"role": "user", "content": user}]}).encode()
     req = urllib.request.Request(base + "/chat/completions", data=body,
@@ -116,6 +116,7 @@ _DOC_TYPES = {"eli:LegalResource", "reg:Directive", "reg:Manual",
               "reg:ProvisionalMeasure", "reg:Document"}
 REG_IRIS = {s for s, p, o in TRIPLES if p == "rdf:type" and o in _DOC_TYPES}
 REG_LABEL = {i: LABEL[i] for i in REG_IRIS if i in LABEL}
+_LABEL2IRI = {v: k for k, v in REG_LABEL.items()}   # 라벨->IRI (폴백 시드용)
 ADJ = defaultdict(set)
 VIA = {}
 # 관계(인용)만 — 날짜/속성 술어 제외. 답변용 사실 주입에 사용.
@@ -274,12 +275,15 @@ def string_seeds(question):
     return [i for _, _, i in scored[:3]]
 
 
-def traverse(question, hops=HOPS):
-    seeds = string_seeds(question)   # 1순위: 규정명이 질문에 거의 그대로면 LLM 생략
-    method = "string"
-    if not seeds:                    # 애매할 때만 LLM 의미 매칭 (왕복 1회)
-        seeds = llm_seeds(question)
-        method = "llm" if seeds else "none"
+def traverse(question, hops=HOPS, seeds_override=None):
+    if seeds_override:
+        seeds = set(seeds_override); method = "vector"
+    else:
+        seeds = string_seeds(question)   # 1순위: 규정명이 질문에 거의 그대로면 LLM 생략
+        method = "string"
+        if not seeds:                    # 애매할 때만 LLM 의미 매칭 (왕복 1회)
+            seeds = llm_seeds(question)
+            method = "llm" if seeds else "none"
     visited, parent = {s: 0 for s in seeds}, {}
     q = deque(seeds)
     while q:
@@ -324,26 +328,29 @@ def kg_facts(seed_iris):
 
 
 _ANS_SYS = ("다음 <문서>와 <지식그래프 사실>만 근거로 한국어로 답하라. "
-            "관련 핵심 조항을 '근거'로 인용한 뒤, 필요하면 '해설'과 '조건·예외'로 나눠 짜임새 있게 정리하라. "
-            "질문과 무관한 조항까지 나열하지는 마라. "
+            "마크다운으로 작성하라: 구획은 `**근거**`·`**해설**`·`**조건·예외**` 굵은 소제목으로, 열거는 `- ` 불릿으로. "
+            "관련 핵심 조항을 근거로 인용한 뒤 필요하면 해설·조건/예외로 나눠 정리하되, 질문과 무관한 조항까지 나열하지는 마라. "
             "문서/사실에 실제로 있는 내용만 쓰고 추측·날조하지 마라. 없으면 모른다고 하라.")
 
 
 def _retrieve(question):
     ensure_vecs()
     g = traverse(question)
-    facts = kg_facts(g["seed_iris"])
     vg, vs = [], []
-    rs = set(g.get("scope") or g["docs"])           # 벡터 스코프 = 그래프 N홉(3) 좁힌 문서집합
     if CHUNK_MAT is not None:                       # precomputed: numpy 고속 코사인
         import numpy as _np
         qv = _np.asarray(embed([question])[0], dtype=_np.float32)
         qv /= (_np.linalg.norm(qv) + 1e-9)
         sims = CHUNK_MAT @ qv
         order = _np.argsort(-sims)
-        vg, seen = [], set()
+        seen = set()
         for i in order[:TOP_K]:
             i = int(i); vg.append({**CHUNKS[i], "score": float(sims[i])}); seen.add(CHUNKS[i]["text"])
+        if not g["seed_iris"] and vg:               # 시드 실패 -> 상위 벡터 문서를 시드로 (GraphRAG 폴백)
+            ti = _LABEL2IRI.get(vg[0]["doc"])
+            if ti:
+                g = traverse(question, seeds_override={ti})
+        rs = set(g.get("scope") or g["docs"])
         for i in order:                              # 그래프 스코프(전역 제외)
             if len(vs) >= TOP_K:
                 break
@@ -356,7 +363,13 @@ def _retrieve(question):
                         key=lambda r: -r["score"])
         vg = scored[:TOP_K]
         seen = {r["text"] for r in vg}
+        if not g["seed_iris"] and vg:
+            ti = _LABEL2IRI.get(vg[0]["doc"])
+            if ti:
+                g = traverse(question, seeds_override={ti})
+        rs = set(g.get("scope") or g["docs"])
         vs = [r for r in scored if r["doc"] in rs and r["text"] not in seen][:TOP_K]
+    facts = kg_facts(g["seed_iris"])
     return g, facts, vg, vs
 
 
@@ -380,7 +393,7 @@ def hybrid(question):
 def chat_stream(system, user, max_tokens=1536):
     """LLM 토큰 스트리밍(SSE). content delta 를 하나씩 yield."""
     base = os.environ["LLM_API_BASE"].rstrip("/")
-    body = json.dumps({"model": os.environ.get("LLM_MODEL", "instruct"), "temperature": 0, "chat_template_kwargs": {"enable_thinking": False},
+    body = json.dumps({"model": os.environ.get("LLM_MODEL", "instruct"), "temperature": 0, "frequency_penalty": 0.4, "repeat_penalty": 1.2, "chat_template_kwargs": {"enable_thinking": False},
                        "max_tokens": max_tokens, "stream": True,
                        "messages": [{"role": "system", "content": system},
                                     {"role": "user", "content": user}]}).encode()
@@ -485,7 +498,7 @@ button{padding:12px 20px;font-size:15px;border:0;border-radius:8px;background:#3
 .pred{color:#a05a00;font-size:12px;margin:6px 0 2px}.chip{display:inline-block;background:#e8eeff;border-radius:6px;padding:2px 8px;margin:2px;font-size:13px;cursor:pointer}.chip.in{background:#ffe8e8}
 svg{border:1px solid #eee;border-radius:8px;background:#fcfcfd;max-width:100%;height:auto;display:block}svg text{font:10px system-ui;pointer-events:none}</style>
 <h1 onclick=home() class=home title="처음으로 (클릭)"><span class=hi>⌂</span>법령·매뉴얼 하이브리드 질의</h1>
-<div class=bar><input id=q placeholder="예) 할인율 적용 감면에 대해 알려줘   ( → 키로 자동완성 )" autofocus><button id=go onclick=go()>질문</button></div>
+<div class=bar><input id=q placeholder="질문을 입력하세요   ( → 키로 예시 자동완성 )" autofocus><button id=go onclick=go()>질문</button></div>
 <div class=note>답변은 온디바이스 로컬 모델로 생성되어 다소 느릴 수 있습니다.</div>
 <div class=layout>
  <div class=main>
@@ -498,7 +511,7 @@ svg{border:1px solid #eee;border-radius:8px;background:#fcfcfd;max-width:100%;he
  <div class=side><div class=card id=ndetail><div class=dist>왼쪽 목록·검색결과에서 노드를 누르면 여기에 상세(유형·관계·미니그래프)가 고정 표시됩니다.</div></div></div>
 </div>
 <script>
-(function(){var q=document.getElementById('q');function setEx(ex){q.__ex=ex;q.setAttribute('placeholder','예) '+ex+'   ( → 키로 자동완성 )');}setEx('할인율 적용 감면에 대해 알려줘');fetch('/rand_q').then(function(r){return r.json();}).then(function(d){if(d&&d.q)setEx(d.q);}).catch(function(){});q.addEventListener('keydown',function(e){if(e.key==='ArrowRight'&&q.value===''&&q.__ex){q.value=q.__ex;e.preventDefault();}});})();
+(function(){var q=document.getElementById('q');function setEx(ex){q.__ex=ex;q.setAttribute('placeholder','예) '+ex+'   ( → 키로 자동완성 )');}fetch('/rand_q').then(function(r){return r.json();}).then(function(d){if(d&&d.q)setEx(d.q);}).catch(function(){});q.addEventListener('keydown',function(e){if(e.key==='ArrowRight'&&q.value===''&&q.__ex){q.value=q.__ex;e.preventDefault();}});})();
 function esc(s){return (s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
 function md(t){t=esc(t||'');
  t=t.replace(/\\$([^$]{0,40})\\$/g,function(m,inner){
@@ -507,6 +520,7 @@ function md(t){t=esc(t||'');
    return inner.replace(/\\\\/g,'').trim();});
  t=t.replace(/\\*\\*([^*]+?)\\*\\*/g,'<b>$1</b>');
  t=t.replace(/^(\\s*)[\\*\\-]\\s+/gm,(m,sp)=>sp.replace(/ /g,'\\u00a0')+'• ');
+ t=t.replace(/^(근거|해설|조건·예외|결론|요약|정의)\\s*:/gm,'<b>$1</b>:');
  return t.replace(/\\n/g,'<br>');}
 function home(){document.getElementById('q').value='';document.getElementById('out').innerHTML='';
  document.getElementById('nq').value='';active.clear();drawLeg();hist=[];_page=0;_hits=IDS;nrender(true);
