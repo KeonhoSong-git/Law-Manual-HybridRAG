@@ -75,7 +75,7 @@ def parse_ttl(text):
 # ---------- LLM/임베딩 ----------
 def chat(system, user, max_tokens=500):
     base = os.environ["LLM_API_BASE"].rstrip("/")
-    body = json.dumps({"model": os.environ.get("LLM_MODEL", "instruct"), "temperature": 0,
+    body = json.dumps({"model": os.environ.get("LLM_MODEL", "instruct"), "temperature": 0, "chat_template_kwargs": {"enable_thinking": False},
                        "max_tokens": max_tokens, "messages": [{"role": "system", "content": system},
                                                               {"role": "user", "content": user}]}).encode()
     req = urllib.request.Request(base + "/chat/completions", data=body,
@@ -322,8 +322,9 @@ def kg_facts(seed_iris):
 
 
 _ANS_SYS = ("다음 <문서>와 <지식그래프 사실>만 근거로 한국어로 답하라. "
-            "단답에 그치지 말고 **근거(관련 조항·별표·조건·예외·기준일 등)까지 포함해 완전하게** 답하라. "
-            "단, 문서/사실에 실제로 있는 내용만 쓰고 추측·날조하지 마라. 없으면 모른다고 하라.")
+            "관련 핵심 조항을 '근거'로 인용한 뒤, 필요하면 '해설'과 '조건·예외'로 나눠 짜임새 있게 정리하라. "
+            "질문과 무관한 조항까지 나열하지는 마라. "
+            "문서/사실에 실제로 있는 내용만 쓰고 추측·날조하지 마라. 없으면 모른다고 하라.")
 
 
 def _retrieve(question):
@@ -374,10 +375,10 @@ def hybrid(question):
             "vector_global": _fmt(vg), "vector_scoped": _fmt(vs), "answer": answer}
 
 
-def chat_stream(system, user, max_tokens=600):
+def chat_stream(system, user, max_tokens=1536):
     """LLM 토큰 스트리밍(SSE). content delta 를 하나씩 yield."""
     base = os.environ["LLM_API_BASE"].rstrip("/")
-    body = json.dumps({"model": os.environ.get("LLM_MODEL", "instruct"), "temperature": 0,
+    body = json.dumps({"model": os.environ.get("LLM_MODEL", "instruct"), "temperature": 0, "chat_template_kwargs": {"enable_thinking": False},
                        "max_tokens": max_tokens, "stream": True,
                        "messages": [{"role": "system", "content": system},
                                     {"role": "user", "content": user}]}).encode()
@@ -448,6 +449,7 @@ h1{font-size:20px}
 .home:hover{background:#eef2ff;box-shadow:0 1px 4px rgba(59,91,219,.18)}
 .home .hi{font-size:16px;color:#3b5bdb}
 .bar{display:flex;gap:8px;margin:14px 0}
+.note{color:#888;font-size:13px;margin:10px 2px 20px;padding-left:2px}
 .layout{display:flex;gap:16px;align-items:flex-start}
 .main{flex:1;min-width:0}
 .side{width:440px;flex:none;position:sticky;top:14px;max-height:calc(100vh - 28px);overflow:auto}
@@ -472,7 +474,8 @@ button{padding:12px 20px;font-size:15px;border:0;border-radius:8px;background:#3
 .pred{color:#a05a00;font-size:12px;margin:6px 0 2px}.chip{display:inline-block;background:#e8eeff;border-radius:6px;padding:2px 8px;margin:2px;font-size:13px;cursor:pointer}.chip.in{background:#ffe8e8}
 svg{border:1px solid #eee;border-radius:8px;background:#fcfcfd;max-width:100%;height:auto;display:block}svg text{font:10px system-ui;pointer-events:none}</style>
 <h1 onclick=home() class=home title="처음으로 (클릭)"><span class=hi>⌂</span>법령·매뉴얼 하이브리드 질의</h1>
-<div class=bar><input id=q placeholder="예) 할인율 적용 감면  ·  감사규정 관련 문서" autofocus><button id=go onclick=go()>질문</button></div>
+<div class=bar><input id=q placeholder="예) 할인율 적용 감면에 대해 알려줘   ( → 키로 자동완성 )" autofocus><button id=go onclick=go()>질문</button></div>
+<div class=note>답변은 온디바이스 로컬 모델로 생성되어 다소 느릴 수 있습니다.</div>
 <div class=layout>
  <div class=main>
   <div id=out></div>
@@ -484,6 +487,7 @@ svg{border:1px solid #eee;border-radius:8px;background:#fcfcfd;max-width:100%;he
  <div class=side><div class=card id=ndetail><div class=dist>왼쪽 목록·검색결과에서 노드를 누르면 여기에 상세(유형·관계·미니그래프)가 고정 표시됩니다.</div></div></div>
 </div>
 <script>
+(function(){var q=document.getElementById('q'),EX='할인율 적용 감면에 대해 알려줘';q.addEventListener('keydown',function(e){if(e.key==='ArrowRight'&&q.value===''){q.value=EX;e.preventDefault();}});})();
 function esc(s){return (s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
 function md(t){t=esc(t||'');
  t=t.replace(/\\$([^$]{0,40})\\$/g,function(m,inner){
