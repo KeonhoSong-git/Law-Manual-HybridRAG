@@ -13,6 +13,7 @@ import glob
 import json
 import math
 import os
+import random
 import re
 import urllib.request
 from collections import defaultdict, deque
@@ -436,6 +437,15 @@ def ask_post(body: Ask):
     return StreamingResponse(gen(), media_type="text/event-stream")
 
 
+@app.get("/rand_q")
+def rand_q():
+    docs = list({c["doc"] for c in CHUNKS if c.get("doc")})
+    if not docs:
+        return {"q": ""}
+    tpl = random.choice(["%s에 대해 알려줘", "%s의 주요 내용은?", "%s 요약해줘", "%s에서 정하는 내용은?"])
+    return {"q": tpl % random.choice(docs)}
+
+
 @app.get("/nodes")
 def nodes_ep():
     """탐색기용 전체 노드 인덱스(라벨·유형·관계). 클라이언트가 검색·필터·페이지·그래프."""
@@ -488,7 +498,7 @@ svg{border:1px solid #eee;border-radius:8px;background:#fcfcfd;max-width:100%;he
  <div class=side><div class=card id=ndetail><div class=dist>왼쪽 목록·검색결과에서 노드를 누르면 여기에 상세(유형·관계·미니그래프)가 고정 표시됩니다.</div></div></div>
 </div>
 <script>
-(function(){var q=document.getElementById('q');var EXS=['할인율 적용 감면에 대해 알려줘','기술보증기금의 보증 대상은?','신용보증기금법 시행령의 주요 내용은?','정부물품 재활용사업 운영요령 요약','수수료 산정 기준 알려줘','재보증의 최고한도는?'];var EX=EXS[Math.floor(Math.random()*EXS.length)];q.setAttribute('placeholder','예) '+EX+'   ( → 키로 자동완성 )');q.addEventListener('keydown',function(e){if(e.key==='ArrowRight'&&q.value===''){q.value=EX;e.preventDefault();}});})();
+(function(){var q=document.getElementById('q');function setEx(ex){q.__ex=ex;q.setAttribute('placeholder','예) '+ex+'   ( → 키로 자동완성 )');}setEx('할인율 적용 감면에 대해 알려줘');fetch('/rand_q').then(function(r){return r.json();}).then(function(d){if(d&&d.q)setEx(d.q);}).catch(function(){});q.addEventListener('keydown',function(e){if(e.key==='ArrowRight'&&q.value===''&&q.__ex){q.value=q.__ex;e.preventDefault();}});})();
 function esc(s){return (s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
 function md(t){t=esc(t||'');
  t=t.replace(/\\$([^$]{0,40})\\$/g,function(m,inner){
